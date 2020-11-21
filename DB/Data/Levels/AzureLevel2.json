@@ -1,0 +1,856 @@
+{
+	
+	"background": "Night",
+	"level":
+	{
+		
+		"stages":
+		[
+			
+			{
+				"background_param": "5",
+				"type": "wave",
+				"music": "Level2Music",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners": 
+					[	
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny, I'm nearing HQ now. No sign of Villain Corp. in the area. What's going on?",
+							"Penny? Are you still there?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"kkzkkz.... kkzkkzz",
+							"kkzzzk... Back... kkzzkkkz... Trap!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What's that? I can't understand you, the signal is all over the place."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"kkzzzzzzzzkzzzz..."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 90,
+					"spawners": 
+					[	
+						
+						{
+						
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 5,
+							"delay": 5,
+							"count": 3,
+							"x": 0,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 9,
+							"delay": 7,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-250",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 14,
+							"delay": 5,
+							"count": 3,
+							"x": 0.25,
+							"y": 0,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "100"
+							
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 20,
+							"delay": 5,
+							"count": 2,
+							"x": 0.25,
+							"y": 1,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "-100"
+							
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 28,
+							"delay": 5,
+							"count": 1,
+							"x": 0.85,
+							"y": 0,
+							"theta": 0,
+							"xParam": "-120",
+							"yParam": "80"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 32,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 34,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 36,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+
+							"keys":
+							[
+						
+								"RobotGun"
+						
+							],
+							"start": 40,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=-50=3=0"
+							
+						},
+						{
+					
+							"keys":
+							[
+						
+								"RobotGun"
+						
+							],
+							"start": 42,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+
+						},
+						{
+						
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 50,
+							"delay": 5,
+							"count": 3,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-250",
+							"yParam": "-10"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 52,
+							"delay": 5,
+							"count": 3,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-250",
+							"yParam": "10"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 70,
+							"delay": 0.25,
+							"count": 12,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 78,
+							"delay": 0.25,
+							"count": 13,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 84,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-200",
+							"yParam": "0"
+						
+						}
+						
+					]
+					
+				}
+				
+				
+			},
+			{
+				
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"kkzkkz.... Burst, come in Azure Burst! Do you read me!?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny? I've been trying to reach you, what the hell is going on!?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"kkzz... need to get out of here! They're... zzkkkz... setting up a trap!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"I know, I just ran into it.",
+							"Who the hell was that? It didn't look like Villain Corp."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"No, this one is... kkzzzzk... much worse. Stay away, if you come they'll... kzzk... Aaaaagh!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny? Penny!? Are you okay!?",
+							"Dammit!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 60,
+					"spawners": 
+					[	
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "5",
+				"type": "dialogue",
+				"script": 
+				[
+					
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"Looking for someone, Ms. Burst?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyBoundDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Uh huuguungu mnhfnhmmpfh! Nuhmf mn uuf!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"Now, now, Ms. Sexton, hush now. Don't want to be naughty.",
+							"You already know what I do to naughty girls."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Who is this!? Don't you lay a finger on her!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyBoundDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"HUHG! UUHH!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"Why don't you come stop me if it bothers you so much?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Damn you!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"Oh, yes! Come punish me, Ms. Burst!",
+							"I've been a bad girl!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 90,
+					"spawners": 
+					[	
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "p5+(-1.666*t)=3=0",
+				"type": "scripted",
+				"duration": 3,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "PainGirl",
+						"xParam": "p480+(-33*t)=3=380",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "0",
+				"type": "dialogue",
+				"script": 
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Where's Penny!? What have you done to her, you sicko?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyBoundDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Huunngh! Uuughmmmphngh!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"Oh I've done awful things to her, I've been so very bad.",
+							"I deserve a spanking, Ms. Burst, spank me!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...",
+							"What is wrong with you?",
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "0",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "PainGirl",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "PainGirl",
+						"required": 1
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "0",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "PainDialogue",
+						"name": "Pain Girl",
+						"lines":
+						[
+							
+							"OOOOOH YEEEEEEEEEES! AAAAAaaaaaah...~"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Gross."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"kkzzzzk... urst! Come in Azure Burst! Are you there?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny? Are you okay?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Ugh... yeah, I'll survive. Just a little sore in... places.",
+							"Listen, "
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			}
+		
+		]
+	}
+	
+}

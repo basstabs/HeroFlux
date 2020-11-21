@@ -1,0 +1,39 @@
+{
+	
+	"key": "Drone",
+	"code": 1,
+	"texture": "Drone",
+	"width": 32,
+	"height": 24,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": true,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 9,
+			"offsetX": 5,
+			"offsetY": 5
+			
+		},
+		"damage": 1,
+		"max_health": 2,
+		"aimed": 
+		{
+			
+			"speed": 200,
+			"actor": false,
+			"agent": true
+			
+		},
+		"score": 50
+		
+	}
+	
+}

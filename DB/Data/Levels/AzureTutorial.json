@@ -1,0 +1,618 @@
+{
+	
+	"background": "Ocean",
+	"warning": true,
+	"level":
+	{
+		
+		"stages":
+		[
+			
+			{
+				"background_param": "2",
+				"type": "wave",
+				"music": "TutorialMusic",
+				"data":
+				{
+					
+					"duration": 3,
+					"spawners": []
+					
+				}
+				
+			},
+			{
+			
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Good afternoon, Azure Burst. My name is Penny. I'm in charge of supporting all field operations here at Hero Corp.",
+							"I'll be in charge of your training today, as we'll be working together quite closely from now on."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Nice to meet you, Penny. I've heard a lot about you.",
+							"Please, Marta is fine. Azure Burst can be quite the mouthful, and I'm sure you've seen my file anyway."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"While I appreciate the sentiment, I must insist. One can never be too careful with secret identities, and our communications channels are far from secure.",
+							"Now, I'll send some drones your way as a quick warm-up. Out here, there's no risk of collateral damage so deal with them as you see fit.",
+							"In the field, I'll give you warnings about approaching hostiles. Stay alert and watch my signals, not all enemies will attack you head on."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Got it. I'm ready, let 'em loose!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					}
+
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+				
+					"duration": 30,
+					"spawners":
+					[
+				
+						{
+						
+							"keys":
+							[
+							
+								"Goodbot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Goodbot"
+							
+							],
+							"start": 7,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Goodbot"
+							
+							],
+							"start": 10,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Goodbot"
+							
+							],
+							"start": 17,
+							"delay": 0.5,
+							"count": 3,
+							"x": 0.9,
+							"y": 0,
+							"theta": 0,
+							"xParam": "p0=2=-50",
+							"yParam": "p50=2=0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Goodbot"
+							
+							],
+							"start": 20,
+							"delay": 0.5,
+							"count": 3,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "p0=2=-50",
+							"yParam": "p-50=2=0"
+						
+						}
+					
+					
+					]
+				
+				}
+				
+			},
+			{
+			
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Good. Make sure you're moderating your energy usage out there.",
+							"If you overuse your most powerful abilities, you won't have the energy to recover from hits.",
+							"You can recharge by picking up energy remnants from destroyed enemies, but plan carefully so that the momentum doesn't carry them out of reach."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"I got it, what's next?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"On to something a little more challenging, then.",
+							"These drones will be armed, make sure to avoid their projectiles."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+				
+					"duration": 30,
+					"spawners":
+					[
+				
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 7,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 10,
+							"delay": 0.5,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot",
+								"Goodbot",
+								"Goodbot",
+								"Goodbot",
+								"Goodbot"
+							
+							],
+							"start": 17,
+							"delay": 0.5,
+							"count": 3,
+							"x": 0.9,
+							"y": 0,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "25"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot",
+								"Goodbot",
+								"Goodbot",
+								"Goodbot",
+								"Goodbot"
+							
+							],
+							"start": 22,
+							"delay": 0.5,
+							"count": 3,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "-25"
+						
+						}
+					
+					
+					]
+				
+				}
+				
+			},
+			{
+			
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Piece of cake! Hope you have something more challenging planned."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Just be patient, Azure Burst. Today is just some basic training so you can get comfortable working with me.",
+							"One more test and we'll call it a day so you can fly back to HQ before sunset. Ready?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Born ready."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					}
+
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+				
+					"duration": 40,
+					"spawners":
+					[
+				
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 3,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Gunbot"
+							
+							],
+							"start": 7,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Goodbot"
+								
+							],
+							"start": 15,
+							"delay": 0.5,
+							"count": 15,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Gunbot"
+								
+							],
+							"start": 20,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Gunbot"
+								
+							],
+							"start": 24,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Gunbot"
+								
+							],
+							"start": 28,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+							
+							
+						}
+					
+					]
+				
+				}
+				
+			},
+			{
+			
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Excellent work. Head on back, I'll fill out the paperwork for your session today and get you approved for Hot 1 clearance by the time you get back."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"On my way, see you soon."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					}
+
+				]
+				
+			}
+		
+		]
+	}
+	
+}

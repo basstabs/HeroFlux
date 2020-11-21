@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Beam",
+			"xParam": "200",
+			"yParam": "0",
+			"x": 14,
+			"y": -8
+			
+		}
+		
+	],
+	"fire_rate": 0.065,
+	"cost": 1,
+	"aimed": false
+	
+}

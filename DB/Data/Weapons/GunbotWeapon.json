@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "GreyBullet",
+			"xParam": "-200",
+			"yParam": "0",
+			"x": -10,
+			"y": -3
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 0,
+	"aimed": false
+	
+}

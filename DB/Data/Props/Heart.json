@@ -1,0 +1,33 @@
+{
+		
+	"key": "Heart",
+	"code": 1,
+	"texture": "Heart",
+	"width": 16,
+	"height": 13,
+	"tracking": false,
+	"death": null,
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 12,
+		"height": 11,
+		"offsetX": 2,
+		"offsetY": 2
+			
+	},
+	"hostile": true,
+	"value": 1,
+	"death_instruction": {
+				
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "BossGameOverImage"
+				
+	}
+		
+}

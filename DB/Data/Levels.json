@@ -1,0 +1,242 @@
+[
+
+	{
+	
+		"props":
+		[
+			
+			{"prop": "GreyBullet", "poolSize": 15}
+			
+		],
+		"actors":
+		[
+			
+			{"actor": "Goodbot", "poolSize": 15},
+			{"actor": "Gunbot", "poolSize": 10}
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+			{"effect": "Explosion-Normal", "poolSize": 15},
+			{"effect": "GreyBullet-Death", "poolSize": 2}
+			
+		],
+		"level": "AzureTutorial",
+		"title": "Learning the Ropes"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+			{"prop": "Bullet", "poolSize": 25},
+			{"prop": "MiniOoze", "poolSize": 6},
+			{"prop": "DarkFireball", "poolSize": 15},
+			{"prop": "Scarves", "poolSize": 5},
+			{"prop": "Spade", "poolSize": 10},
+			{"prop": "Heart", "poolSize": 10}
+			
+		],
+		"actors":
+		[
+		
+			{"actor": "Robot", "poolSize": 25},
+			{"actor": "RobotGun", "poolSize": 20},
+			{"actor": "Ooze", "poolSize": 5},
+			{"actor": "Drone", "poolSize": 5}
+			
+		],
+		"agents":
+		[
+			
+			{"agent": "Kabadra", "poolSize": 1}
+			
+		],
+		"effects":
+		[
+			
+			{"effect": "Explosion-Normal", "poolSize": 15},
+			{"effect": "DarkFireball-Death", "poolSize": 2},
+			{"effect": "Bullet-Death", "poolSize": 2},
+			{"effect": "Ooze-Death", "poolSize": 2},
+			{"effect": "MiniOoze-Death", "poolSize": 2}
+			
+		],
+		"level": "AzureLevel1",
+		"title": "Warlock and Key"
+		
+	},
+	{
+		
+		"props":
+		[
+		
+			{"prop": "Bullet", "poolSize": 25}
+			
+		],
+		"actors":
+		[
+		
+			{"actor": "Robot", "poolSize": 25},
+			{"actor": "RobotGun", "poolSize": 10},
+			{"actor": "Shieldbot", "poolSize": 5},
+			{"actor": "ChloroGrunt", "poolSize": 3},
+			{"actor": "Drone", "poolSize": 10}
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+			{"effect": "Explosion-Normal", "poolSize": 15},
+			{"effect": "Bullet-Death", "poolSize": 2},
+			{"effect": "ChloroGrunt-Death", "poolSize": 3}
+			
+		],
+		"level": "AzureLevel2",
+		"title": "Spank Me Harder"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel3",
+		"title": "Level 3"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel4",
+		"title": "Level 4"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel5",
+		"title": "Level 5"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel6",
+		"title": "Level 6"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel7",
+		"title": "Level 7"
+		
+	},
+	{
+		
+		"props":
+		[
+			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[
+			
+		],
+		"level": "AzureLevel8",
+		"title": "Level 8"
+		
+	}
+	
+]

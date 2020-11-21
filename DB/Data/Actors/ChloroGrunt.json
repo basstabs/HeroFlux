@@ -1,0 +1,44 @@
+{
+		
+	"key": "ChloroGrunt",
+	"kamikaze": true,
+	"code": 1,
+	"texture": "ChloroGrunt",
+	"width": 40,
+	"height": 40,
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": true,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "ChloroGrunt-Death",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 14,
+			"height": 25,
+			"offsetX": 11,
+			"offsetY": 5
+				
+		},
+		"damage": 1,
+		"max_health": 3,
+		"aimed": false,
+		"death_instruction": {
+				
+			"xParam": "p40*cos(8*t)=1=20*t",
+			"yParam": "p0=1=-100+(400*t)",
+			"audio": "ChloroAudio",
+			"transition": "Player-ToChloro",
+			"animation": "Player-Chloro",
+			"image": "ChloroGameOverImage"
+				
+		},
+		"score": 100
+			
+	}
+		
+}

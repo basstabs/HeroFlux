@@ -1,0 +1,49 @@
+{
+		
+	"key": "RobotGun",
+	"code": 1,
+	"texture": "RobotGun",
+	"width": 26,
+	"height": 16,
+	"sheet": "Robot",
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [
+				
+			{"weapon": "RobotWeapon", "audio": "BulletAudio"}
+				
+		],
+		"fire_conditions": [
+				
+			{
+					
+				"weapon": 0,
+				"time": 0.25,
+				"fire_rate": 1.5,
+				"ammo": 3,
+				"animation": null
+					
+			}
+				
+		],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 5,
+			"offsetX": 6,
+			"offsetY": 3
+				
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": false,
+		"score": 50
+			
+	}
+		
+}

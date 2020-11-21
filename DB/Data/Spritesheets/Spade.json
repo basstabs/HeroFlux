@@ -1,0 +1,18 @@
+{
+	
+	"name": "Spade",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 24,
+			"frames": [0, 1, 2, 3],
+			"repeat": -1
+			
+		}
+		
+	]
+	
+}

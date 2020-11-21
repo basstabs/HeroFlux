@@ -1,0 +1,23 @@
+{
+		
+	"key": "GreyBullet",
+	"code": 1,
+	"texture": "GreyBullet",
+	"width": 12,
+	"height": 7,
+	"tracking": false,
+	"death": "GreyBullet-Death",
+	"bounds":
+	{
+		
+		"type": "box",
+		"width": 7,
+		"height": 5,
+		"offsetX": 1,
+		"offsetY": 1
+			
+	},
+	"hostile": true,
+	"value": 1
+		
+}

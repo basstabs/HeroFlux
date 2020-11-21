@@ -1,0 +1,32 @@
+{
+	
+	"key": "MiniOoze",
+	"code": 1,
+	"texture": "MiniOoze",
+	"width": 12,
+	"height": 6,
+	"tracking": true,
+	"death": "MiniOoze-Death",
+	"bounds":
+	{
+		
+		"type": "circle",
+		"radius": 3,
+		"offsetX": 6,
+		"offsetY": 0
+		
+	},
+	"hostile": true,
+	"value": 1,
+	"death_instruction": {
+				
+		"xParam": "0",
+		"yParam": "100+(-300*t)",
+		"audio": "StruggleAudio",
+		"transition": "Player-ToOoze",
+		"animation": "Player-Ooze",
+		"image": "OozeGameOverImage"
+				
+	}
+		
+}

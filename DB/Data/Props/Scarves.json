@@ -1,0 +1,33 @@
+{
+		
+	"key": "Scarves",
+	"code": 1,
+	"texture": "Scarves",
+	"width": 20,
+	"height": 6,
+	"tracking": false,
+	"death": null,
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 16,
+		"height": 4,
+		"offsetX": 2,
+		"offsetY": 1
+			
+	},
+	"hostile": true,
+	"value": 1,
+	"death_instruction": {
+				
+			"xParam": "-20",
+			"yParam": "-100+(300*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToKabadra",
+			"animation": "Player-Kabadra",
+			"image": "BossGameOverImage"
+				
+	}
+		
+}

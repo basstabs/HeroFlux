@@ -1,0 +1,23 @@
+{
+		
+	"key": "Laser",
+	"code": 0,
+	"texture": "Laser",
+	"width": 10,
+	"height": 5,
+	"tracking": false,
+	"death": "Laser-Death",
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 8,
+		"height": 3,
+		"offsetX": 2,
+		"offsetY": 1
+			
+	},
+	"hostile": true,
+	"value": 1
+		
+}

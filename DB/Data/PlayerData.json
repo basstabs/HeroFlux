@@ -1,0 +1,97 @@
+{
+		
+	"code": 2,
+	"texture": "Player",
+	"width": 40,
+	"height": 40,
+	"collide": true,
+	"death": 25,
+	"super": 25,
+	"start": 25,
+	"agent":
+	{
+			
+		"hVel": 150,
+		"vVel": 150,
+		"weapons":
+		[
+				
+			{"weapon": "Main", 	"audio": "LaserAudio"},
+			{"weapon": "Sub", "audio": "FireballAudio"},
+			{"weapon": "Super", "audio": "BeamAudio"}
+			
+		],
+		"actions":
+		[
+			
+			{
+			
+				"continuous": true,
+				"code": 48,
+				"weapon": 2,
+				"animation": "Player-Beam",
+				"multiplier": 1,
+				"transition": "Player-ToBeam",
+				"move": false
+				
+			},
+			{
+				
+				"continuous": false,
+				"code": 16,
+				"weapon": 0,
+				"animation": "Player-Shoot",
+				"multiplier": 0.5,
+				"transition": "",
+				"move": true
+				
+			},
+			{
+				
+				"continuous": false,
+				"code": 32,
+				"weapon": 1,
+				"animation": "Player-Fire",
+				"multiplier": 1,
+				"transition": "",
+				"move": false
+				
+			}
+			
+		],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 10,
+			"height": 16,
+			"offsetX": 18,
+			"offsetY": 5
+				
+		},
+		"control":
+		{
+			
+			"type": "input"
+			
+		},
+		"damage": 1,
+		"max_health": 1,
+		"death": "Player-Death",
+		"default_death":
+		{
+		
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio"
+			
+		},
+		"power": 100,
+		"empty": "EmptyAudio",
+		"score": -250
+			
+	}
+		
+}

@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Fireball",
+			"xParam": "100",
+			"yParam": "0",
+			"x": 15,
+			"y": -10
+			
+		}
+		
+	],
+	"fire_rate": 1,
+	"cost": 5,
+	"aimed": false
+	
+}

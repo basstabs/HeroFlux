@@ -1,0 +1,33 @@
+{
+		
+	"key": "Shieldbot",
+	"code": 1,
+	"texture": "Shieldbot",
+	"width": 32,
+	"height": 20,
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 24,
+			"height": 18,
+			"offsetX": 2,
+			"offsetY": 1
+				
+		},
+		"damage": 1,
+		"max_health": 8,
+		"aimed": false,
+		"score": 200
+			
+	}
+		
+}

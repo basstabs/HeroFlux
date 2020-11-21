@@ -1,0 +1,122 @@
+{
+	
+	"name": "Player",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 12,
+			"frames": [0, 1, 2, 3],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Fire",
+			"frame_rate": 24,
+			"frames": [4, 4, 5, 6, 6, 6],
+			"repeat": 0
+			
+		},
+		{
+		
+			"name": "Shoot",
+			"frame_rate": 12,
+			"frames": [4, 5, 6, 7, 8, 9],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Spawn",
+			"frame_rate": 36,
+			"frames": [10, 11, 12, 13],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToDeath",
+			"frame_rate": 12,
+			"frames": [14, 15, 16],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 12,
+			"frames": [17, 18, 19, 20],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToBeam",
+			"frame_rate": 12,
+			"frames": [21, 22, 23],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Beam",
+			"frame_rate": 24,
+			"frames": [24, 25, 26, 27],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToOoze",
+			"frame_rate": 6,
+			"frames": [28, 29, 30],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Ooze",
+			"frame_rate": 12,
+			"frames": [31, 32, 33, 34],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToKabadra",
+			"frame_rate": 6,
+			"frames": [35, 36, 37],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Kabadra",
+			"frame_rate": 12,
+			"frames": [38, 39, 40, 41],
+			"repeat": -1
+			
+		},
+		{
+		
+			"name": "ToChloro",
+			"frame_rate": 12,
+			"frames": [42, 43, 44, 45, 46, 47, 48],
+			"repeat": 2
+			
+		},
+		{
+			
+			"name": "Chloro",
+			"frame_rate": 1,
+			"frames": [48],
+			"repeat": -1
+			
+		}
+		
+	]
+	
+}

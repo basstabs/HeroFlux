@@ -1,0 +1,27 @@
+{
+
+	"fire_modes":
+	[
+	
+		{
+		
+			"key": "MiniFireball",
+			"xParam": "800",
+			"yParam": "0",
+			"x": 0,
+			"y": 0
+	
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 2,
+	"aimed":
+	{
+	
+		"actor": true,
+		"agent": true
+	
+	}
+
+}

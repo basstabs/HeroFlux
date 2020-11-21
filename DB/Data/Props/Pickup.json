@@ -1,0 +1,22 @@
+{
+	
+	"key": "Pickup",
+	"code": 5,
+	"texture": "Pickup",
+	"width": 8,
+	"height": 8,
+	"tracking": false,
+	"death": "Pickup-Death",
+	"bounds":
+	{
+		
+		"type": "circle",
+		"radius": 6,
+		"offsetX": -1,
+		"offsetY": -1
+		
+	},
+	"hostile": false,
+	"value": 1
+		
+}

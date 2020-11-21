@@ -1,0 +1,236 @@
+{
+	
+	"background": "TitleBackground",
+	"music": "TitleMusic",
+	"text":
+	[
+		
+		{
+			
+			"text": "Effects Volume:",
+			"font": {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF"},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.25,
+					"y": -0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": -0.1,
+						"target": 0.2,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"text": "Music Volume:",
+			"font": {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF"},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.25,
+					"y": 1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1,
+						"target": 0.5,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		}
+		
+	],
+	"items": 
+	[
+
+		{
+			
+			"type": "slider",
+			"image": "OptionsSliderImage",
+			"pointer": "OptionsPointerImage",
+			"x": 0.1,
+			"y": 0.3,
+			"method": "SetEffects",
+			"defaultValue": "EffectVolume",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.1,
+					"y": -0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": -0.1,
+						"target": 0.3,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "slider",
+			"image": "OptionsSliderImage",
+			"pointer": "OptionsPointerImage",
+			"x": 0.1,
+			"y": 0.6,
+			"method": "SetMusic",
+			"defaultValue": "MusicVolume",
+			"display":
+			{
+				
+				"start": 
+				{
+					
+					"x": 0.1,
+					"y": 1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Back",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.45,
+			"y": 0.8,
+			"method": "Back",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1,
+					"y": 0.8,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1,
+						"target": 0.45,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+		
+		}
+		
+	]
+
+}

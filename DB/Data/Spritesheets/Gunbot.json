@@ -1,0 +1,18 @@
+{
+	
+	"name": "Gunbot",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 48,
+			"frames": [0, 1, 2, 3, 4, 5],
+			"repeat": -1
+			
+		}
+		
+	]
+	
+}

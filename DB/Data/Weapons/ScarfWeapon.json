@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Scarves",
+			"xParam": "-300",
+			"yParam": "0",
+			"x": -16,
+			"y": -9
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 2,
+	"aimed": false
+	
+}

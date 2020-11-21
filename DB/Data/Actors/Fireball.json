@@ -1,0 +1,48 @@
+{
+		
+	"key": "Fireball",
+	"code": 0,
+	"texture": "Fireball",
+	"width": 20,
+	"height": 12,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+			
+			{"weapon": "FireballWeapon", "audio": "FireballAudio"}
+			
+		],
+		"fire_conditions": [
+			
+			{
+				
+				"weapon": 0,
+				"time": 1,
+				"fire_rate": 0.25,
+				"ammo": 5,
+				"animation": null
+				
+			}
+			
+		],
+		"death": "Fireball-Death",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 4,
+			"offsetX": 8,
+			"offsetY": 2
+			
+		},
+		"damage": 1,
+		"max_health": 3,
+		"aimed": false,
+		"score": 0
+		
+	}
+		
+}

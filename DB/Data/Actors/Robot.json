@@ -1,0 +1,32 @@
+{
+		
+	"key": "Robot",
+	"code": 1,
+	"texture": "Robot",
+	"width": 23,
+	"height": 16,
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 5,
+			"offsetX": 4,
+			"offsetY": 3
+				
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": false,
+		"score": 10
+			
+	}
+		
+}

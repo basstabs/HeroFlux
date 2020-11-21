@@ -1,0 +1,26 @@
+{
+	
+	"name": "Bullet",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 24,
+			"frames": [0, 1, 2],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 24,
+			"frames": [3, 4, 5],
+			"repeat": 0
+			
+		}
+		
+	]
+	
+}

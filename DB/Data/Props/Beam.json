@@ -1,0 +1,23 @@
+{
+		
+	"key": "Beam",
+	"code": 0,
+	"texture": "Beam",
+	"width": 16,
+	"height": 16,
+	"tracking": false,
+	"death": "Beam-Death",
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 16,
+		"height": 12,
+		"offsetX": 0,
+		"offsetY": 2
+			
+	},
+	"hostile": true,
+	"value": 2
+		
+}

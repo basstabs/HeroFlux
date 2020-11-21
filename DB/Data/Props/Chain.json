@@ -1,0 +1,23 @@
+{
+		
+	"key": "Chain",
+	"code": 1,
+	"texture": "Chain",
+	"width": 12,
+	"height": 3,
+	"tracking": false,
+	"death": "",
+	"bounds":
+	{
+		
+		"type": "box",
+		"width": 12,
+		"height": 3,
+		"offsetX": 0,
+		"offsetY": 0
+			
+	},
+	"hostile": false,
+	"value": 1
+		
+}

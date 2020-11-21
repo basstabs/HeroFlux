@@ -1,0 +1,50 @@
+{
+		
+	"key": "Gunbot",
+	"code": 1,
+	"texture": "Gunbot",
+	"width": 28,
+	"height": 16,
+	"sheet": "Robot",
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [
+				
+			{"weapon": "GunbotWeapon", "audio": "BulletAudio"}
+				
+		],
+		"fire_conditions": [
+				
+			{
+					
+				"weapon": 0,
+				"time": 0.25,
+				"fire_rate": 1.5,
+				"ammo": 3,
+				"animation": null
+					
+			}
+				
+		],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 20,
+			"height": 12,
+			"offsetX": 3,
+			"offsetY": 4
+				
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": false,
+		"score": 50
+			
+	}
+		
+}

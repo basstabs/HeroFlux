@@ -1,0 +1,993 @@
+{
+		
+	"key": "Kabadra",
+	"collide": true,
+	"texture": "Kabadra",
+	"width": 40,
+	"height": 48,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+			
+			{"weapon": "DarkFireballWeapon", "audio": "FireballAudio"},
+			{"weapon": "ScarfWeapon", "audio": "ThrowAudio"},
+			{"weapon": "SpadeWeapon", "audio": "ThrowAudio"},
+			{"weapon": "HeartWeapon", "audio": "ThrowAudio"}
+				
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 12,
+			"height": 36,
+			"offsetX": 15,
+			"offsetY": 5
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+					
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"time": 1.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": "Kabadra-ToCast"
+									
+							},
+							"duration": 3000,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 51,
+					"maxPower": 100,
+					"minPower": 13
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 135,
+							"time": 1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": "Kabadra-ToCast"
+								
+							},
+							"duration": 1000,
+							"animation": "Cast"
+							
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 5
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": "Kabadra-ToCast"
+									
+							},
+							"duration": 5000,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 21
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 2
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 2
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 68,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 135,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+								
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 203,
+							"time": 0.5,
+							"invuln": false
+							
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 51,
+					"maxPower": 100,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 54,
+							"time": 0.25,
+							"invuln": false
+							
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+						
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 108,
+							"time": 0.25,
+							"invuln": false
+							
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 162,
+							"time": 0.25,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 216,
+							"time": 0.25,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 10
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+							
+							"state": "moveto",
+							"x": 375,
+							"y": 25,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 375,
+							"y": 245,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 135,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+							
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 51,
+					"maxPower": 100,
+					"minPower": 5
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 90,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 325,
+							"y": 245,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 325,
+							"y": 25,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 180,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 275,
+							"y": 135,
+							"time": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						}
+							
+					],
+					"maxHP": 51,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 6
+					
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+							
+							"state": "moveto",
+							"x": 450,
+							"y": 27,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+						
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 54,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 81,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 108,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 162,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 189,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 216,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						},
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 243,
+							"time": 0.1,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+							
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 20
+						
+				}
+					
+			],
+			"default": 
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 380,
+						"y": 135,
+						"time": 2,
+						"invuln": false
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 20, "transition": "Kabadra-ToCharge"},
+						"exit": {},
+						"animation": "Charge"
+							
+					}
+						
+				]
+					
+			}	
+			
+		},
+		"damage": 1,
+		"max_health": 100,
+		"death": "Kabadra-Death",
+		"default_death":
+		{
+		
+			"transition": "Kabadra-Death",
+			"animation": "Kabadra-Death",
+			"xParam": "0",
+			"yParam": "((500*t)*t)+50",
+			"audio": "KabadraScream"
+			
+		},
+		"death_instruction": {
+				
+			"xParam": "-20",
+			"yParam": "-100+(300*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToKabadra",
+			"animation": "Player-Kabadra",
+			"image": "BossGameOverImage"
+				
+		},
+		"power": 100,
+		"empty": "EmptyAudio",
+		"score": 5000
+			
+	}
+		
+}

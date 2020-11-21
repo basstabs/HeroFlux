@@ -1,0 +1,66 @@
+{
+	
+	"name": "Kabadra",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 12,
+			"frames": [0, 1, 2, 3, 1],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Fire",
+			"frame_rate": 18,
+			"frames": [4, 5, 6, 7, 8, 8],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "ToCast",
+			"frame_rate": 12,
+			"frames": [9, 10, 11],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Cast",
+			"frame_rate": 12,
+			"frames": [12, 13, 14, 15],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToCharge",
+			"frame_rate": 12,
+			"frames": [16, 17, 18],
+			"repeat": 0
+			
+		},
+		{
+		
+			"name": "Charge",
+			"frame_rate": 12,
+			"frames": [19, 20, 21, 22],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 12,
+			"frames": [23, 24, 25],
+			"repeat": -1
+			
+		}
+		
+	]
+	
+}

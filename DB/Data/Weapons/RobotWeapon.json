@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Bullet",
+			"xParam": "-200",
+			"yParam": "0",
+			"x": -10,
+			"y": 5
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 0,
+	"aimed": false
+	
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Shmup</title>
+    <script type="text/javascript" src="JS/Dependencies/phaser.min.js"></script>
+	
+	<script type="module" src="JS/Initialize.js"></script>
+	
+    <style type="text/css">
+        body
+		{
+			
+        	margin: 0;
+			
+        }
+        
+        @font-face
+        {
+        
+        	font-family: silkscreen;
+        	src: url("DB/Fonts/Silkscreen/slkscr.ttf");
+        
+        }
+		
+		@font-face
+		{
+			
+			font-family: plasma;
+			src: url("DB/Fonts/Plasma/plasdrip.ttf");
+			
+		}
+		
+		@font-face
+		{
+			
+			font-family: chunk;
+			src: url("DB/Fonts/chunkfive/ChunkFive-Regular.otf");
+			
+		}
+    </style>
+    
+    <!-- 
+		Max score: 45880
+
+    	Attributions:
+    
+    	-Fonts: Obtained through FontSquirrel
+    		Silkscreen: Jason Kottke (jason@kottke.org)
+    		
+			Plasma Drip: Brian Kent (kentpw@norwich.net)
+
+			Chunk Five: The League of Movable Type (https://www.theleagueofmoveabletype.com/)
+
+    	--Music:
+    		https://www.facebook.com/freegamemusic/
+    	
+    	--Sound:
+    		8-bit sounds created through bfxr (bfxr.net)
+
+			Scream: Modified from original (https://freesound.org/people/Archeos/sounds/261419/) via audacity and TimeMachine plugin (https://vst4free.com/plugin/2068/)
+    		Struggle: Modified from original (https://freesound.org/people/AmeAngelofSin/sounds/345049/ by AmeAngelofSin https://twitter.com/ameangelofsin) via audactiy and TimeMachine plugin
+			Kabadra Scream: Modified from original (https://freesound.org/people/vmgraw/sounds/257691/) via audactiy and TimeMachine plugin
+			Moan: Modified from original (https://freesound.org/people/GamingFreak/sounds/334908/) via audacity and TimeMachine plugin
+	-->
+</head>
+<body>
+    <div id="game-container" style="position: absolute; z-index: 0;">
+	</div>
+	<canvas id="ui-layer" width="3840" height="2160" style="position: absolute; z-index: 1; pointer-events: none;">
+	</canvas>
+	<div style="font-family: silkscreen; visibility: hidden">
+		.
+	</div>
+	<div style="font-family: plasma; visibility: hidden">
+		.
+	</div>
+	<div style="font-family: chunk; visibility: hidden">
+		.
+	</div>
+</body>
+</html>

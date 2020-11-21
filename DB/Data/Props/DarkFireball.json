@@ -1,0 +1,33 @@
+{
+		
+	"key": "DarkFireball",
+	"code": 1,
+	"texture": "DarkFireball",
+	"width": 20,
+	"height": 12,
+	"tracking": true,
+	"death": "DarkFireball-Death",
+	"bounds":
+	{
+			
+		"type": "circle",
+		"radius": 4,
+		"offsetX": 8,
+		"offsetY": 2
+			
+	},
+	"hostile": true,
+	"value": 1,
+	"death_instruction":
+	{
+		
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "BossGameOverImage"
+			
+	}
+				
+}

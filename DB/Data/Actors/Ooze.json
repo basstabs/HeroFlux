@@ -1,0 +1,60 @@
+{
+		
+	"key": "Ooze",
+	"code": 1,
+	"texture": "Ooze",
+	"width": 32,
+	"height": 16,
+	"sheet": "OozeSheet",
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [
+				
+			{"weapon": "OozeWeapon", "audio": "FireballAudio"}
+				
+		],
+		"fire_conditions": [
+				
+			{
+					
+				"weapon": 0,
+				"time": 0.1,
+				"fire_rate": 2,
+				"ammo": -1,
+				"animation": "Ooze-Fire"
+					
+			}
+				
+		],
+		"death": "Ooze-Death",
+		"bounds":
+		{
+				
+			"type": "box",
+			"width": 20,
+			"height": 12,
+			"offsetX": 2,
+			"offsetY": 3
+			
+		},
+		"damage": 1,
+		"max_health": 3,
+		"aimed": false,
+		"death_instruction": {
+				
+			"xParam": "0",
+			"yParam": "100+(-300*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToOoze",
+			"animation": "Player-Ooze",
+			"image": "OozeGameOverImage"
+				
+		},
+		"score": 100
+			
+	}
+		
+}

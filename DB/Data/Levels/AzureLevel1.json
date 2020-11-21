@@ -1,0 +1,2098 @@
+{
+	
+	"background": "Skyline",
+	"warning": true,
+	"level":
+	{
+		
+		"stages":
+		[
+			
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"music": "Level1Music",
+				"data":
+				{
+					
+					"duration": 3,
+					"spawners": []
+					
+				}
+				
+			},
+			{
+			
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"All heroes report! Code 9A Alert Status Red!",
+							"I repeat, Code 9A Alert Status Red! All heroes report in ASAP!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Azure Burst here. What's going on?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Villain Corp. is attacking the city! Drones are swarming every district!",
+							"We need you downtown, and we need you there yesterday!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Don't I need Hot Clearance 3 to engage inside the city limits?",
+							"My training only covered Hot 1."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Just go! I'll fill out the paper work, now move your behind before they blow something up!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"On it!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					}
+
+				]
+				
+			},
+			{
+				
+				"background_param": "pt+2=3=5",
+				"type": "wave",
+				"data":
+				{
+				
+					"duration": 55,
+					"spawners":
+					[
+				
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 5,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 10,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 15,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 20,
+							"delay": 0.35,
+							"count": 8,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "p-100=2=0",
+							"yParam": "p0=2=100"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 24,
+							"delay": 0.35,
+							"count": 8,
+							"x": 1,
+							"y": 0.55,
+							"theta": 0,
+							"xParam": "p-100=2=0",
+							"yParam": "p0=2=-100"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 30,
+							"delay": 0.5,
+							"count": 4,
+							"x": 0.75,
+							"y": 1,
+							"theta": 0,
+							"xParam": "p0=2=-100",
+							"yParam": "p-67.5=2=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 4,
+							"x": 0.75,
+							"y": 0,
+							"theta": 0,
+							"xParam": "p0=2=-100",
+							"yParam": "p67.5=2=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 35,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 40,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=-50=3=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 45,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+					
+						}
+					
+					]
+				
+				}
+				
+			},
+			{
+			
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Hold on, I've intercepted a Villain Corp. transmission.",
+							"Tapping you in now."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Approaching Hero Corp. agents. Recon Wing has suffered heavy losses."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Hmmph. Why must things always be so difficult? Who is it? Hopefully not one of those pompous twins. A man can only have so much patience for nonsense."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"No clue. I don't recognize the signature or the strategy.",
+							"Must be some rookie."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Ugh. Kitty, darling, I'm FAR too busy to deal with this pest.",
+							"Could you be a dear and take care of this for me?"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Well, since you asked so nicely.",
+							"I've re-reouted forces from Interceptor Wing to support Recon."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"You're a darling, gorgeous. Mwa!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"That bitch!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"...sis?",
+							"I told you not to eavesdrop on my conversations, Penny!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Errrr... Uhm... gotta go, Kitty!",
+							"Shit!",
+							"I mean... ah... darn! Heads up, Azure Burst, enemy drones are headed right for you!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+			
+					"duration": 25,
+					"spawners":
+					[
+					
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 3,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 7.5,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 7.5,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+								
+							],
+							"start": 10,
+							"delay": 1,
+							"count": 5,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 12,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 12,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						}
+						
+					]
+			
+				} 
+			
+			},
+			{
+			
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Is this... Azure Burst? Do I have that right? "
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What do you want?",
+							"How are you on this channel?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Don't you worry, darling, Kitty worked her magic and now I'm here.",
+							"Just wanted to give you a shout and see if you're REALLY that interested in this whole getting in my way business.",
+							"I figured maybe you could do us both a favor and piss off."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"You know I miiiiight have been tempted if you hadn't called me darlin'.",
+							"Does that, like, work for you? The whole insultingly flattering schtick?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+						
+							"Ugh, no need to be so difficult. Kitty, gorgeous, Azure Butt is being difficult.",
+							"Be a dear and handle this for me, pretty please?"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+						
+							"You're so needy, Kabby. Fine, I'll re-route some armed drones to intercept."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+						
+							"You're the absolute best! Mwaa!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Heads up, Azure Burst, enemy ballistic signatures incoming!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 68,
+					"spawners":
+					[
+						
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 3,
+							"delay": 0.25,
+							"count": 3,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 5,
+							"delay": 0.25,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 7,
+							"delay": 0.25,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+								
+							],
+							"start": 10,
+							"delay": 0.5,
+							"count": 4,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "50*sin(t)"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+								
+							],
+							"start": 13,
+							"delay": 0.4,
+							"count": 4,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "-50*sin(t)"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+								
+							],
+							"start": 18,
+							"delay": 0.3,
+							"count": 4,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "50*sin(t)"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun",
+								"Robot",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 25,
+							"delay": 0.5,
+							"count": 8,
+							"x": 0.7,
+							"y": 0,
+							"theta": 0,
+							"xParam": "-50*sin(t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun",
+								"Robot",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 28,
+							"delay": 0.5,
+							"count": 8,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "-50*sin(t)",
+							"yParam": "-25"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 45,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 45,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 48,
+							"delay": 0.25,
+							"count": 20,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 53,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 54,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 55,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						}
+						
+					]
+					
+				}
+				
+			},
+			{
+			
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"You're a real pain in my perfect ass, you know that, honey?"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Not my fault you're incompetent. And I'm not your honey."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"IN... INCOMPETENT!?",
+							"That's it! Kitty! I want this brat captured and brought to me!",
+							"Parents these days never teach their kids any respect! I'll have to do it myself."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+						
+							"Ugh. Whatever, don't get your panties in a wad, Kabby.",
+							"Symbio's have agreed to help and are on their way to intercept."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Hey! Get off our channels!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"No need to get so pissy, Pen. Just chill."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+						
+							"Yeah! You're such a party pooper.",
+							"No need to be so uptight, sis."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"...Assholes."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "5",
+				"type": "wave",
+				"data":
+				{
+			
+					"duration": 150,
+					"spawners":
+					[
+						
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 3,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 8,
+							"delay": 0,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "-50"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 13,
+							"delay": 0,
+							"count": 1,
+							"x": 0.8,
+							"y": 0,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "50"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 18,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+((10*t)*t)",
+							"yParam": "30+(10*t)"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.1,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 30,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+((10*t)*t)",
+							"yParam": "-30+(-10*t)"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 32,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.1,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 32,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 40,
+							"delay": 1,
+							"count": 4,
+							"x": 1,
+							"y": 0.1,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 40,
+							"delay": 1,
+							"count": 4,
+							"x": 1,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "-25",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 42,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 48,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 48,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 48,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 60,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 65,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 70,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 75,
+							"delay": 2,
+							"count": 3,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-40",
+							"yParam": "0"
+							
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun",
+								"Robot",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 85,
+							"delay": 0.5,
+							"count": 4,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "50*sin(t)"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun",
+								"Robot",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 90,
+							"delay": 0.4,
+							"count": 4,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "-50*sin(t)"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun",
+								"Robot",
+								"Robot",
+								"Robot"
+								
+							],
+							"start": 95,
+							"delay": 0.3,
+							"count": 4,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "50*sin(t)"
+							
+						},
+						{
+
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 102,
+							"delay": 0,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "-50"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ooze"
+								
+							],
+							"start": 105,
+							"delay": 0,
+							"count": 1,
+							"x": 0.8,
+							"y": 0,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "50"
+							
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 110,
+							"delay": 1,
+							"count": 15,
+							"x": 0,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "p75=3=0=6=-75",
+							"yParam": "p0=3=-75=6=0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Drone"
+								
+							],
+							"start": 112,
+							"delay": 1,
+							"count": 2,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+							
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 130,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 135,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=-50=3=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 140,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+					
+						}
+						
+					]
+					
+				}
+			
+			},
+			{
+				
+				"background_param": "p5+(-1.666*t)=3=0",
+				"type": "scripted",
+				"duration": 3,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "Kabadra",
+						"xParam": "p480+(-33*t)=3=380",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "0",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Well, well, well. If it isn't the Azure pest herself.",
+							"You're quite a maddening woman, red."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"I'm not the one laying siege to a city. What are you after, anyway?",
+							"You have to know Hero Corp. can't just let this slide."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Tch. You Hero Corp. are all the same. Bylaws this, rules that! Blegh.",
+							"Some things are more important than your stupid bureaucracy!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Such as?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Well I was gonna tell you, do a pretty girl a favor ya know?",
+							"But noooo, you had to go and be a nuisance. Goody-Two Shoes like you would just try and stop us anyway."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Stop what?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Do I look like an idiot to you, Miss Burst?",
+							"...don't answer that.",
+							"If you want a revealing monologue, you'll have to find someone else.",
+							"Now, time to make you... DISAPPEAR!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"You know, my money was either on disapear or something about sawing me in half.",
+							"Should have made a bet with Penny."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Shut up!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Make me."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"With pleasure!"
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "0",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "Kabadra",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "Kabadra",
+						"required": 1
+						
+					}
+					
+				]
+				
+			},
+			{
+			
+				"background_param": "0",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"...urst! Come in Azure Burst! Are you okay!?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Yeah. Give me a second.",
+							"Villain Corp. Agent is down. Should I bring him in?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"There's no time. Villain Corp. is swarming HQ. Horizon and Ignios are down. Castor and Pollux are MIA."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"On my way!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"No! You need to get out of here! This isn't just another hostile takeover, this is something bigger.",
+							"We need to keep as many agents as possible ready for our counteroffensive.",
+							"...",
+							"Azure Burst? Come in?",
+							"Please tell me you aren't already en route.",
+							"...",
+							"Dammit! No one fucking listens to me."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+					
+				]
+				
+			}
+			
+		]
+
+	}
+	
+}

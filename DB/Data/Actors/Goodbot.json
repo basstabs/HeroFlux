@@ -1,0 +1,33 @@
+{
+		
+	"key": "Goodbot",
+	"code": 1,
+	"texture": "Goodbot",
+	"width": 28,
+	"height": 16,
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 20,
+			"height": 12,
+			"offsetX": 3,
+			"offsetY": 4
+				
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": false,
+		"score": 10
+			
+	}
+		
+}
