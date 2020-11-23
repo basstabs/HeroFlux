@@ -115,6 +115,22 @@
 			"frames": [48],
 			"repeat": -1
 			
+		},
+		{
+			
+			"name": "ToChains",
+			"frame_rate": 6,
+			"frames": [49, 50, 51],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Chains",
+			"frame_rate": 12,
+			"frames": [52, 53, 54, 55],
+			"repeat": -1
+			
 		}
 		
 	]

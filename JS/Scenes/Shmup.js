@@ -799,6 +799,6 @@ function HandleOverlap(obj1, obj2)
 function ProcessOverlap(obj1, obj2)
 {
 	
-	return (Code.Interact(obj1.code, obj2.code) && obj1.active && obj2.active && !obj1.die && !obj2.die && !obj2.Invulnerable() && (!obj1.Invulnerable() || !obj2.Hostile()));
+	return (Code.Interact(obj1.code, obj2.code) && obj1.active && obj2.active && !obj1.die && !obj2.die && (!obj2.Invulnerable() || !obj1.Hostile()) && (!obj1.Invulnerable() || !obj2.Hostile()));
 		
 }

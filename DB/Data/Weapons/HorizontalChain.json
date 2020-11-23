@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Chain",
+			"xParam": "-200",
+			"yParam": "0",
+			"x": 30,
+			"y": 15
+			
+		}
+		
+	],
+	"fire_rate": 0.065,
+	"cost": 1,
+	"aimed": false
+	
+}

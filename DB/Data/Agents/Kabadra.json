@@ -48,7 +48,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 135,
-							"time": 1.5,
+							"duration": 1.5,
 							"invuln": false
 								
 						},
@@ -87,7 +87,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 135,
-							"time": 1,
+							"duration": 1,
 							"invuln": false
 								
 						},
@@ -126,7 +126,7 @@
 							"state": "moveto",
 							"x": 350,
 							"y": 135,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -225,7 +225,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 68,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -251,7 +251,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 135,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -277,7 +277,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 203,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 							
 						},
@@ -316,7 +316,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 54,
-							"time": 0.25,
+							"duration": 0.25,
 							"invuln": false
 							
 						},
@@ -342,7 +342,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 108,
-							"time": 0.25,
+							"duration": 0.25,
 							"invuln": false
 							
 						},
@@ -368,7 +368,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 162,
-							"time": 0.25,
+							"duration": 0.25,
 							"invuln": false
 								
 						},
@@ -394,7 +394,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 216,
-							"time": 0.25,
+							"duration": 0.25,
 							"invuln": false
 								
 						},
@@ -433,7 +433,7 @@
 							"state": "moveto",
 							"x": 375,
 							"y": 25,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -459,7 +459,7 @@
 							"state": "moveto",
 							"x": 350,
 							"y": 135,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -485,7 +485,7 @@
 							"state": "moveto",
 							"x": 375,
 							"y": 245,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -511,7 +511,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 135,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -550,7 +550,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 90,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -576,7 +576,7 @@
 							"state": "moveto",
 							"x": 325,
 							"y": 245,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -602,7 +602,7 @@
 							"state": "moveto",
 							"x": 325,
 							"y": 25,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -628,7 +628,7 @@
 							"state": "moveto",
 							"x": 400,
 							"y": 180,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -654,7 +654,7 @@
 							"state": "moveto",
 							"x": 275,
 							"y": 135,
-							"time": 0.5,
+							"duration": 0.5,
 							"invuln": false
 								
 						},
@@ -693,7 +693,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 27,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -719,7 +719,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 54,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -745,7 +745,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 81,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -771,7 +771,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 108,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -797,7 +797,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 135,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -823,7 +823,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 162,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -849,7 +849,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 189,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -875,7 +875,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 216,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -901,7 +901,7 @@
 							"state": "moveto",
 							"x": 450,
 							"y": 243,
-							"time": 0.1,
+							"duration": 0.1,
 							"invuln": false
 								
 						},
@@ -943,7 +943,7 @@
 						"state": "moveto",
 						"x": 380,
 						"y": 135,
-						"time": 2,
+						"duration": 2,
 						"invuln": false
 							
 					},
@@ -958,7 +958,8 @@
 						
 				]
 					
-			}	
+			},
+			"activate": null,
 			
 		},
 		"damage": 1,

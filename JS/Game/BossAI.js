@@ -22,6 +22,7 @@ export default class AI extends Control
 		this.actions = json.actions;
 		
 		this.default = json.default;
+		this.activate = json.activate;
 		
 		this.started = false;
 
@@ -77,15 +78,6 @@ export default class AI extends Control
 	RunState(state)
 	{
 		
-		if(state.state == "moveto")
-		{
-		
-			this.agent.MoveTo(state.x, state.y, state.time, state.invuln);
-			
-			return;
-			
-		}
-		
 		var duration = 0;
 		var animation = this.agent.key + "-" + state.animation;
 		
@@ -103,6 +95,24 @@ export default class AI extends Control
 			
 		}
 			
+		
+		if(state.state == "moveto")
+		{
+		
+			
+			if(state.durationAnimation)
+			{
+				
+				duration = duration / 1000; //Duration is given in seconds for Moveto and milliseconds for everything else, but animation counts are always in milliseconds
+				
+			}
+			
+			this.agent.MoveTo(state.x, state.y, duration, state.invuln, animation);
+			
+			return;
+			
+		}
+		
 		if(state.enter.code)
 		{
 			
@@ -119,26 +129,37 @@ export default class AI extends Control
 	ChooseAction()
 	{
 		
-		var actions = this.actions.filter(function(action)
+		if(!this.started && this.activate)
 		{
 			
-			return ((this.agent.health <= action.maxHP) && (this.agent.health >= action.minHP)) && ((this.agent.power <= action.maxPower) && (this.agent.power >= action.minPower));
+			this.currentAction = this.activate;
 			
-		}, this);
-		
-		if(actions.length > 0)
-		{
-			
-			var index = MathLibrary.RandomInteger(0, actions.length);
-			
-			this.currentAction = actions[index];
-
 		}
 		else
 		{
 		
-			this.currentAction = this.default;
+			var actions = this.actions.filter(function(action)
+			{
 			
+				return ((this.agent.health <= action.maxHP) && (this.agent.health >= action.minHP)) && ((this.agent.power <= action.maxPower) && (this.agent.power >= action.minPower));
+			
+			}, this);
+		
+			if(actions.length > 0)
+			{
+			
+				var index = MathLibrary.RandomInteger(0, actions.length);
+			
+				this.currentAction = actions[index];
+
+			}
+			else
+			{
+		
+				this.currentAction = this.default;
+			
+			}
+		
 		}
 		
 		this.currentState = 0;
@@ -157,9 +178,9 @@ export default class AI extends Control
 			if(!message.IsEmpty())
 			{
 				
-				this.started = true;
-				
 				this.ChooseAction();
+				
+				this.started = true;
 				
 			}
 			

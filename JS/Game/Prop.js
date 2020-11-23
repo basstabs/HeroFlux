@@ -19,8 +19,6 @@ export default class Prop extends PoolObject
 		this.value = value;
 		this.hostile = hostile;
 		
-		this.die = false;
-		
 		this.death_instruction = death_instruction;
 		
 		this.idle = "";
@@ -102,13 +100,6 @@ export default class Prop extends PoolObject
 		super.Handle(obj);
 		
 		this.Die();
-		
-	}
-	
-	Die()
-	{
-		
-		this.die = true;
 		
 	}
 	

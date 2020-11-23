@@ -111,6 +111,8 @@ export default class PoolObject extends Phaser.Physics.Arcade.Sprite
 				
 		this.code = code;
 		
+		this.die = false;
+		
 	}
 
 	Pool()
@@ -319,10 +321,17 @@ export default class PoolObject extends Phaser.Physics.Arcade.Sprite
 		
 	}
 	
+	Die()
+	{
+		
+		this.die = true;
+		
+	}
+	
 	Hurt(damage)
 	{
 	
-		if(!this.Invulnerable())
+		if(!this.Invulnerable() && !this.die)
 		{
 			
 			this.health -= damage;

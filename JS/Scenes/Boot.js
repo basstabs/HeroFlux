@@ -35,7 +35,7 @@ export default class Boot extends BaseScene
 		
 		//Title Screen Assets
 		preload_data["assets"].push({type: "image", id: "TitleBackground", url: "DB/Images/Menus/TitleBackground.png"});
-		preload_data["assets"].push({type: "image", id: "Logo", url: "DB/Images/Menus/LogoDemo.png"});
+		preload_data["assets"].push({type: "image", id: "Logo", url: "DB/Images/Menus/Logo.png"});
 		preload_data["assets"].push({type: "image", id: "TitleImage", url: "DB/Images/Menus/TitleImage.png"});
 		preload_data["assets"].push({type: "json", id: "TitleScreen", url: "DB/Data/Menus/TitleScreen.json"});
 		preload_data["assets"].push({type: "music", id: "TitleMusic", url: "DB/Music/TitleMusic.mp3"});

@@ -18,6 +18,7 @@ export default class Weapon
 			this.fire_modes[i] = {};
 			
 			this.fire_modes[i].message = new PoolMessage(json.fire_modes[i].key, json.fire_modes[i].xParam, json.fire_modes[i].yParam);
+			this.fire_modes[i].message.SetWorld(json.world);
 			this.fire_modes[i].offset_x = json.fire_modes[i].x;
 			this.fire_modes[i].offset_y = json.fire_modes[i].y;
 			
@@ -34,6 +35,8 @@ export default class Weapon
 		
 		this.scene = scene;
 		this.code = code;
+		
+		this.world = json.world;
 		
 	}
 	

@@ -1,6 +1,6 @@
 {
 	
-	"name": "Kabadra",
+	"name": "PainGirl",
 	"animations":
 	[
 		
@@ -15,7 +15,7 @@
 		{
 			
 			"name": "Break",
-			"frame_rate": 18,
+			"frame_rate": 9,
 			"frames": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
 			"repeat": 0
 			
@@ -30,9 +30,17 @@
 		},
 		{
 			
+			"name": "Recharge",
+			"frame_rate": 12,
+			"frames": [17, 18, 19, 18],
+			"repeat": -1
+			
+		},
+		{
+			
 			"name": "ToShoot",
 			"frame_rate": 12,
-			"frames": [17, 18, 19],
+			"frames": [20, 21, 22],
 			"repeat": 0
 			
 		},
@@ -40,7 +48,31 @@
 			
 			"name": "Shoot",
 			"frame_rate": 12,
-			"frames": [20, 21, 22, 21],
+			"frames": [23, 24, 25, 24],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Fire",
+			"frame_rate": 12,
+			"frames": [26, 26, 26, 27, 28, 28],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "ToFall",
+			"frame_rate": 12,
+			"frames": [29, 30, 31],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Fall",
+			"frame_rate": 12,
+			"frames": [32, 33, 34],
 			"repeat": -1
 			
 		}

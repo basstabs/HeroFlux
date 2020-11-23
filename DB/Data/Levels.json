@@ -77,7 +77,9 @@
 		"props":
 		[
 		
-			{"prop": "Bullet", "poolSize": 25}
+			{"prop": "Bullet", "poolSize": 25},
+			{"prop": "MiniOoze", "poolSize": 6},
+			{"prop": "Chain", "poolSize": 100}
 			
 		],
 		"actors":
@@ -87,11 +89,14 @@
 			{"actor": "RobotGun", "poolSize": 10},
 			{"actor": "Shieldbot", "poolSize": 5},
 			{"actor": "ChloroGrunt", "poolSize": 3},
-			{"actor": "Drone", "poolSize": 10}
+			{"actor": "Drone", "poolSize": 10},
+			{"actor": "Ooze", "poolSize": 5}
 			
 		],
 		"agents":
 		[
+			
+			{"agent": "PainGirl", "poolSize": 1}
 			
 		],
 		"effects":
@@ -99,7 +104,9 @@
 			
 			{"effect": "Explosion-Normal", "poolSize": 15},
 			{"effect": "Bullet-Death", "poolSize": 2},
-			{"effect": "ChloroGrunt-Death", "poolSize": 3}
+			{"effect": "ChloroGrunt-Death", "poolSize": 3},
+			{"effect": "Ooze-Death", "poolSize": 2},
+			{"effect": "MiniOoze-Death", "poolSize": 2}
 			
 		],
 		"level": "AzureLevel2",

@@ -5,19 +5,28 @@
 	"texture": "Chain",
 	"width": 12,
 	"height": 3,
-	"tracking": false,
+	"tracking": true,
 	"death": "",
 	"bounds":
 	{
 		
-		"type": "box",
-		"width": 12,
-		"height": 3,
-		"offsetX": 0,
-		"offsetY": 0
+		"type": "circle",
+		"radius": 4,
+		"offsetX": 2,
+		"offsetY": -2
 			
 	},
-	"hostile": false,
-	"value": 1
+	"hostile": true,
+	"value": 1,
+	"death_instruction": {
+				
+		"xParam": "-20",
+		"yParam": "100+(-300*t)",
+		"audio": "StruggleAudio",
+		"transition": "Player-ToChains",
+		"animation": "Player-Chains",
+		"image": "PainGirlGameOverImage"
+				
+	}
 		
 }

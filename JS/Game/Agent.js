@@ -60,7 +60,6 @@ export default class Agent extends PoolObject
 		this.continuous_started = false;
 		this.continuous_code = 0;
 		
-		this.die = false;
 		this.death_collide = false;
 		
 		this.default_death = json.default_death;
@@ -92,13 +91,13 @@ export default class Agent extends PoolObject
 		
 	}
 
-	MoveTo(x, y, time, invuln)
+	MoveTo(x, y, time, invuln, animation)
 	{
 		
 		var xParam = Parametrizer.LinearCombination(this.x, x, time);
 		var yParam = Parametrizer.LinearCombination(this.y, y, time);
 	
-		var data = {update: true, exit: {}, enter: {xParam: xParam, yParam: yParam, invuln: invuln}, duration: time * 1000, animation: this.idle};
+		var data = {update: true, exit: {}, enter: {xParam: xParam, yParam: yParam, invuln: invuln}, duration: time * 1000, animation: (animation ? animation : this.idle)};
 				
 		this.ChangeState(CONST_AGENT_SCRIPT, data);
 		
@@ -651,7 +650,7 @@ export default class Agent extends PoolObject
 	Handle(obj)
 	{
 	
-		if(!obj.hostile)
+		if(!obj.Hostile())
 		{
 		
 			this.PowerUp(obj.Value());
@@ -720,7 +719,14 @@ export default class Agent extends PoolObject
 	Die()
 	{
 		
-		MessageBox.PostMessage(new ScoreMessage(this.score));
+		if(!this.die)
+		{
+			
+			MessageBox.PostMessage(new ScoreMessage(this.score));
+			
+		}
+		
+		super.Die();
 		
 	}
 	

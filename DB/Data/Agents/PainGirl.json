@@ -1,0 +1,1172 @@
+{
+		
+	"key": "PainGirl",
+	"collide": true,
+	"texture": "PainGirl",
+	"width": 40,
+	"height": 40,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+			
+			{"weapon": "SingleChainThrow", "audio": "ChainAudio"},
+			{"weapon": "TripleChainThrow", "audio": "ChainAudio"},
+			{"weapon": "VerticalChain", "audio": "ChainAudio"},
+			{"weapon": "HorizontalChain", "audio": "ChainAudio"},
+			{"weapon": "NorthEastChain", "audio": "ChainAudio"},
+			{"weapon": "SouthEastChain", "audio": "ChainAudio"}
+			
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 20,
+			"height": 30,
+			"offsetX": 11,
+			"offsetY": 3
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+					
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 75,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 75,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 70,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 3000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 47
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 3000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 47
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 70,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 90,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 3000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 47
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 3000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 47
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 200,
+							"duration": 2,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 70,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 2000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 70,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 2000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 100,
+					"maxPower": 500,
+					"minPower": 32
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 90,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 2000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 32
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 200,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 2000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 32
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 200,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 1.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 5,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 100,
+					"minHP": 50,
+					"maxPower": 500,
+					"minPower": 16
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 5,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						},
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 5,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						},
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 200,
+							"duration": 0.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 5,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 48
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 200,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						},
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						},
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 0.5,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 48
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 70,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 70,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 70,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 90,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 200,
+							"duration": 1,
+							"invuln": false,
+							"animation": "Fight"
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter": 
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "PainGirl-ToShoot"
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+						}
+							
+					],
+					"maxHP": 50,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 8
+						
+				}
+				
+			],
+			"default": 
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 300,
+						"y": 135,
+						"duration": 2,
+						"invuln": false,
+						"animation": "Fight"
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 75, "transition": "PainGirl-Recharge"},
+						"exit": {},
+						"animation": "Recharge"
+							
+					}
+						
+				]
+					
+			},
+			"activate":
+			{
+			
+				"states":
+				[
+				
+					{
+					
+						"state": "moveto",
+						"x": 400,
+						"y": 135,
+						"durationAnimation": "Break",
+						"invuln": false,
+						"animation": "Break"
+					
+					}
+				
+				]
+			
+			}
+			
+		},
+		"damage": 1,
+		"max_health": 150,
+		"death": "PainGirl-Death",
+		"default_death":
+		{
+		
+			"transition": "PainGirl-ToFall",
+			"animation": "PainGirl-Fall",
+			"xParam": "20",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio"
+			
+		},
+		"death_instruction": {
+				
+			"xParam": "-20",
+			"yParam": "-100+(300*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToChains",
+			"animation": "Player-Chains",
+			"image": "PainGirlGameOverImage"
+				
+		},
+		"power": 500,
+		"empty": "EmptyAudio",
+		"score": 7500
+			
+	}
+		
+}

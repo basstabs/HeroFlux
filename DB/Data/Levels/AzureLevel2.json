@@ -6,8 +6,9 @@
 		
 		"stages":
 		[
-			
+
 			{
+				
 				"background_param": "5",
 				"type": "wave",
 				"music": "Level2Music",
@@ -483,7 +484,333 @@
 					
 					"duration": 60,
 					"spawners": 
-					[	
+					[
+						
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 3,
+							"delay": 6,
+							"count": 2,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 5,
+							"delay": 6,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 7,
+							"delay": 6,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 17,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 17.5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.51,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 18,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.49,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 24,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 24.5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.24,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 25,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.26,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 30,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 30.5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.76,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 31,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.74,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 38,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 38.5,
+							"delay": 1,
+							"count": 6,
+							"x": 1,
+							"y": 0.49,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 39,
+							"delay": 1,
+							"count": 6,
+							"x": 1,
+							"y": 0.51,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+							
+							],
+							"start": 40,
+							"delay": 3,
+							"count": 3,
+							"x": 1,
+							"y": 0.1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+							
+							],
+							"start": 41,
+							"delay": 3,
+							"count": 3,
+							"x": 1,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 52,
+							"delay": 0.25,
+							"count": 16,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						}
+						
 					]
 					
 				}
@@ -506,7 +833,7 @@
 							"Looking for someone, Ms. Burst?"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -549,7 +876,7 @@
 							"You already know what I do to naughty girls."
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -591,7 +918,7 @@
 							"Why don't you come stop me if it bothers you so much?"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -620,7 +947,7 @@
 							"I've been a bad girl!"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					}
@@ -634,9 +961,425 @@
 				"data":
 				{
 					
-					"duration": 90,
+					"duration": 117,
 					"spawners": 
-					[	
+					[
+						
+						{
+						
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 5,
+							"delay": 5,
+							"count": 7,
+							"x": 0,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 8,
+							"delay": 5,
+							"count": 7,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-200",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 11,
+							"delay": 5,
+							"count": 7,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-200",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 13,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.37,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 13.5,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.38,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 14,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.36,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 16,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.63,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 16.5,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.62,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 17,
+							"delay": 10,
+							"count": 3,
+							"x": 1,
+							"y": 0.64,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 45,
+							"delay": 5,
+							"count": 1,
+							"x": 0.25,
+							"y": 0,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "100"
+							
+						},
+						{
+							
+							"keys":
+							[
+							
+								"ChloroGrunt"
+							
+							],
+							"start": 47,
+							"delay": 5,
+							"count": 1,
+							"x": 0.25,
+							"y": 1,
+							"theta": 0,
+							"xParam": "100",
+							"yParam": "-100"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 50,
+							"delay": 10,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 51,
+							"delay": 10,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 55,
+							"delay": 10,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 56,
+							"delay": 10,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 60,
+							"delay": 0.5,
+							"count": 10,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "p0=1=25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 60.25,
+							"delay": 0.5,
+							"count": 10,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "p0=1=-25"
+							
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 78,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 82,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=-50=3=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 86,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 90,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "p-100=1.5=50=3=-100",
+							"yParam": "p0=1.5=50=3=0"
+
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 95,
+							"delay": 0.5,
+							"count": 25,
+							"x": 0,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "p75=3=0=6=-75",
+							"yParam": "p0=3=-75=6=0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 95,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						}
+						
 					]
 					
 				}
@@ -660,7 +1403,7 @@
 					{
 						
 						"key": "PainGirl",
-						"xParam": "p480+(-33*t)=3=380",
+						"xParam": "p480+(-60*t)=3=300",
 						"yParam": "135",
 						"x": 1,
 						"y": 0.5
@@ -716,7 +1459,7 @@
 							"I deserve a spanking, Ms. Burst, spank me!"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -728,7 +1471,7 @@
 						[
 							
 							"...",
-							"What is wrong with you?",
+							"What is wrong with you?"
 							
 						],
 						"color": "#8AF1FF",
@@ -784,7 +1527,7 @@
 							"OOOOOH YEEEEEEEEEES! AAAAAaaaaaah...~"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -838,11 +1581,26 @@
 						[
 							
 							"Ugh... yeah, I'll survive. Just a little sore in... places.",
-							"Listen, "
+							"There's no time to waste. I'm sending you coordinates, we need you there ASAP.",
+							"I'll explain on the way!"
 							
 						],
 						"color": "#FFFFFF",
 						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Got them. On my way."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
 						
 					}
 					
