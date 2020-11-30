@@ -82,10 +82,10 @@ export default class Agent extends PoolObject
 		
 	}
 	
-	SetControl(data)
+	SetControl(scene, data)
 	{
     
-    	this.control = Agent.ControlFactory(data);
+    	this.control = Agent.ControlFactory(scene, data);
     
 		this.control.Hook(this);
 		
@@ -722,6 +722,8 @@ export default class Agent extends PoolObject
 		if(!this.die)
 		{
 			
+			this.control.Shutdown();
+			
 			MessageBox.PostMessage(new ScoreMessage(this.score));
 			
 		}
@@ -737,7 +739,7 @@ export default class Agent extends PoolObject
 		
 	}
 	
-	static ControlFactory(data)
+	static ControlFactory(scene, data)
 	{
 
 		if(data.type == "input")
@@ -750,7 +752,7 @@ export default class Agent extends PoolObject
 		if(data.type == "ai")
 		{
 			
-			return new BossAI(data);
+			return new BossAI(scene, data);
 			
 		}
 		

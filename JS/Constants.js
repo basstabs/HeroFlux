@@ -35,6 +35,24 @@ export const CONST_UI_POWERGAUGE_DATA = {
 
 };
 
+export const CONST_UI_ENEMY_DATA = {
+
+	x: 0.9975,
+	y: -0.015,
+	alpha: 0,
+	size: "200px",
+	color: "#F18A8A"
+
+};
+
+export const CONST_UI_ENEMYGAUGE_DATA = {
+
+	x: 0.8333,
+	y: -0.265,
+	alpha: 0
+
+};
+
 export const CONST_DIALOGUE_SPEAKER_DATA = {
 	
 	rightStart: 1,

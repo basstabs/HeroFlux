@@ -120,4 +120,9 @@ export default class Control
 		
 	}
 	
+	Shutdown()
+	{
+		
+	}
+	
 }

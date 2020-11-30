@@ -9,7 +9,7 @@ export const CONST_AISTART_MESSAGE_SUFFIX = "_aistart";
 export default class AI extends Control
 {
 
-	constructor(json)
+	constructor(scene, json)
 	{
 		
 		super();
@@ -30,6 +30,8 @@ export default class AI extends Control
 		this.state_duration = 0;
 		
 		this.current_code = -1;
+		
+		this.scene = scene;
 		
 	}
 
@@ -79,7 +81,7 @@ export default class AI extends Control
 	{
 		
 		var duration = 0;
-		var animation = this.agent.key + "-" + state.animation;
+		var animation = this.agent.key + "-" + (state.animation ? state.animation : "Idle");
 		
 		if(state.duration)
 		{
@@ -163,7 +165,7 @@ export default class AI extends Control
 		}
 		
 		this.currentState = 0;
-		this.RunState(this.currentAction.states[0])
+		this.RunState(this.currentAction.states[0]);
 		
 	}
 	
@@ -173,6 +175,8 @@ export default class AI extends Control
 				
 		if(!this.started)
 		{
+			
+			this.scene.HookEnemy(this.agent);
 			
 			var message = MessageBox.PullMessage(this.agent.key + CONST_AISTART_MESSAGE_SUFFIX);
 			if(!message.IsEmpty())
@@ -208,6 +212,13 @@ export default class AI extends Control
 			}
 			
 		}
+		
+	}
+	
+	Shutdown()
+	{
+		
+		this.scene.UnhookEnemy();
 		
 	}
 	

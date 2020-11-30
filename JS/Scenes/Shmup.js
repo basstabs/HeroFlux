@@ -1,6 +1,6 @@
 import GameScene from "../Base/GameScene.js";
 import {PoolSprite, SpriteMessage, PoolMessage, CONST_POOLSPRITE_MESSAGE_CODE, CONST_SPAWN_MESSAGE_CODE} from "../Base/PoolObject.js";
-import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y} from "../Base/BaseConstants.js";
+import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, CONST_UI_WIDTH} from "../Base/BaseConstants.js";
 import UI from "../Base/UILayer.js";
 
 import Logger from "../Tools/Logger.js";
@@ -21,7 +21,7 @@ import Player, {CONST_PLAYER_SPAWN, CONST_PLAYER_SPAWN_STATE, CONST_PLAYER_DIALO
 
 import Pause from "../Scenes/Pause.js";
 
-import {CONST_UI_POWER_DATA, CONST_UI_POWERGAUGE_DATA} from "../Constants.js";
+import {CONST_UI_POWER_DATA, CONST_UI_POWERGAUGE_DATA, CONST_UI_ENEMYGAUGE_DATA, CONST_UI_ENEMY_DATA} from "../Constants.js";
 
 const CONST_PLAYER_KEY = "Player";
 
@@ -52,8 +52,19 @@ export default class Shmup extends GameScene
 
 		this.player = null;	
 		
+		this.ui_powerGauge = null;
+		this.ui_powerGauge_index = -1;
+		
 		this.ui_power = null;
 		this.ui_power_index = -1;
+		
+		this.ui_enemyGauge = null;
+		this.ui_enemyGauge_index = -1;
+		
+		this.ui_enemyPower = null;
+		this.ui_enemyPower_index = -1;
+		
+		this.hooked_enemy = null;
 		
 		this.screenTransition = false;
 		this.win = false;
@@ -89,6 +100,8 @@ export default class Shmup extends GameScene
 		this.CreateProps(this.data.props);
 		
 		this.CreateEffects(this.data.effects);
+		
+		this.CreateUI();
 		
 		Timer.Reset();
 		this.level.Start();
@@ -274,21 +287,11 @@ export default class Shmup extends GameScene
 		this.objects[CONST_PLAYER_KEY].add(this.player, true);
 		
 		this.player.SetBounds(json.bounds);
-		this.player.SetControl(json.control); 
+		this.player.SetControl(this, json.control); 
 		
 		this.agent_meta[0] = {};
 		this.agent_meta[0].key = CONST_PLAYER_KEY;
 		this.agent_meta[0].code = player.code;
-		
-		//Set up UI elements
-		this.ui_powerGauge = this.textures.get("PowerGauge");
-		
-		this.ui_powerGauge_index = UI.AddSource(this.ui_powerGauge.source[0].source, CONST_UI_POWERGAUGE_DATA);
-		
-		this.ui_power = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, this.player.Power().toString(), {fontFamily: "silkscreen", fontSize: CONST_UI_POWER_DATA.size, color: CONST_UI_POWER_DATA.color});
-		this.ui_power.setOrigin(1, 0.5);
-		
-		this.ui_power_index = UI.AddSource(this.ui_power.canvas, CONST_UI_POWER_DATA);
 		
 	}
 		
@@ -321,7 +324,7 @@ export default class Shmup extends GameScene
 				
 				newAgent.SetBounds(json.bounds);
 				
-				newAgent.SetControl(json.control);
+				newAgent.SetControl(this, json.control);
 				
 			}
 			
@@ -400,6 +403,31 @@ export default class Shmup extends GameScene
 			this.prop_meta[i].code = prop.code;
 	
 		}
+		
+	}
+	
+	CreateUI()
+	{
+		
+		//Player UI
+		this.ui_powerGauge = this.textures.get("PowerGauge");
+		
+		this.ui_powerGauge_index = UI.AddSource(this.ui_powerGauge.source[0].source, CONST_UI_POWERGAUGE_DATA);
+		
+		this.ui_power = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, this.player.Power().toString(), {fontFamily: "silkscreen", fontSize: CONST_UI_POWER_DATA.size, color: CONST_UI_POWER_DATA.color});
+		this.ui_power.setOrigin(1, 0.5);
+		
+		this.ui_power_index = UI.AddSource(this.ui_power.canvas, CONST_UI_POWER_DATA);
+		
+		//Enemy UI
+		this.ui_enemyGauge = this.textures.get("EnemyGauge");
+		
+		this.ui_enemyGauge_index = UI.AddSource(this.ui_enemyGauge.source[0].source, CONST_UI_ENEMYGAUGE_DATA);
+		
+		this.ui_enemyPower = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, "500", {fontFamily: "silkscreen", fontSize: CONST_UI_ENEMY_DATA.size, color: CONST_UI_ENEMY_DATA.color});
+		this.ui_enemyPower.setOrigin(1, 0.5);
+		
+		this.ui_enemyPower_index = UI.AddSource(this.ui_enemyPower.canvas, CONST_UI_ENEMY_DATA);
 		
 	}
 	
@@ -622,6 +650,26 @@ export default class Shmup extends GameScene
 		
 	}
 
+	HookEnemy(agent)
+	{
+		
+		this.hooked_enemy = agent;
+		
+		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", 0, CONST_UI_POWERGAUGE_DATA.alpha, 250, false);
+		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 0, 1, 250, false);
+		
+	}
+	
+	UnhookEnemy()
+	{
+		
+		this.hooked_enemy = null;
+		
+		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", CONST_UI_POWERGAUGE_DATA.alpha, 0, 250, false);
+		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 1, 0, 250, false);
+		
+	}
+	
 	UpdateUI()
 	{
 	
@@ -646,6 +694,21 @@ export default class Shmup extends GameScene
 			this.ui_power.setColor(CONST_UI_POWER_DATA.low_color);
 			
 		}
+		
+		if(this.hooked_enemy)
+		{
+			
+			this.ui_enemyPower.setText(this.hooked_enemy.Power().toString());
+			
+		}
+		else
+		{
+			
+			this.ui_enemyPower.setText("0");
+			
+		}
+	
+		UI.UpdateSource(this.ui_enemyPower_index, null, {x: CONST_UI_ENEMY_DATA.x - (this.ui_enemyPower.displayWidth / CONST_UI_WIDTH)});
 		
 		UI.Update();
 		UI.Draw();

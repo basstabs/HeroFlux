@@ -132,7 +132,7 @@
 			
 		],
 		"level": "AzureLevel3",
-		"title": "Level 3"
+		"title": ""
 		
 	},
 	{
@@ -228,6 +228,11 @@
 		"props":
 		[
 			
+			{"prop": "DarkFireball", "poolSize": 15},
+			{"prop": "Scarves", "poolSize": 5},
+			{"prop": "Spade", "poolSize": 10},
+			{"prop": "Heart", "poolSize": 10}
+			
 		],
 		"actors":
 		[
@@ -235,10 +240,14 @@
 		],
 		"agents":
 		[
+		
+			{"agent": "Kabadra", "poolSize": 1}
 			
 		],
 		"effects":
 		[
+			
+			{"effect": "DarkFireball-Death", "poolSize": 2}
 			
 		],
 		"level": "AzureLevel8",

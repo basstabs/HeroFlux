@@ -63,6 +63,7 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "sound", id: "TypeAudio", url: "DB/Sound/Type.wav"});
 		preload_data["assets"].push({type: "sound", id: "SpawnAudio", url: "DB/Sound/SpawnAudio.wav"});
 		preload_data["assets"].push({type: "image", id: "PowerGauge", url: "DB/Images/PowerGauge.png"});
+		preload_data["assets"].push({type: "image", id: "EnemyGauge", url: "DB/Images/EnemyGauge.png"});
 		
 		var preloader = new Loader("Preloader");
 		this.scene.add("Preloader", preloader);
