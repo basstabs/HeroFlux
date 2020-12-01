@@ -50,7 +50,7 @@ export default class Boot extends BaseScene
 		//Level Select Assets
 		preload_data["assets"].push({type: "json", id: "Levels", url: "DB/Data/Levels.json"});
 		preload_data["assets"].push({type: "json", id: "LevelSelectScreen", url: "DB/Data/Menus/LevelSelect.json"});
-		preload_data["assets"].push({type: "image", id: "LevelSelectImage", url: "DB/Images/menus/LevelSelectImage.png"});
+		preload_data["assets"].push({type: "image", id: "LevelSelectImage", url: "DB/Images/Menus/LevelSelectImage.png"});
 		
 		//Game Over Assets
 		preload_data["assets"].push({type: "image", id: "GameOverImage", url: "DB/Images/GameOver/GameOver.png"});
