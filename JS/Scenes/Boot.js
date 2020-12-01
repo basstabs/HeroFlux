@@ -42,7 +42,7 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "sound", id: "SelectAudio", url: "DB/Sound/Select.wav"});
 		
 		//Options Screen Assets
-		preload_data["assets"].push({type: "image", id: "OptionsBackground", url: "DB/Images/Menus/OptionsBackground.png"});
+		//preload_data["assets"].push({type: "image", id: "OptionsBackground", url: "DB/Images/Menus/OptionsBackground.png"});
 		preload_data["assets"].push({type: "image", id: "OptionsSliderImage", url: "DB/Images/Menus/OptionsSlider.png"});
 		preload_data["assets"].push({type: "image", id: "OptionsPointerImage", url: "DB/Images/Menus/OptionsPointer.png"});
 		preload_data["assets"].push({type: "json", id: "OptionsScreen", url: "DB/Data/Menus/OptionsScreen.json"});
