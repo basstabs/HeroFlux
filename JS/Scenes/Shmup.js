@@ -23,6 +23,11 @@ import Pause from "../Scenes/Pause.js";
 
 import {CONST_UI_POWER_DATA, CONST_UI_POWERGAUGE_DATA, CONST_UI_ENEMYGAUGE_DATA, CONST_UI_ENEMY_DATA} from "../Constants.js";
 
+export const CONST_UI_LIFE_WIDTH = 360;
+export const CONST_UI_LIFE_HEIGHT = 15;
+export const CONST_UI_LIFE_PADDING = 8;
+const CONST_UI_LIFE_X = 60;
+
 const CONST_PLAYER_KEY = "Player";
 
 const CONST_SCREEN_FADEOUT = 3000;
@@ -63,6 +68,10 @@ export default class Shmup extends GameScene
 		
 		this.ui_enemyPower = null;
 		this.ui_enemyPower_index = -1;
+		
+		this.life_bar = null;
+		this.life = null;
+		this.life_markers = null;
 		
 		this.hooked_enemy = null;
 		
@@ -429,6 +438,17 @@ export default class Shmup extends GameScene
 		
 		this.ui_enemyPower_index = UI.AddSource(this.ui_enemyPower.canvas, CONST_UI_ENEMY_DATA);
 		
+		this.life_bar = this.add.image(CONST_UI_LIFE_X, 0, "LifeBar");
+		this.life_bar.setOrigin(0, 0);
+		this.life_bar.setVisible(false);
+		
+		this.life = this.add.sprite(CONST_UI_LIFE_X + (this.life_bar.displayWidth / 2), 0, "Life");
+		this.life.setOrigin(0.5, 0);
+		this.life.anims.play("Life-Idle");
+		this.life.setVisible(false);
+	
+		this.life_markers = this.add.group();
+		
 	}
 	
 	SetCollisions()
@@ -650,13 +670,24 @@ export default class Shmup extends GameScene
 		
 	}
 
-	HookEnemy(agent)
+	HookEnemy(agent, markers)
 	{
 		
 		this.hooked_enemy = agent;
 		
-		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", 0, CONST_UI_POWERGAUGE_DATA.alpha, 250, false);
-		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 0, 1, 250, false);
+		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", 0, CONST_UI_POWERGAUGE_DATA.alpha, 0, false);
+		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 0, 1, 0, false);
+		
+		for(var i = 0; i < markers.length; i++)
+		{
+			
+			this.life_markers.add(this.add.image(CONST_UI_LIFE_X + (CONST_UI_LIFE_WIDTH / 2) - (((CONST_UI_LIFE_WIDTH / 2) - CONST_UI_LIFE_PADDING) * markers[i]), 0, "LifeMarker").setOrigin(0.5, 0));
+			this.life_markers.add(this.add.image(CONST_UI_LIFE_X + (CONST_UI_LIFE_WIDTH / 2) + (((CONST_UI_LIFE_WIDTH / 2) - CONST_UI_LIFE_PADDING) * markers[i]), 0, "LifeMarker").setOrigin(0.5, 0));
+			
+		}
+		
+		this.life.setVisible(true);
+		this.life_bar.setVisible(true);
 		
 	}
 	
@@ -665,8 +696,13 @@ export default class Shmup extends GameScene
 		
 		this.hooked_enemy = null;
 		
-		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", CONST_UI_POWERGAUGE_DATA.alpha, 0, 250, false);
-		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 1, 0, 250, false);
+		UI.AnimateSource(this.ui_enemyGauge_index, "alpha", CONST_UI_POWERGAUGE_DATA.alpha, 0, 0, false);
+		UI.AnimateSource(this.ui_enemyPower_index, "alpha", 1, 0, 0, false);
+		
+		this.life_markers.clear(false, true);
+		
+		this.life.setVisible(false);
+		this.life_bar.setVisible(false);
 		
 	}
 	
@@ -699,6 +735,9 @@ export default class Shmup extends GameScene
 		{
 			
 			this.ui_enemyPower.setText(this.hooked_enemy.Power().toString());
+			
+			var enemy_health = this.hooked_enemy.health / this.hooked_enemy.maxHealth;
+			this.life.setScale(enemy_health, 1);
 			
 		}
 		else

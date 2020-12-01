@@ -677,7 +677,7 @@
 						}
 							
 					],
-					"maxHP": 51,
+					"maxHP": 50,
 					"minHP": 0,
 					"maxPower": 100,
 					"minPower": 6
@@ -959,7 +959,8 @@
 				]
 					
 			},
-			"activate": null
+			"activate": null,
+			"markers": [0.5]
 			
 		},
 		"damage": 1,

@@ -11,8 +11,8 @@
 	"agent":
 	{
 			
-		"hVel": 150,
-		"vVel": 150,
+		"hVel": 200,
+		"vVel": 200,
 		"weapons":
 		[
 				

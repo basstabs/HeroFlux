@@ -33,6 +33,8 @@ export default class AI extends Control
 		
 		this.scene = scene;
 		
+		this.markers = json.markers;
+		
 	}
 
 	Hook(agent)
@@ -176,7 +178,7 @@ export default class AI extends Control
 		if(!this.started)
 		{
 			
-			this.scene.HookEnemy(this.agent);
+			this.scene.HookEnemy(this.agent, this.markers);
 			
 			var message = MessageBox.PullMessage(this.agent.key + CONST_AISTART_MESSAGE_SUFFIX);
 			if(!message.IsEmpty())

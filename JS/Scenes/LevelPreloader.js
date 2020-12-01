@@ -1,6 +1,7 @@
 import BaseScene from "../Base/Scene.js";
 
 import Loader from "../Scenes/Loader.js";
+import {CONST_UI_LIFE_WIDTH, CONST_UI_LIFE_HEIGHT, CONST_UI_LIFE_PADDING} from "../Scenes/Shmup.js";
 
 export default class LevelPreloader extends BaseScene
 {
@@ -76,6 +77,9 @@ export default class LevelPreloader extends BaseScene
 		this.PreparePlayer();
 		this.PrepareLevel();
 	
+		this.assets.spritesheets.push({type: "spritesheet", id: "Life", url: "DB/Images/Spritesheets/" + this.level_data.life + ".png", width: CONST_UI_LIFE_WIDTH - 2 * CONST_UI_LIFE_PADDING, height: CONST_UI_LIFE_HEIGHT, data: "LifeSheet"});
+		this.assets.spritesheets.push({type: "json", id: "LifeSheet", url: "DB/Data/Spritesheets/Life.json"});
+		
 		var preload_data = [];
 		preload_data["next_scene"] = "Shmup";
 		preload_data["assets"] = this.assets.spritesheets.concat(this.assets.images, this.assets.json, this.assets.sound, this.assets.music);

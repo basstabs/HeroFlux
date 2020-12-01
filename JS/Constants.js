@@ -29,7 +29,7 @@ export const CONST_UI_POWER_DATA = {
 
 export const CONST_UI_POWERGAUGE_DATA = {
 
-	x: -0.1,
+	x: -0.11,
 	y: -0.265,
 	alpha: 0.8
 
@@ -47,7 +47,7 @@ export const CONST_UI_ENEMY_DATA = {
 
 export const CONST_UI_ENEMYGAUGE_DATA = {
 
-	x: 0.8333,
+	x: 0.8433,
 	y: -0.265,
 	alpha: 0
 

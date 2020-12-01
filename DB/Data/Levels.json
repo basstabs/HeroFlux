@@ -27,7 +27,8 @@
 			
 		],
 		"level": "AzureTutorial",
-		"title": "Learning the Ropes"
+		"title": "Learning the Ropes",
+		"life": "Life"
 		
 	},
 	{
@@ -69,7 +70,8 @@
 			
 		],
 		"level": "AzureLevel1",
-		"title": "Warlock and Key"
+		"title": "Warlock and Key",
+		"life": "Life"
 		
 	},
 	{
@@ -110,7 +112,8 @@
 			
 		],
 		"level": "AzureLevel2",
-		"title": "Spank Me Harder"
+		"title": "Spank Me Harder",
+		"life": "Life"
 		
 	},
 	{
@@ -132,7 +135,8 @@
 			
 		],
 		"level": "AzureLevel3",
-		"title": ""
+		"title": "Level 3",
+		"life": "Life"
 		
 	},
 	{
@@ -154,7 +158,8 @@
 			
 		],
 		"level": "AzureLevel4",
-		"title": "Level 4"
+		"title": "Level 4",
+		"life": "Life"
 		
 	},
 	{
@@ -176,7 +181,8 @@
 			
 		],
 		"level": "AzureLevel5",
-		"title": "Level 5"
+		"title": "Level 5",
+		"life": "GreenLife"
 		
 	},
 	{
@@ -198,7 +204,8 @@
 			
 		],
 		"level": "AzureLevel6",
-		"title": "Level 6"
+		"title": "Level 6",
+		"life": "GreenLife"
 		
 	},
 	{
@@ -220,7 +227,8 @@
 			
 		],
 		"level": "AzureLevel7",
-		"title": "Level 7"
+		"title": "Level 7",
+		"life": "GreenLife"
 		
 	},
 	{
@@ -231,7 +239,8 @@
 			{"prop": "DarkFireball", "poolSize": 15},
 			{"prop": "Scarves", "poolSize": 5},
 			{"prop": "Spade", "poolSize": 10},
-			{"prop": "Heart", "poolSize": 10}
+			{"prop": "Heart", "poolSize": 10},
+			{"prop": "Chain", "poolSize": 100}
 			
 		],
 		"actors":
@@ -241,7 +250,8 @@
 		"agents":
 		[
 		
-			{"agent": "Kabadra", "poolSize": 1}
+			{"agent": "Kabadra", "poolSize": 1},
+			{"agent": "PainGirl", "poolSize": 1}
 			
 		],
 		"effects":
@@ -251,7 +261,8 @@
 			
 		],
 		"level": "AzureLevel8",
-		"title": "Level 8"
+		"title": "Level 8",
+		"life": "Life"
 		
 	}
 	
