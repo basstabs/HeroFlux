@@ -1,0 +1,50 @@
+{
+	
+	"key": "Autotaper",
+	"code": 1,
+	"texture": "Autotaper",
+	"width": 12,
+	"height": 8,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": true,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Explosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 4,
+			"offsetX": 0,
+			"offsetY": 0
+			
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed":
+		{
+			
+			"speed": 150,
+			"actor": false,
+			"agent": true
+			
+		},
+		
+		"death_instruction": {
+				
+			"xParam": "",
+			"yParam": "",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToTape",
+			"animation": "Player-Tape",
+			"image": "TapeGameOverImage"
+				
+		},
+		"score": 25
+		
+	}
+	
+}

@@ -1,0 +1,279 @@
+{
+	
+	"background": "Tunnel",
+	"level":
+	{
+		
+		"stages":
+		[
+
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"music": "Level2Music",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+		    {
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"So let me get this straight. This... reconstruction engine... reprograms people's minds?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Yes."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"And Hero Corp. built it.",
+							"To take control of captured Villain Corp. agents?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"That's what I've been told, yes."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"That's... terrifying. Really putting the Hero in Hero Corp., Penny."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Look don't bitch... I mean, complain, to me.",
+							"I was only given access to this intel after the first attack. I didn't know about this either.",
+							"We can discuss all the moral implications later. Right now we need to take the reconstruction engine back from Villain Corp."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Yeah, yeah. I'm on it."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Heads up and move slow. This facility is crawling with Villain Corp."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Hero Corp. approaching. Orders are to not let them reach the engine."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Affirmative."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Ho-Horizon!?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Contact with enemy agents is prohibited."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What's wrong with her?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Those bastards must have used the reconstruction engine on her!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Come off your high horse, sis. Your sides been doing it for years."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"..."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			}
+		
+		]
+	}
+	
+}

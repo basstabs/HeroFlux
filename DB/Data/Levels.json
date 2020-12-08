@@ -120,10 +120,21 @@
 		
 		"props":
 		[
+		
+			{"prop": "Bullet", "poolSize": 25},
+			{"prop": "MiniOoze", "poolSize": 6}
 			
 		],
 		"actors":
 		[
+			
+			{"actor": "Robot", "poolSize": 25},
+			{"actor": "RobotGun", "poolSize": 10},
+			{"actor": "Shieldbot", "poolSize": 5},
+			{"actor": "ChloroGrunt", "poolSize": 3},
+			{"actor": "Drone", "poolSize": 10},
+			{"actor": "Ooze", "poolSize": 5},
+			{"actor": "Autotaper", "poolSize": 15}
 			
 		],
 		"agents":
@@ -132,6 +143,12 @@
 		],
 		"effects":
 		[
+			
+			{"effect": "Explosion-Normal", "poolSize": 15},
+			{"effect": "Bullet-Death", "poolSize": 2},
+			{"effect": "ChloroGrunt-Death", "poolSize": 3},
+			{"effect": "Ooze-Death", "poolSize": 2},
+			{"effect": "MiniOoze-Death", "poolSize": 2}
 			
 		],
 		"level": "AzureLevel3",
@@ -229,40 +246,6 @@
 		"level": "AzureLevel7",
 		"title": "Level 7",
 		"life": "GreenLife"
-		
-	},
-	{
-		
-		"props":
-		[
-			
-			{"prop": "DarkFireball", "poolSize": 15},
-			{"prop": "Scarves", "poolSize": 5},
-			{"prop": "Spade", "poolSize": 10},
-			{"prop": "Heart", "poolSize": 10},
-			{"prop": "Chain", "poolSize": 100}
-			
-		],
-		"actors":
-		[
-			
-		],
-		"agents":
-		[
-		
-			{"agent": "Kabadra", "poolSize": 1},
-			{"agent": "PainGirl", "poolSize": 1}
-			
-		],
-		"effects":
-		[
-			
-			{"effect": "DarkFireball-Death", "poolSize": 2}
-			
-		],
-		"level": "AzureLevel8",
-		"title": "Level 8",
-		"life": "Life"
 		
 	}
 	
