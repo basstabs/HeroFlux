@@ -1,0 +1,470 @@
+{
+	
+	"background": "DarkTunnel",
+	"level":
+	{
+		
+		"stages":
+		[
+
+			{
+				
+				"background_param": "5",
+				"type": "wave",
+				"music": "Level2Music",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+		    {
+				
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What the hell is happening down here!?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Hang on! Sensors are going crazy.",
+							"...",
+							"Fuck! Villain Corp. are firing on the base, and the pumps are offline.",
+							"You need to get out of there before the entire facility floods!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Hang on, I'm going back for Horizon!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"There's no time!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "Dialogue",
+						"name": "",
+						"lines":
+						[
+							
+							"Hero Corp. approaching. Orders are to not let them reach the engine."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Affirmative."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Ho-Horizon!?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Contact with enemy agents is prohibited."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What's wrong with her?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Those bastards must have used the reconstruction engine on her!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Come off your high horse, sis. Your side's been doing it for years."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"..."
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Enemy agent entering operational region.",
+							"Preparing to engage."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Reinforcements are a few minutes out. Maintain defensive position.",
+							"We CAN'T lose the reconstruction engine."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Acknowledged."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Horizon! Snap out of it!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Terminating enemy contacts."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Shit!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Snap out of it, Horizon! You can fight this!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "HorizonBadDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Hnn... urk...",
+							"Nng... Engaging."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Horizon has been neutralized."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Your top priority is to secure the reconstruction engine.",
+							"Orders are to extract it back to main HQ."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"..."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Azure Burst? Can you hear me?",
+							"What's going on out there?"
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"The reconstruction engine just went offline. What the hell happened!?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"The right thing."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Goddammnit, Azure Burst! When are you going to learn to follow orders?"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
+				]
+				
+			}
+		
+		]
+	}
+	
+}

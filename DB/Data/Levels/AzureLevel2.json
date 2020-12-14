@@ -16,8 +16,8 @@
 				{
 					
 					"duration": 5,
-					"spawners": 
-					[	
+					"spawners":
+					[
 					]
 					
 				}
@@ -99,8 +99,8 @@
 				{
 					
 					"duration": 90,
-					"spawners": 
-					[	
+					"spawners":
+					[
 						
 						{
 						
@@ -483,7 +483,7 @@
 				{
 					
 					"duration": 60,
-					"spawners": 
+					"spawners":
 					[
 						
 						{
@@ -820,7 +820,7 @@
 				
 				"background_param": "5",
 				"type": "dialogue",
-				"script": 
+				"script":
 				[
 					
 					{
@@ -962,7 +962,7 @@
 				{
 					
 					"duration": 117,
-					"spawners": 
+					"spawners":
 					[
 						
 						{
@@ -1417,7 +1417,7 @@
 				
 				"background_param": "0",
 				"type": "dialogue",
-				"script": 
+				"script":
 				[
 					
 					{
