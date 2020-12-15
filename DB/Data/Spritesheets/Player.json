@@ -131,6 +131,22 @@
 			"frames": [52, 53, 54, 55],
 			"repeat": -1
 			
+		},
+		{
+			
+			"name": "ToTape",
+			"frame_rate": 6,
+			"frames": [56, 57, 58],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Tape",
+			"frame_rate": 6,
+			"frames": [59, 60, 61, 62],
+			"repeat": -1
+			
 		}
 		
 	]

@@ -1,6 +1,7 @@
 {
 	
 	"key": "Autotaper",
+	"kamikaze": true,
 	"code": 1,
 	"texture": "Autotaper",
 	"width": 12,
@@ -36,7 +37,7 @@
 		"death_instruction": {
 				
 			"xParam": "20*cos(8*t)",
-			"yParam": "25",
+			"yParam": "50",
 			"audio": "StruggleAudio",
 			"transition": "Player-ToTape",
 			"animation": "Player-Tape",
