@@ -220,13 +220,9 @@ export default class Player extends Agent
 		
 		super.DeathEnter(data);
 		
-		if(data.image)
-		{
 			
-			MessageBox.PostMessage(new PlayerDeathMessage(data.image));
-			
-		}
-		
+	    MessageBox.PostMessage(new PlayerDeathMessage(data.image));
+
 	}
 	
 	Hurt(damage, death)

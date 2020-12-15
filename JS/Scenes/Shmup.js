@@ -55,7 +55,7 @@ export default class Shmup extends GameScene
 		this.actor_meta = [];
 		this.agent_meta = [];
 
-		this.player = null;	
+		this.player = null;
 		
 		this.ui_powerGauge = null;
 		this.ui_powerGauge_index = -1;
@@ -296,7 +296,7 @@ export default class Shmup extends GameScene
 		this.objects[CONST_PLAYER_KEY].add(this.player, true);
 		
 		this.player.SetBounds(json.bounds);
-		this.player.SetControl(this, json.control); 
+		this.player.SetControl(this, json.control);
 		
 		this.agent_meta[0] = {};
 		this.agent_meta[0].key = CONST_PLAYER_KEY;
