@@ -1,0 +1,75 @@
+{
+		
+	"key": "Engine",
+	"collide": true,
+	"texture": "Engine",
+	"width": 40,
+	"height": 40,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 20,
+			"height": 30,
+			"offsetX": 15,
+			"offsetY": 3
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+			],
+			"default":
+			{
+					
+				"states":
+				[
+
+					{
+							
+						"state": "normal",
+						"enter": {},
+						"exit": {},
+						"animation": "Idle"
+							
+					}
+						
+				]
+					
+			},
+			"markers": []
+			
+		},
+		"damage": 0,
+		"max_health": 20,
+		"death": "Engine-Death",
+		"default_death":
+		{
+		
+			"transition": "Engine-Death",
+			"animation": "Engine-Death",
+			"xParam": "0",
+			"yParam": "50",
+			"audio": "ExplosionAudio"
+			
+		},
+		"power": 0,
+		"empty": "EmptyAudio",
+		"score": 100
+			
+	}
+		
+}

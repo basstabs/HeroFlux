@@ -17,7 +17,7 @@
 		{
 			
 			"type": "circle",
-			"radius": 4,
+			"radius": 6,
 			"offsetX": 0,
 			"offsetY": 0
 			
@@ -27,7 +27,7 @@
 		"aimed":
 		{
 			
-			"speed": 150,
+			"speed": 100,
 			"actor": false,
 			"agent": true
 			
@@ -35,8 +35,8 @@
 		
 		"death_instruction": {
 				
-			"xParam": "",
-			"yParam": "",
+			"xParam": "20*cos(8*t)",
+			"yParam": "25",
 			"audio": "StruggleAudio",
 			"transition": "Player-ToTape",
 			"animation": "Player-Tape",

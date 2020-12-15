@@ -1,0 +1,26 @@
+{
+
+	"name": "Engine",
+	"animations":
+	[
+	
+		{
+		
+			"name": "Idle",
+			"frame_rate": 6,
+			"frames": [0, 1, 2, 1],
+			"repeat": -1
+		
+		},
+		{
+		    
+		    "name": "Death",
+		    "frame_rate": 6,
+		    "frames": [0, 1, 2, 1],
+		    "repeat": -1
+		    
+		}
+	
+	]
+
+}

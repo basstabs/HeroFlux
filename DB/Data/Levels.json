@@ -130,8 +130,8 @@
 			
 			{"actor": "Robot", "poolSize": 25},
 			{"actor": "RobotGun", "poolSize": 10},
-			{"actor": "Shieldbot", "poolSize": 5},
-			{"actor": "ChloroGrunt", "poolSize": 3},
+			{"actor": "Shieldbot", "poolSize": 10},
+			{"actor": "ChloroGrunt", "poolSize": 10},
 			{"actor": "Drone", "poolSize": 10},
 			{"actor": "Ooze", "poolSize": 5},
 			{"actor": "Autotaper", "poolSize": 15}
@@ -139,6 +139,8 @@
 		],
 		"agents":
 		[
+			
+			{"agent": "Engine", "poolSize": 1}
 			
 		],
 		"effects":
@@ -152,7 +154,7 @@
 			
 		],
 		"level": "AzureLevel3",
-		"title": "Level 3",
+		"title": "Mind Control Over Matter",
 		"life": "Life"
 		
 	},
