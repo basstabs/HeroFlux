@@ -232,6 +232,8 @@
 		"props":
 		[
 			
+			{"prop": "Chain", "poolSize": 100}
+			
 		],
 		"actors":
 		[
@@ -240,7 +242,8 @@
 		"agents":
 		[
 			
-			{"agent": "Engine", "poolSize": 1}
+			{"agent": "Engine", "poolSize": 1},
+			{"agent": "PainGirl", "poolSize": 1}
 			
 		],
 		"effects":
