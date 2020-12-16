@@ -41,7 +41,8 @@ export const CONST_UI_ENEMY_DATA = {
 	y: -0.015,
 	alpha: 0,
 	size: "200px",
-	color: "#F18A8A"
+	color: "#F18A8A",
+	green: "#8AFF8A"
 
 };
 

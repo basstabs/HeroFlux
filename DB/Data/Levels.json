@@ -201,7 +201,7 @@
 		],
 		"level": "AzureLevel5",
 		"title": "Level 5",
-		"life": "GreenLife"
+		"life": "Life"
 		
 	},
 	{
@@ -224,7 +224,7 @@
 		],
 		"level": "AzureLevel6",
 		"title": "Level 6",
-		"life": "GreenLife"
+		"life": "Life"
 		
 	},
 	{
@@ -249,7 +249,7 @@
 		],
 		"level": "AzureLevel7",
 		"title": "Level 7",
-		"life": "GreenLife"
+		"life": "Life"
 		
 	}
 	
