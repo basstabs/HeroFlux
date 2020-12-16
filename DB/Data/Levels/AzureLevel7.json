@@ -1,0 +1,86 @@
+{
+	
+	"background": "Skyline",
+	"warning": true,
+	"level":
+	{
+		
+		"stages":
+		[
+			
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"music": "Level1Music",
+				"data":
+				{
+					
+					"duration": 3,
+					"spawners": []
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "p5+(-1.666*t)=3=0",
+				"type": "scripted",
+				"duration": 3,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"xParam": "p480+(-33*t)=3=380",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "0",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"required": 1
+						
+					}
+					
+				]
+				
+			}
+			
+		]
+
+	}
+	
+}

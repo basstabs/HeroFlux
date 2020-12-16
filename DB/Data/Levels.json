@@ -240,6 +240,8 @@
 		"agents":
 		[
 			
+			{"agent": "Engine", "poolSize": 1}
+			
 		],
 		"effects":
 		[

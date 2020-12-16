@@ -54,7 +54,7 @@
 			
 		},
 		"damage": 0,
-		"max_health": 20,
+		"max_health": 10,
 		"death": "Engine-Death",
 		"default_death":
 		{
@@ -63,7 +63,7 @@
 			"animation": "Engine-Death",
 			"xParam": "0",
 			"yParam": "50",
-			"audio": "ExplosionAudio"
+			"audio": "BigExplosionAudio"
 			
 		},
 		"power": 0,
