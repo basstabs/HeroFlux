@@ -3,7 +3,11 @@ import {MenuItem, TextMenuItem} from "../Base/MenuItems.js";
 import UI from "../Base/UILayer.js";
 import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, CONST_UI_WIDTH, CONST_UI_HEIGHT} from "../Base/BaseConstants.js";
 
+import SaveData from "../Game/SaveData.js";
+
 import SoundBoard from "../Tools/SoundBoard.js";
+
+import {CONST_CURRENCY_DATA} from "../Constants.js";
 
 export default class MenuSceen extends BaseScene
 {
@@ -48,6 +52,13 @@ export default class MenuSceen extends BaseScene
 		this.add.image(0, 0, this.background_image).setOrigin(0, 0);
 		
 		SoundBoard.Music(this.music);
+		
+		if(this.menu_data.currency)
+		{
+		    
+		    this.CreateCurrency();
+		    
+		}
 		
 		for(var i = 0; i < this.menu_data.text.length; i++)
 		{
@@ -98,18 +109,52 @@ export default class MenuSceen extends BaseScene
 		
 	}
 	
+	CreateCurrency()
+	{
+	    
+	    this.currency_image = this.textures.get("CurrencyImage");
+		this.currencyIndex = UI.AddSource(this.currency_image.source[0].source, {x: 0, y: 0, alpha: 0});
+		UI.AnimateSource(this.currencyIndex, "alpha", 0, 1, 500, false);
+	    
+	    this.currency_text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, " x " + SaveData.CurrentPower(), CONST_CURRENCY_DATA.font);
+	    this.currencyTextIndex = UI.AddSource(this.currency_text.canvas, CONST_CURRENCY_DATA);
+	    UI.AnimateSource(this.currencyTextIndex, "alpha", 0, 1, 500, false);
+	    
+	}
+	
 	update()
 	{
+		
+		if(this.menu_data.currency)
+		{
+		    
+		    this.UpdateCurrency();
+		    
+		}
 		
 		UI.Update();
 		UI.Draw();
 		
 	}
 	
+	UpdateCurrency()
+	{
+	    
+	    this.currency_text.setText(" x " + SaveData.CurrentPower());
+	    
+	}
+	
 	Hide()
 	{
 		
 		this.closing = true;
+		
+		if(this.menu_data.currency)
+		{
+		    
+		    this.HideCurrency();
+		    
+		}
 		
 		for(var i = 0; i < this.text.length; i++)
 		{
@@ -127,6 +172,14 @@ export default class MenuSceen extends BaseScene
 			
 		}
 		
+	}
+	
+	HideCurrency()
+	{
+	    
+	    UI.AnimateSource(this.currencyIndex, "alpha", 1, 0, 500, true);
+	    UI.AnimateSource(this.currencyTextIndex, "alpha", 1, 0, 500, true);
+	    
 	}
 	
 }

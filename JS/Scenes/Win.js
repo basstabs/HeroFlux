@@ -6,7 +6,6 @@ import SoundBoard from "../Tools/SoundBoard.js";
 
 import Score from "../Game/Score.js";
 import Input from "../Game/Input.js";
-import SaveData from "../Game/SaveData.js";
 
 import Title from "../Scenes/Title.js";
 import Loader from "../Scenes/Loader.js";
@@ -74,9 +73,7 @@ export default class Win extends GameScene
 	{
 	
 		var level = this.cache.json.get("LevelData");
-		this.score = Score.ComputeScore();
-		
-		SaveData.SetScore(level.level, this.score);
+		this.score = Score.ComputeScore(level.level);
 		
 		Loader.Unload(this, data);
 		

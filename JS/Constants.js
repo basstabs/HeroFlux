@@ -95,4 +95,13 @@ export const CONST_TITLE_SCREEN_DATA = {
 	
 }
 
+export const CONST_CURRENCY_DATA = {
+    
+    x: 0.07,
+	y: 0.03,
+	alpha: 0,
+	font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"}
+    
+}
+
 export const CONST_PICKUP_SPEED = 50;

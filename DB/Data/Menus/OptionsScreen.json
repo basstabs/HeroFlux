@@ -2,6 +2,7 @@
 	
 	"background": "TitleBackground",
 	"music": "TitleMusic",
+	"currency": false,
 	"text":
 	[
 		
@@ -87,7 +88,7 @@
 		}
 		
 	],
-	"items": 
+	"items":
 	[
 
 		{
@@ -147,7 +148,7 @@
 			"display":
 			{
 				
-				"start": 
+				"start":
 				{
 					
 					"x": 0.1,

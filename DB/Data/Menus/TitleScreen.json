@@ -2,8 +2,9 @@
 	
 	"background": "TitleBackground",
 	"music": "TitleMusic",
+	"currency": false,
 	"text": [],
-	"items": 
+	"items":
 	[
 
 		{
@@ -62,18 +63,18 @@
 			"text":
 			{
 				
-				"text": "Options",
+				"text": "Feats",
 				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
 				
 			},
 			"x": 0.2,
 			"y": 0.6,
-			"method": "Options",
+			"method": "Feats",
 			"arg": "",
 			"display":
 			{
 				
-				"start": 
+				"start":
 				{
 					
 					"x": -0.2,
@@ -89,6 +90,56 @@
 						"key": "x",
 						"start": -0.2,
 						"target": 0.2,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Options",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.25,
+			"y": 0.7,
+			"method": "Options",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.25,
+					"y": 0.7,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.25,
+						"target": 0.25,
 						"time": 500
 						
 					},

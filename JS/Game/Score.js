@@ -1,5 +1,7 @@
 import MessageBox, {Message} from "../Tools/Messages.js";
 
+import SaveData from "../Game/SaveData.js";
+
 const CONST_PICKUP_POINTS = 10;
 const CONST_PICKUP_MULTIPLIER_INCREMENT = 0.1;
 
@@ -21,11 +23,13 @@ export default class Score
 			
 	}
 	
-	static ComputeScore()
+	static ComputeScore(level)
 	{
 		
 		var score = 0;
 		var pickupMultiplier = 1;
+		
+		var cc = true;
 		
 		var message = MessageBox.PullMessage(CONST_SCORE_MESSAGE_CODE);
 		while(!message.IsEmpty())
@@ -35,6 +39,7 @@ export default class Score
 			{
 				
 				pickupMultiplier = 1;
+				cc = false;
 				
 			}
 			
@@ -57,7 +62,18 @@ export default class Score
 			
 		}
 		
-		return Math.max(0, Math.floor(score));
+		if(cc)
+		{
+		    
+		    SaveData.CC(level);
+		    
+		}
+		
+		score = Math.max(0, Math.floor(score));
+		
+		SaveData.SetScore(level.level, score);
+		
+		return score;
 		
 	}
 	

@@ -8,6 +8,8 @@ export default class SaveData
 		
 		this.scores = {}; //Dictionary of key => integer pairs
 		
+		this.ccs = {}; //Dictionary of key => boolean pairs
+		
 		this.unlocks = [];
 		
 	}
@@ -45,6 +47,20 @@ export default class SaveData
 			
 		}
 		
+		var ccs = window.localStorage.getItem("PlayerCCs");
+		if(ccs !== null)
+		{
+		    
+		    player.ccs = JSON.parse(ccs);
+		    
+		}
+		else
+		{
+		    
+		    player.ccs = base.ccs;
+		    
+		}
+		
 		var unlocks = window.localStorage.getItem("PlayerUnlocks");
 		if(unlocks !== null)
 		{
@@ -70,6 +86,8 @@ export default class SaveData
 		
 		window.localStorage.setItem("PlayerScores", this.scores);
 		
+		window.localStorage.setItem("PlayerCCs", this.ccs);
+		
 		window.localStorage.setItem("PlayerUnlocks", this.unlocks);
 		
 	}
@@ -84,7 +102,7 @@ export default class SaveData
 	LoadData(scene)
 	{
 		
-		var baseData = scene.cache.json.get("SaveDataBase");
+		var baseData = JSON.parse(JSON.stringify(scene.cache.json.get("SaveDataBase")));
 		
 		var playerData = this.LoadPlayerData(baseData);
 		
@@ -180,6 +198,20 @@ export default class SaveData
 		
 		return SaveData.m_save.Score(level);
 		
+	}
+	
+	static CC(level)
+	{
+	    
+	    SaveData.m_save.CC(level);
+	    
+	}
+	
+	CC(level)
+	{
+	    
+	    this.ccs[level] = true;
+	    
 	}
 	
 	OpenLock(key)

@@ -49,7 +49,7 @@
 								
 							"state":  "fire",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 0,
@@ -79,7 +79,127 @@
 								
 							"state":  "fire",
 							"exit": {},
-							"enter": 
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 75,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 150,
+					"minHP": 75,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 75,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 75,
+					"minHP": 0,
+					"maxPower": 500,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
 							{
 									
 								"weapon_index": 1,
@@ -119,7 +239,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -159,7 +279,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -199,7 +319,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -239,7 +359,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -279,7 +399,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -319,7 +439,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -359,7 +479,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -399,7 +519,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -439,7 +559,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -479,7 +599,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -519,7 +639,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -559,7 +679,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -599,7 +719,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 4,
@@ -639,7 +759,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 5,
@@ -679,7 +799,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 5,
@@ -706,7 +826,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 5,
@@ -733,7 +853,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 5,
@@ -773,7 +893,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 4,
@@ -800,7 +920,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 4,
@@ -827,7 +947,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 4,
@@ -867,7 +987,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -907,7 +1027,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -947,7 +1067,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 2,
@@ -987,7 +1107,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -1027,7 +1147,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -1067,7 +1187,7 @@
 								
 							"state":  "continuous",
 							"exit": {},
-							"enter": 
+							"enter":
 							{
 									
 								"weapon_index": 3,
@@ -1090,7 +1210,7 @@
 				}
 				
 			],
-			"default": 
+			"default":
 			{
 					
 				"states":

@@ -33,6 +33,9 @@ export default class Boot extends BaseScene
 		
 		preload_data["assets"] = [];
 		
+		//Universal Menu Assets
+		preload_data["assets"].push({type: "image", id: "CurrencyImage", url: "DB/Images/Menus/Currency.png"});
+		
 		//Title Screen Assets
 		preload_data["assets"].push({type: "image", id: "TitleBackground", url: "DB/Images/Menus/TitleBackground.png"});
 		preload_data["assets"].push({type: "image", id: "Logo", url: "DB/Images/Menus/Logo.png"});
@@ -42,7 +45,6 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "sound", id: "SelectAudio", url: "DB/Sound/Select.wav"});
 		
 		//Options Screen Assets
-		//preload_data["assets"].push({type: "image", id: "OptionsBackground", url: "DB/Images/Menus/OptionsBackground.png"});
 		preload_data["assets"].push({type: "image", id: "OptionsSliderImage", url: "DB/Images/Menus/OptionsSlider.png"});
 		preload_data["assets"].push({type: "image", id: "OptionsPointerImage", url: "DB/Images/Menus/OptionsPointer.png"});
 		preload_data["assets"].push({type: "json", id: "OptionsScreen", url: "DB/Data/Menus/OptionsScreen.json"});
@@ -51,6 +53,10 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "json", id: "Levels", url: "DB/Data/Levels.json"});
 		preload_data["assets"].push({type: "json", id: "LevelSelectScreen", url: "DB/Data/Menus/LevelSelect.json"});
 		preload_data["assets"].push({type: "image", id: "LevelSelectImage", url: "DB/Images/Menus/LevelSelectImage.png"});
+		
+		//Feats Assets
+		preload_data["assets"].push({type: "json", id: "Feats", url: "DB/Data/Feats.json"});
+		preload_data["assets"].push({type: "json", id: "FeatsScreen", url: "DB/Data/Menus/FeatsScreen.json"});
 		
 		//Game Over Assets
 		preload_data["assets"].push({type: "image", id: "GameOverImage", url: "DB/Images/GameOver/GameOver.png"});

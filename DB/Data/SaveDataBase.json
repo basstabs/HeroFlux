@@ -4,11 +4,59 @@
 	{
 	
 		"AzureTutorial": 0,
-		"AzureLevel1": 0
+		"AzureLevel1": 0,
+		"AzureLevel2": 0,
+		"AzureLevel3": 0,
+		"AzureLevel4": 0,
+		"AzureLevel5": 0,
+		"AzureLevel6": 0,
+		"AzureLevel7": 0
 		
+	},
+	"ccs":
+	{
+	    
+	    "AzureTutorial": false,
+		"AzureLevel1": false,
+		"AzureLevel2": false,
+		"AzureLevel3": false,
+		"AzureLevel4": false,
+		"AzureLevel5": false,
+		"AzureLevel6": false,
+		"AzureLevel7": false
+	    
 	},
 	"unlocks":
 	[
+	    
+	    {"key": "F-BRookie", "cost": -50, "open": false},
+	    {"key": "F-SRookie", "cost": -100, "open": false},
+	    {"key": "F-GRookie", "cost": -150, "open": false},
+	    {"key": "F-BMagician", "cost": -500, "open": false},
+	    {"key": "F-SMagician", "cost": -500, "open": false},
+	    {"key": "F-GMagician", "cost": -2000, "open": false},
+	    {"key": "F-BMasochist", "cost": -500, "open": false},
+	    {"key": "F-SMasochist", "cost": -1000, "open": false},
+	    {"key": "F-GMasochist", "cost": -2500, "open": false},
+	    {"key": "F-BHeroine", "cost": -500, "open": false},
+	    {"key": "F-SHeroine", "cost": -1500, "open": false},
+	    {"key": "F-GHeroine", "cost": -3000, "open": false},
+	    {"key": "F-BVillain", "cost": -500, "open": false},
+	    {"key": "F-SVillain", "cost": -2000, "open": false},
+	    {"key": "F-GVillain", "cost": -3500, "open": false},
+	    {"key": "F-BInvader", "cost": -500, "open": false},
+	    {"key": "F-SInvader", "cost": -2500, "open": false},
+	    {"key": "F-GInvader", "cost": -4000, "open": false},
+	    {"key": "F-BCore", "cost": -500, "open": false},
+	    {"key": "F-SCore", "cost": -3000, "open": false},
+	    {"key": "F-GCore", "cost": -4500, "open": false},
+	    {"key": "F-BGeneral", "cost": -500, "open": false},
+	    {"key": "F-SGeneral", "cost": -3500, "open": false},
+	    {"key": "F-GGeneral", "cost": -5000, "open": false},
+	    {"key": "F-Destroyer", "cost": -1500, "open": false},
+	    {"key": "F-Obliterator", "cost": -6000, "open": false},
+	    {"key": "F-Super", "cost": -3000, "open": false}
+	    
 	]
 	
 }

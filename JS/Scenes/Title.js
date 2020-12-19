@@ -6,6 +6,7 @@ import UI from "../Base/UILayer.js";
 import LevelSelect from "../Scenes/LevelSelect.js";
 import Loader from "../Scenes/Loader.js";
 import Options from "../Scenes/Options.js";
+import Feats from "../Scenes/Feats.js";
 
 import {CONST_TITLE_SCREEN_DATA} from "../Constants.js";
 
@@ -71,6 +72,23 @@ export default class Title extends MenuScene
 		
 		}, [], this);
 
+	}
+	
+	Feats()
+	{
+	    
+	    this.Hide();
+		
+		this.time.delayedCall(this.max_animation, function()
+		{
+			
+			this.scene.remove("Title");
+		
+			this.scene.add("Feats", Feats);
+			this.Start("Feats", {preserve: false});
+			
+		}, [], this);
+	    
 	}
 	
 	Options()

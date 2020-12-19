@@ -1,0 +1,340 @@
+[
+    
+    {
+        
+        "key": "F-BRookie",
+        "name": "Bronze Rookie",
+        "description": "Complete \"<t-AzureTutorial>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureTutorial", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SRookie",
+        "name": "Silver Rookie",
+        "description": "Complete \"<t-AzureTutorial>\" with a score of at least 3000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureTutorial", "score": 3000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GRookie",
+        "name": "Golden Rookie",
+        "description": "Complete \"<t-AzureTutorial>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureTutorial"
+        
+    },
+    {
+        
+        "key": "F-BMagician",
+        "name": "Bronze Magician",
+        "description": "Complete \"<t-AzureLevel1>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel1", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SMagician",
+        "name": "Silver Magician",
+        "description": "Complete \"<t-AzureLevel1>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel1", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GMagician",
+        "name": "Golden Magician",
+        "description": "Complete \"<t-AzureLevel1>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel1"
+        
+    },
+    {
+        
+        "key": "F-BMasochist",
+        "name": "Bronze Masochist",
+        "description": "Complete \"<t-AzureLevel2>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel2", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SMasochist",
+        "name": "Silver Masochist",
+        "description": "Complete \"<t-AzureLevel2>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel2", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GMasochist",
+        "name": "Golden Masochist",
+        "description": "Complete \"<t-AzureLevel2>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel2"
+        
+    },
+    {
+        
+        "key": "F-BHeroine",
+        "name": "Bronze Heroine",
+        "description": "Complete \"<t-AzureLevel3>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel3", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SHeroine",
+        "name": "Silver Heroine",
+        "description": "Complete \"<t-AzureLevel3>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel3", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GHeroine",
+        "name": "Golden Heroine",
+        "description": "Complete \"<t-AzureLevel3>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel3"
+        
+    },
+    {
+        
+        "key": "F-BVillain",
+        "name": "Bronze Villain",
+        "description": "Complete \"<t-AzureLevel4>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel4", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SVillain",
+        "name": "Silver Villain",
+        "description": "Complete \"<t-AzureLevel4>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel4", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GVillain",
+        "name": "Golden Villain",
+        "description": "Complete \"<t-AzureLevel4>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel4"
+        
+    },
+    {
+        
+        "key": "F-BInvader",
+        "name": "Bronze Invader",
+        "description": "Complete \"<t-AzureLevel5>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel5", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SInvader",
+        "name": "Silver Invader",
+        "description": "Complete \"<t-AzureLevel5>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel5", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GInvader",
+        "name": "Golden Invader",
+        "description": "Complete \"<t-AzureLevel5>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel5"
+        
+    },
+    {
+        
+        "key": "F-BCore",
+        "name": "Bronze Core",
+        "description": "Complete \"<t-AzureLevel6>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel6", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SCore",
+        "name": "Silver Core",
+        "description": "Complete \"<t-AzureLevel6>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel6", "score": 35000}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-GCore",
+        "name": "Golden Core",
+        "description": "Complete \"<t-AzureLevel6>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel6"
+        
+    },
+    {
+        
+        "key": "F-BGeneral",
+        "name": "Bronze General",
+        "description": "Complete \"<t-AzureLevel7>\".",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel7", "score": 1}
+            
+        ]
+        
+    },
+    {
+        
+        "key": "F-SGeneral",
+        "name": "Silver General",
+        "description": "Complete \"<t-AzureLevel7>\" with a score of at least 35000 points.",
+        "type": "score",
+        "scores":
+        [
+            
+            {"level": "AzureLevel7", "score": 35000}
+            
+        ]
+        
+    },
+    {
+     
+        "key": "F-GGeneral",
+        "name": "Golden General",
+        "description": "Complete \"<t-AzureLevel7>\" without getting hit.",
+        "type": "1cc",
+        "level": "AzureLevel7"
+        
+    },
+    {
+        
+        "key": "F-Destroyer",
+        "name": "Destroyer",
+        "description": "Kill 1000 enemies.",
+        "type": "kill",
+        "amount": 1000
+        
+    },
+    {
+        
+        "key": "F-Obliterator",
+        "name": "Obliterator",
+        "description": "Kill 5000 enemies.",
+        "type": "kill",
+        "amount": 5000
+        
+    },
+    {
+        
+        "key": "F-Super",
+        "name": "Superheroine",
+        "description": "Beat the game.",
+        "type": "score",
+        "scores":
+        [
+        
+            {"level": "AzureTutorial", "score": 1},
+            {"level": "AzureLevel1", "score": 1},
+            {"level": "AzureLevel2", "score": 1},
+            {"level": "AzureLevel3", "score": 1},
+            {"level": "AzureLevel4", "score": 1},
+            {"level": "AzureLevel5", "score": 1},
+            {"level": "AzureLevel6", "score": 1},
+            {"level": "AzureLevel7", "score": 1}
+            
+        ]
+        
+    }
+    
+    
+]
