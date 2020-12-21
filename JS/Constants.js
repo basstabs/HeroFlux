@@ -101,7 +101,7 @@ export const CONST_FEATS_SCREEN_DATA = {
     description_data: {"x": 0.5, "y": 0.45, "alpha": 0},
     reward_image_data: {"x": 0.5, "y": 0.67, "alpha": 0},
     reward_data: {"x": 0.57, "y": 0.7, "alpha": 0},
-    font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }},
+    font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},
     unlocked_color: "#F9E113"
     
 };
