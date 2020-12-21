@@ -6,6 +6,8 @@ export default class SaveData
 		
 		this.total_power = 0;
 		
+		this.total_kills = 0;
+		
 		this.scores = {}; //Dictionary of key => integer pairs
 		
 		this.ccs = {}; //Dictionary of key => boolean pairs
@@ -23,7 +25,7 @@ export default class SaveData
 		if(total_power !== null)
 		{
 			
-			player.total_power = parseInt(totalPower);
+			player.total_power = parseInt(total_power);
 			
 		}
 		else
@@ -31,6 +33,20 @@ export default class SaveData
 		
 			player.total_power = 0;
 			
+		}
+		
+		var total_kills = window.localStorage.getItem("PlayerTotalKills");
+		if(total_kills !== null)
+		{
+		    
+		    player.total_kills = parseInt(total_kills);
+		    
+		}
+		else
+		{
+		
+		    player.total_kills = 0;
+		    
 		}
 		
 		var scores = window.localStorage.getItem("PlayerScores");
@@ -84,11 +100,13 @@ export default class SaveData
 		
 		window.localStorage.setItem("PlayerTotalPower", this.total_power);
 		
-		window.localStorage.setItem("PlayerScores", this.scores);
+		window.localStorage.setItem("PlayerTotalKills", this.total_kills);
 		
-		window.localStorage.setItem("PlayerCCs", this.ccs);
+		window.localStorage.setItem("PlayerScores", JSON.stringify(this.scores));
 		
-		window.localStorage.setItem("PlayerUnlocks", this.unlocks);
+		window.localStorage.setItem("PlayerCCs", JSON.stringify(this.ccs));
+		
+		window.localStorage.setItem("PlayerUnlocks", JSON.stringify(this.unlocks));
 		
 	}
 	
@@ -106,7 +124,8 @@ export default class SaveData
 		
 		var playerData = this.LoadPlayerData(baseData);
 		
-		this.total_power = player.total_power;
+		this.total_power = playerData.total_power;
+		this.total_kills = playerData.total_kills;
 		
 		for(var i = 0; i < baseData.unlocks.length; i++)
 		{
@@ -116,6 +135,7 @@ export default class SaveData
 		}
 		
 		this.scores = playerData.scores;
+		this.ccs = playerData.ccs;
 		
 	}
 	
@@ -138,7 +158,7 @@ export default class SaveData
 			if(this.unlocks[i].Open())
 			{
 				
-				this.total_power -= this.unlocks[i].Cost();
+				pow -= this.unlocks[i].Cost();
 				
 			}
 			
@@ -153,6 +173,35 @@ export default class SaveData
 		
 		return SaveData.m_save.CurrentPower();
 		
+	}
+	
+	CurrentKills()
+	{
+	    
+	    return this.total_kills;
+	    
+	}
+	
+	static CurrentKills()
+	{
+	    
+	    
+	    return SaveData.m_save.CurrentKills();
+	    
+	}
+	
+	AddKill()
+	{
+	    
+	    this.total_kills += 1;
+	    
+	}
+	
+	static AddKill()
+	{
+	    
+	    SaveData.m_save.AddKill();
+	    
 	}
 	
 	AddPower(power)
@@ -213,6 +262,41 @@ export default class SaveData
 	    this.ccs[level] = true;
 	    
 	}
+	
+	HasCCed(level)
+	{
+	    
+	    return this.ccs[level];
+	    
+	}
+	
+	static HasCCed(level)
+	{
+	    
+	    return SaveData.m_save.HasCCed(level);
+	    
+	}
+	
+	LockCost(key)
+	{
+	    
+	    var unlock = this.unlocks.find(function(unlock)
+	    {
+	        
+	        return unlock.Key() === key;
+	        
+	    });
+	    
+	    return unlock.Cost();
+	    
+	}
+	
+    static LockCost(key)
+    {
+        
+        return SaveData.m_save.LockCost(key);
+        
+    }
 	
 	OpenLock(key)
 	{

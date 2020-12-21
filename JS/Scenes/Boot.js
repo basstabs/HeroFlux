@@ -35,6 +35,7 @@ export default class Boot extends BaseScene
 		
 		//Universal Menu Assets
 		preload_data["assets"].push({type: "image", id: "CurrencyImage", url: "DB/Images/Menus/Currency.png"});
+		preload_data["assets"].push({type: "json", id: "SaveDataBase", url: "DB/Data/SaveDataBase.json"});
 		
 		//Title Screen Assets
 		preload_data["assets"].push({type: "image", id: "TitleBackground", url: "DB/Images/Menus/TitleBackground.png"});

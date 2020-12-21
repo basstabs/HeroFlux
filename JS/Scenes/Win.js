@@ -73,6 +73,7 @@ export default class Win extends GameScene
 	{
 	
 		var level = this.cache.json.get("LevelData");
+	
 		this.score = Score.ComputeScore(level.level);
 		
 		Loader.Unload(this, data);

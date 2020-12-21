@@ -8,7 +8,9 @@ import Parametrizer from "../Tools/Parametrizer.js";
 
 import Input from "../Game/Input.js";
 import BossAI from "../Game/BossAI.js";
+import Code from "../Game/Code.js";
 import Weapon from "../Game/Weapon.js";
+import SaveData from "../Game/SaveData.js";
 import {ScoreMessage} from "../Game/Score.js";
 
 export const CONST_AGENT_NORMAL = "normal";
@@ -36,7 +38,7 @@ export default class Agent extends PoolObject
 
 		this.currentState = CONST_AGENT_NORMAL;
     
-		this.weapons = [];	
+		this.weapons = [];
 		for(var i = 0; i < json.weapons.length; i++)
 		{
 			
@@ -253,7 +255,7 @@ export default class Agent extends PoolObject
 	}
 	
 	ChangeState(newState, data)
-	{	
+	{
 
 		this.ExitState(data.exit);
 		
@@ -725,6 +727,13 @@ export default class Agent extends PoolObject
 			this.control.Shutdown();
 			
 			MessageBox.PostMessage(new ScoreMessage(this.score));
+		
+			if(Code.Enemy(this.code))
+		    {
+			
+			    SaveData.AddKill();
+			
+		    }
 			
 		}
 		

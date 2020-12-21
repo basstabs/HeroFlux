@@ -117,7 +117,7 @@ export default class Options extends MenuScene
 			else
 			{
 				
-				newItem.text = "?????";
+				newItem.text = "???";
 				newItem.font = CONST_LEVELSELECT_DISABLED_FONT;
 				
 			}

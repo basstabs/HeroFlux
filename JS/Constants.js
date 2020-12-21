@@ -70,7 +70,7 @@ export const CONST_DIALOGUE_SPEAKER_DATA = {
 	nameSize: "125px",
 	speed: 100
 	
-}
+};
 
 export const CONST_TITLE_SCREEN_DATA = {
 	
@@ -93,7 +93,18 @@ export const CONST_TITLE_SCREEN_DATA = {
 	},
 	time: 500
 	
-}
+};
+
+export const CONST_FEATS_SCREEN_DATA = {
+    
+    name_data: {"x": 0.5, "y": 0.35, "alpha": 0},
+    description_data: {"x": 0.5, "y": 0.45, "alpha": 0},
+    reward_image_data: {"x": 0.5, "y": 0.67, "alpha": 0},
+    reward_data: {"x": 0.57, "y": 0.7, "alpha": 0},
+    font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }},
+    unlocked_color: "#F9E113"
+    
+};
 
 export const CONST_CURRENCY_DATA = {
     
@@ -102,6 +113,6 @@ export const CONST_CURRENCY_DATA = {
 	alpha: 0,
 	font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"}
     
-}
+};
 
 export const CONST_PICKUP_SPEED = 50;

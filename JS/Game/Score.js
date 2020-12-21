@@ -71,7 +71,7 @@ export default class Score
 		
 		score = Math.max(0, Math.floor(score));
 		
-		SaveData.SetScore(level.level, score);
+		SaveData.SetScore(level, score);
 		
 		return score;
 		

@@ -5,6 +5,7 @@ import MessageBox from "../Tools/Messages.js"
 import Prop from "../Game/Prop.js";
 import Code from "../Game/Code.js";
 import Weapon from "../Game/Weapon.js";
+import SaveData from "../Game/SaveData.js";
 import {ScoreMessage} from "../Game/Score.js";
 
 import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y} from "../Base/BaseConstants.js";
@@ -72,7 +73,7 @@ export default class Actor extends Prop
 		if(this.Aimed())
 		{
 		
-			var direction = this.scene.AimingTarget(this, this.code, this.aimed.actor, this.aimed.agent); 
+			var direction = this.scene.AimingTarget(this, this.code, this.aimed.actor, this.aimed.agent);
 			direction.scale(this.aimed.speed);
 			
 			this.xParam = Parametrizer.ConstantFunction(direction.x);
@@ -150,6 +151,8 @@ export default class Actor extends Prop
 		
 			MessageBox.PostMessage(message);
 			MessageBox.PostMessage(new ScoreMessage(this.score));
+			
+			SaveData.AddKill();
 			
 		}
 		

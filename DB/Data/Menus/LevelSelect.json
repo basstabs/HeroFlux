@@ -2,7 +2,7 @@
 	
 	"background": "TitleBackground",
 	"music": "TitleMusic",
-	"currency": true,
+	"currency": false,
 	"text": [],
 	"items":
 	[

@@ -8,6 +8,8 @@ import Loader from "../Scenes/Loader.js";
 import Options from "../Scenes/Options.js";
 import Feats from "../Scenes/Feats.js";
 
+import SaveData from "../Game/SaveData.js";
+
 import {CONST_TITLE_SCREEN_DATA} from "../Constants.js";
 
 export default class Title extends MenuScene
@@ -26,6 +28,8 @@ export default class Title extends MenuScene
 		var data = this.cache.json.get("TitleScreen");
 		
 		super.init(data);
+		
+		SaveData.LoadData(this);
 		
 	}
 	
@@ -74,6 +78,23 @@ export default class Title extends MenuScene
 
 	}
 	
+	Upgrades()
+	{
+	    
+	    this.Hide();
+		
+		this.time.delayedCall(this.max_animation, function()
+		{
+			
+			this.scene.remove("Title");
+		
+			this.scene.add("Upgrades", Upgrades);
+			this.Start("Upgrades", {preserve: false});
+			
+		}, [], this);
+	    
+	}
+	
 	Feats()
 	{
 	    
@@ -86,6 +107,23 @@ export default class Title extends MenuScene
 		
 			this.scene.add("Feats", Feats);
 			this.Start("Feats", {preserve: false});
+			
+		}, [], this);
+	    
+	}
+	
+	Gallery()
+	{
+	    
+	    this.Hide();
+		
+		this.time.delayedCall(this.max_animation, function()
+		{
+			
+			this.scene.remove("Title");
+		
+			this.scene.add("Gallery", Gallery);
+			this.Start("Gallery", {preserve: false});
 			
 		}, [], this);
 	    
