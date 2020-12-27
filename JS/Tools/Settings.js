@@ -7,7 +7,7 @@ export default class Settings
 	constructor()
 	{
 		
-		this.data = 
+		this.data =
 		{
 			
 			keybinds: {
@@ -15,73 +15,73 @@ export default class Settings
 			    left:
                 {
 
-                	key: "A"
+                	key: 65
 
                 },
                 right:
                 {
 
-                    key: "D"
+                    key: 68
 
                 },
                 up:
                 {
 
-                    key: "W"
+                    key: 87
 
                 },
                 down:
                 {
 
-                    key: "S"
+                    key: 83
 
                 },
                 A:
                 {
 
-                    key: "J"
+                    key: 74
 
                 },
                 B:
                 {
 
-                    key: "K"
+                    key: 75
 
                 },
 				X:
 				{
 				
-					key: "U"
+					key: 85
 					
 				},
 				Y:
 				{
 					
-					key: "I"
+					key: 73
 					
 				},
 				L:
 				{
 					
-					key: "N"
+					key: 78
 					
 				},
 				R:
 				{
 					
-					key: "M"
+					key: 77
 					
 				},
 				confirm:
 				{
 					
-					key: "SPACE"
+					key: 32
 					
 				},
 				pause:
 				{
 					
-					key: "BACKTICK"
+					key: 192
 					
 				}
 			
@@ -91,6 +91,20 @@ export default class Settings
 
 		};
 		
+	}
+	
+	static Save()
+	{
+	    
+	    Settings.Instance().Save();
+	    
+	}
+	
+	static Load()
+	{
+	    
+	    Settings.Instance().Load();
+	    
 	}
 	
 	static Instance()
@@ -119,6 +133,26 @@ export default class Settings
 		
 		return Settings.Instance().MusicVolume(vol);
 		
+	}
+	
+	Save()
+	{
+	    
+	    window.localStorage.setItem("Settings", JSON.stringify(this.data));
+	    
+	}
+	
+	Load()
+	{
+	    
+	    var data = window.localStorage.getItem("Settings");
+	    if(data !== null)
+	    {
+	        
+	        this.data = JSON.parse(data);
+	        
+	    }
+	    
 	}
 	
 	EffectVolume(vol)
@@ -168,6 +202,20 @@ export default class Settings
 	
 		this.data[key] = value;
 		
+	}
+	
+	AccessKeyBinding(command)
+	{
+	    
+	    return this.data.keybinds[command].key;
+	    
+	}
+	
+	ChangeKeyBinding(command, key)
+	{
+	    
+	    this.data.keybinds[command] = {key: key};
+	    
 	}
 	
 	Full()

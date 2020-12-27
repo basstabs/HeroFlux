@@ -1,0 +1,663 @@
+{
+	
+	"background": "TitleBackground",
+	"music": "TitleMusic",
+	"currency": false,
+	"text": [],
+	"items":
+	[
+		
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Up: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.1,
+			"method": "PollCommand",
+			"arg": "up",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Down: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.225,
+			"method": "PollCommand",
+			"arg": "down",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.225,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Left: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.35,
+			"method": "PollCommand",
+			"arg": "left",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.35,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+        {
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Right: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.475,
+			"method": "PollCommand",
+			"arg": "right",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.475,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Confirm: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.6,
+			"method": "PollCommand",
+			"arg": "confirm",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.6,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Pause: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.1,
+			"y": 0.725,
+			"method": "PollCommand",
+			"arg": "pause",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.725,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.1,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Shoot: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.1,
+			"method": "PollCommand",
+			"arg": "A",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Fireball: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.225,
+			"method": "PollCommand",
+			"arg": "B",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.225,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Beam: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.35,
+			"method": "PollCommand",
+			"arg": "X",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.35,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+        {
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Recover: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.475,
+			"method": "PollCommand",
+			"arg": "Y",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.475,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Dash: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.6,
+			"method": "PollCommand",
+			"arg": "R",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.6,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Backdash: ",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.6,
+			"y": 0.725,
+			"method": "PollCommand",
+			"arg": "L",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.1,
+					"y": 0.725,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.1,
+						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Back",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.05,
+			"y": 0.9,
+			"method": "Back",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.9,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.05,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		}
+		
+	]
+
+}

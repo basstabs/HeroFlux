@@ -10,8 +10,10 @@ export default class Control
 		
 		this.control_functions = [this.Left, this.Right, this.Up, this.Down, this.AButton, this.BButton, this.XButton, this.YButton, this.LButton, this.RButton];
 		
+		this.input = null;
+		
 	}
-	
+
 	Hook(agent)
 	{
 		

@@ -3,7 +3,7 @@ import Settings from "../Tools/Settings.js";
 
 import Control from "../Game/Control.js";
 
-const CONST_ACTIONS = ["left", "right", "up", "down", "A", "B", "X", "Y", "L", "R", "confirm", "pause"];
+export const CONST_ACTIONS = ["left", "right", "up", "down", "A", "B", "X", "Y", "L", "R", "confirm", "pause"];
 
 class Input extends Control
 {
@@ -35,6 +35,13 @@ class Input extends Control
 		
 		return Input.m_input;
 		
+	}
+	
+	static ChangeKey(command, key)
+	{
+	    
+	    Input.m_input.key_input.ChangeKey(command, key);
+	    
 	}
 	
 	Active()
@@ -171,10 +178,14 @@ class KeyInput extends Control
 
 		}
 
+        this.input = null;
+
 	}
 	
 	static Initialize(input)
 	{
+
+        Input.m_input.key_input.input = input;
 
 		var keybinds = Settings.Instance().Access("keybinds");
 
@@ -183,11 +194,18 @@ class KeyInput extends Control
 
 			var data = keybinds[CONST_ACTIONS[i]];
 
-			Input.m_input.key_input.keys[CONST_ACTIONS[i]] = input.keyboard.addKey(data.key , true, true);
+			Input.m_input.key_input.keys[CONST_ACTIONS[i]] = input.keyboard.addKey(data.key, true, true);
 
 		}
 		
 	}
+
+    ChangeKey(command, key)
+    {
+        
+        this.keys[command] = this.input.keyboard.addKey(key, true, true);
+        
+    }
 
 	Movement()
 	{

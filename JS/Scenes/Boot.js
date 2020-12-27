@@ -50,6 +50,9 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "image", id: "OptionsPointerImage", url: "DB/Images/Menus/OptionsPointer.png"});
 		preload_data["assets"].push({type: "json", id: "OptionsScreen", url: "DB/Data/Menus/OptionsScreen.json"});
 		
+		//Remap Screen Assets
+		preload_data["assets"].push({type: "json", id: "RemapScreen", url: "DB/Data/Menus/RemapScreen.json"});
+		
 		//Level Select Assets
 		preload_data["assets"].push({type: "json", id: "Levels", url: "DB/Data/Levels.json"});
 		preload_data["assets"].push({type: "json", id: "LevelSelectScreen", url: "DB/Data/Menus/LevelSelect.json"});

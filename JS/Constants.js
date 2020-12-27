@@ -106,6 +106,29 @@ export const CONST_FEATS_SCREEN_DATA = {
     
 };
 
+export const CONST_REMAP_SCREEN_DATA = {
+    
+    font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},
+    data: {
+    
+        "left": {"x": 0.3, "y": 0.35, "alpha": 0},
+        "right": {"x": 0.3, "y": 0.475, "alpha": 0},
+        "up": {"x": 0.3, "y": 0.1, "alpha": 0},
+        "down": {"x": 0.3, "y": 0.225, "alpha": 0},
+        "A": {"x": 0.8, "y": 0.1, "alpha": 0},
+        "B": {"x": 0.8, "y": 0.225, "alpha": 0},
+        "X": {"x": 0.8, "y": 0.35, "alpha": 0},
+        "Y": {"x": 0.8, "y": 0.475, "alpha": 0},
+        "L": {"x": 0.8, "y": 0.725, "alpha": 0},
+        "R": {"x": 0.8, "y": 0.6, "alpha": 0},
+        "confirm": {"x": 0.3, "y": 0.6, "alpha": 0},
+        "pause": {"x": 0.3, "y": 0.725, "alpha": 0}
+    
+    },
+    highlight: "#F9E113"
+    
+}
+
 export const CONST_CURRENCY_DATA = {
     
     x: 0.07,

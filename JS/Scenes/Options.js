@@ -7,6 +7,7 @@ import Settings from "../Tools/Settings.js";
 import SoundBoard from "../Tools/SoundBoard.js";
 
 import Title from "../Scenes/Title.js";
+import Remap from "../Scenes/Remap.js";
 
 const CONST_EFFECT_MULTIPLIER = 1;
 const CONST_MUSIC_MULTIPLIER = 0.25;
@@ -53,6 +54,8 @@ export default class Options extends MenuScene
 	
 	SetEffects(vol)
 	{
+	
+	    Settings.EffectVolume(vol * CONST_EFFECT_MULTIPLIER);
 		
 		SoundBoard.UpdateEffectVolume(vol * CONST_EFFECT_MULTIPLIER);
 		
@@ -61,7 +64,26 @@ export default class Options extends MenuScene
 	SetMusic(vol)
 	{
 		
+		Settings.MusicVolume(vol * CONST_MUSIC_MULTIPLIER);
+		
 		SoundBoard.UpdateMusicVolume(vol * CONST_MUSIC_MULTIPLIER);
+		
+	}
+	
+	Remap(controller)
+	{
+	    
+	    this.Hide();
+		
+		this.time.delayedCall(this.max_animation, function()
+		{
+			
+			this.scene.remove("Options");
+			this.scene.add("Remap", Remap);
+		
+			this.Start("Remap", {"controller": controller});
+		
+		}, [], this);
 		
 	}
 	
@@ -69,6 +91,8 @@ export default class Options extends MenuScene
 	{
 		
 		super.Hide();
+		
+		Settings.Save();
 		
 		this.time.delayedCall(this.max_animation, function()
 		{

@@ -28,7 +28,7 @@
 						
 						"key": "y",
 						"start": -0.1,
-						"target": 0.2,
+						"target": 0.1,
 						"time": 500
 						
 					},
@@ -68,7 +68,7 @@
 						
 						"key": "y",
 						"start": 1,
-						"target": 0.5,
+						"target": 0.3,
 						"time": 500
 						
 					},
@@ -97,7 +97,7 @@
 			"image": "OptionsSliderImage",
 			"pointer": "OptionsPointerImage",
 			"x": 0.1,
-			"y": 0.3,
+			"y": 0.2,
 			"method": "SetEffects",
 			"defaultValue": "EffectVolume",
 			"display":
@@ -118,7 +118,7 @@
 						
 						"key": "y",
 						"start": -0.1,
-						"target": 0.3,
+						"target": 0.2,
 						"time": 500
 						
 					},
@@ -142,7 +142,7 @@
 			"image": "OptionsSliderImage",
 			"pointer": "OptionsPointerImage",
 			"x": 0.1,
-			"y": 0.6,
+			"y": 0.4,
 			"method": "SetMusic",
 			"defaultValue": "MusicVolume",
 			"display":
@@ -163,7 +163,107 @@
 						
 						"key": "y",
 						"start": 1,
+						"target": 0.4,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Keyboard Settings",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.25,
+			"y": 0.6,
+			"method": "Remap",
+			"arg": false,
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.25,
+					"y": 1.3,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1.3,
 						"target": 0.6,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Gamepad Settings",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.25,
+			"y": 0.7,
+			"method": "Remap",
+			"arg": true,
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.25,
+					"y": 1.2,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1.2,
+						"target": 0.7,
 						"time": 500
 						
 					},
@@ -191,8 +291,8 @@
 				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
 				
 			},
-			"x": 0.45,
-			"y": 0.8,
+			"x": 0.05,
+			"y": 0.9,
 			"method": "Back",
 			"arg": "",
 			"display":
@@ -201,8 +301,8 @@
 				"start":
 				{
 					
-					"x": 1,
-					"y": 0.8,
+					"x": -0.2,
+					"y": 0.9,
 					"alpha": 0
 					
 				},
@@ -212,8 +312,8 @@
 					{
 						
 						"key": "x",
-						"start": 1,
-						"target": 0.45,
+						"start": -0.2,
+						"target": 0.05,
 						"time": 500
 						
 					},
@@ -229,7 +329,7 @@
 				]
 				
 			}
-		
+			
 		}
 		
 	]

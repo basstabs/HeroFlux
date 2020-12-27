@@ -3,7 +3,6 @@ import Config from "../Base/Config.js";
 import UI from "../Base/UILayer.js";
 import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, CONST_UI_WIDTH} from "../Base/BaseConstants.js";
 
-import Settings from "../Tools/Settings.js";
 import SoundBoard from "../Tools/SoundBoard.js";
 
 import SaveData from "../Game/SaveData.js";

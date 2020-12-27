@@ -27,7 +27,7 @@
 			{
 			
 				"continuous": true,
-				"code": 48,
+				"code": 64,
 				"weapon": 2,
 				"animation": "Player-Beam",
 				"multiplier": 1,

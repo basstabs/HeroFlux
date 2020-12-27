@@ -2,7 +2,7 @@ import BaseScene from "../Base/Scene.js";
 
 import SoundBoard from "../Tools/SoundBoard.js";
 
-export default class MenuSceen extends BaseScene
+export default class AudioSceen extends BaseScene
 {
 	
 	constructor(type)

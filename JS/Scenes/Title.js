@@ -10,6 +10,9 @@ import Feats from "../Scenes/Feats.js";
 
 import SaveData from "../Game/SaveData.js";
 
+import Settings from "../Tools/Settings.js";
+import SoundBoard from "../Tools/SoundBoard.js";
+
 import {CONST_TITLE_SCREEN_DATA} from "../Constants.js";
 
 export default class Title extends MenuScene
@@ -30,6 +33,10 @@ export default class Title extends MenuScene
 		super.init(data);
 		
 		SaveData.LoadData(this);
+		
+		Settings.Load();
+		SoundBoard.UpdateEffectVolume(Settings.EffectVolume());
+		SoundBoard.UpdateMusicVolume(Settings.MusicVolume());
 		
 	}
 	
