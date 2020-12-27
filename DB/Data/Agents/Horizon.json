@@ -1,0 +1,97 @@
+{
+		
+	"key": "Horizon",
+	"collide": true,
+	"texture": "Horizon",
+	"width": 40,
+	"height": 40,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+			
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 20,
+			"height": 30,
+			"offsetX": 11,
+			"offsetY": 3
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+				
+			],
+			"default":
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 300,
+						"y": 135,
+						"duration": 2,
+						"invuln": false,
+						"animation": "Idle"
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 75, "transition": "Horizon-ToRecharge"},
+						"exit": {},
+						"animation": "Recharge"
+							
+					}
+						
+				]
+					
+			},
+			"markers": []
+			
+		},
+		"damage": 1,
+		"max_health": 150,
+		"death": "Horizon-Death",
+		"default_death":
+		{
+		
+			"transition": "Horizon-ToFall",
+			"animation": "Horizon-Fall",
+			"xParam": "20",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio"
+			
+		},
+		"death_instruction": {
+				
+			"xParam": "-20",
+			"yParam": "-100+(300*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToChains",
+			"animation": "Player-Chains",
+			"image": "HorizonGameOverImage"
+				
+		},
+		"power": 500,
+		"empty": "EmptyAudio",
+		"score": 7500
+			
+	}
+		
+}
