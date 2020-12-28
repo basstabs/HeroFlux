@@ -1,4 +1,4 @@
-import GameScene from "../Base/GameScene.js";
+import MenuScene from "../Base/MenuScene.js";
 import {CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y} from "../Base/BaseConstants.js";
 import UI from "../Base/UILayer.js";
 
@@ -55,7 +55,7 @@ const CONST_UI_WIN_DATA = {
 	
 }
 
-export default class Win extends GameScene
+export default class Win extends MenuScene
 {
 	
 	constructor(data)
@@ -65,89 +65,62 @@ export default class Win extends GameScene
 		
 		this.score = 0;
 		
-		this.animating = false;
-		
 	}
 	
 	init(data)
 	{
-	
+
+	    var data = this.cache.json.get("ContinueScreen");
+		data.background = "TitleBackground";
+
+		super.init(data);
+
 		var level = this.cache.json.get("LevelData");
 	
 		this.score = Score.ComputeScore(level.level);
 		
 		Loader.Unload(this, data);
+	
 		
 	}
 	
 	create()
 	{
 		
-		this.add.image(0, 0, "TitleBackground").setOrigin(0, 0);
-		
-		Input.Initialize(this.input);
-		this.inputInstance = Input.Access();
-	
-		this.image = this.textures.get(CONST_WIN_IMAGE);
-		this.image_index = UI.AddSource(this.image.source[0].source, CONST_WIN_IMAGE_DATA);
-		
-		UI.AnimateSource(this.image_index, "alpha", 0, 1, CONST_WIN_ANIMATION_TIME, false);
-		
-		this.text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, "Score:", {fontFamily: "chunk", fontSize: CONST_UI_WIN_DATA.size, fill: CONST_UI_WIN_DATA.color, stroke: CONST_UI_WIN_DATA.stroke, strokeThickness: CONST_UI_WIN_DATA.thickness});
-		this.text.setOrigin(0.5, 0.5);
-		
-		this.text_index = UI.AddSource(this.text.canvas, CONST_UI_WIN_DATA);
-		
-		UI.AnimateSource(this.text_index, "alpha", 0, CONST_UI_WIN_DATA.targetAlpha, CONST_WIN_ANIMATION_TIME, false);
-		
-		this.score = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, this.score.toString(), {fontFamily: "chunk", fontSize: CONST_UI_WIN_DATA.size, color: CONST_UI_WIN_DATA.score.color, stroke: CONST_UI_WIN_DATA.stroke, strokeThickness: CONST_UI_WIN_DATA.thickness});
-		this.score.setOrigin(0.5, 0.5);
-		
-		this.score_index = UI.AddSource(this.score.canvas, CONST_UI_WIN_DATA.score);
-		UI.AnimateSource(this.score_index, "alpha", 0, CONST_UI_WIN_DATA.targetAlpha, CONST_WIN_ANIMATION_TIME, false);
-		
-		this.link = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, CONST_WIN_STASH_LINK, {fontFamily: "chunk", fontSize: CONST_UI_WIN_DATA.link.size, color: CONST_UI_WIN_DATA.link.color, stroke: CONST_UI_WIN_DATA.stroke, strokeThickness: CONST_UI_WIN_DATA.thickness});
-		this.link.setOrigin(0.5, 0.5);
-		
-		this.link_index = UI.AddSource(this.link.canvas, CONST_UI_WIN_DATA.link);
-		
-		UI.AnimateSource(this.link_index, "alpha", 0, CONST_UI_WIN_DATA.targetAlpha, CONST_WIN_ANIMATION_TIME, false);
+		super.create();
 		
 	}
 	
 	update()
 	{
 		
-		if(!this.animating && (this.inputInstance.DialogueSkip() || this.inputInstance.DialoguePress()))
+		super.update();
+		
+	}
+	
+	Continue()
+	{
+	    
+	}
+	
+	Quit()
+	{
+	    
+	    this.Hide();
+	    
+	    this.time.delayedCall(this.max_animation, function()
 		{
-			
-			SoundBoard.Play("SelectAudio");
-			
-		   	this.animating = true;
-		   
-			UI.AnimateSource(this.image_index, "alpha", 1, 0, CONST_WIN_ANIMATION_TIME, true);
-			UI.AnimateSource(this.text_index, "alpha", CONST_UI_WIN_DATA.targetAlpha, 0, CONST_WIN_ANIMATION_TIME, true);
-			UI.AnimateSource(this.score_index, "alpha", CONST_UI_WIN_DATA.targetAlpha, 0, CONST_WIN_ANIMATION_TIME, true);
-			UI.AnimateSource(this.link_index, "alpha", CONST_UI_WIN_DATA.targetAlpha, 0, CONST_WIN_ANIMATION_TIME, true);
-			
-			this.time.delayedCall(CONST_WIN_ANIMATION_TIME, function()
-			{
 				
-				this.scene.remove("Win");
-				this.scene.remove("GameOver");
+			this.scene.remove("Win");
+			this.scene.remove("GameOver");
 				
-				var title = new Title();
-				this.scene.add("Title", title);
+			var title = new Title();
+			this.scene.add("Title", title);
 		
-				this.Start("Title", {});
+			this.Start("Title", {});
 				
-			}, [], this);
-			
-		}
-		
-		UI.Update();
-		UI.Draw();
-		
+		}, [], this);
+	    
 	}
 	
 }

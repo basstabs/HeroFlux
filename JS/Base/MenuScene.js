@@ -49,7 +49,12 @@ export default class MenuSceen extends BaseScene
 	create()
 	{
 		
-		this.add.image(0, 0, this.background_image).setOrigin(0, 0);
+		if(this.background_image)
+		{
+		
+		    this.add.image(0, 0, this.background_image).setOrigin(0, 0);
+		
+		}
 		
 		SoundBoard.Music(this.music);
 		

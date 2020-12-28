@@ -62,8 +62,9 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "json", id: "Feats", url: "DB/Data/Feats.json"});
 		preload_data["assets"].push({type: "json", id: "FeatsScreen", url: "DB/Data/Menus/FeatsScreen.json"});
 		
-		//Game Over Assets
+		//Game Over/Continue Assets
 		preload_data["assets"].push({type: "image", id: "GameOverImage", url: "DB/Images/GameOver/GameOver.png"});
+		preload_data["assets"].push({type: "json", id: "ContinueScreen", url: "DB/Data/Menus/ContinueScreen.json"});
 		
 		//Universal Game Assets
 		preload_data["assets"].push({type: "image", id: "Warning", url: "DB/Images/Warning.png"});
