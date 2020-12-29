@@ -117,6 +117,8 @@ export default class GameOver extends MenuScene
 		
 			this.Start("Title", {});
 				
+			Loader.Unload(this, this.remove);
+				
 		}, [], this);
 	    
 	}

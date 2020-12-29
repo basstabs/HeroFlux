@@ -70,10 +70,10 @@ export default class Win extends MenuScene
 	init(data)
 	{
 
-	    var data = this.cache.json.get("ContinueScreen");
-		data.background = "TitleBackground";
+	    var menu_data = this.cache.json.get("ContinueScreen");
+		menu_data.background = "TitleBackground";
 
-		super.init(data);
+		super.init(menu_data);
 
 		var level = this.cache.json.get("LevelData");
 	
@@ -118,7 +118,7 @@ export default class Win extends MenuScene
 			this.scene.add("Title", title);
 		
 			this.Start("Title", {});
-				
+			
 		}, [], this);
 	    
 	}

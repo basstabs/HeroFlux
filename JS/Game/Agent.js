@@ -625,6 +625,9 @@ export default class Agent extends PoolObject
 		
 		this.power = Math.floor(Math.min(this.charge_power + (t * this.charge_speed), this.max_power));
 		
+		this.setVelocityX(0);
+		this.setVelocityY(0);
+		
 	}
 	
 	ChargeExit(data)
