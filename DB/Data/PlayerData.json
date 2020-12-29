@@ -56,6 +56,15 @@
 				"transition": "",
 				"move": false
 				
+			},
+			{
+			    
+			    "code": 128,
+			    "animation": "Player-Recharge",
+			    "transition": "Player-Recharge",
+			    "recharge": 5,
+			    "cost": 25
+			    
 			}
 			
 		],

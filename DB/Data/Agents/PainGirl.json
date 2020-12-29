@@ -1229,7 +1229,7 @@
 					{
 							
 						"state": "charge",
-						"enter": { "speed": 75, "transition": "PainGirl-Recharge"},
+						"enter": { "speed": 75, "transition": "PainGirl-Recharge", "code": 1},
 						"exit": {},
 						"animation": "Recharge"
 							

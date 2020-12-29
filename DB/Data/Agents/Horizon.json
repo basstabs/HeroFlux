@@ -53,7 +53,7 @@
 					{
 							
 						"state": "charge",
-						"enter": { "speed": 75, "transition": "Horizon-ToRecharge"},
+						"enter": { "speed": 75, "transition": "", "code": 1},
 						"exit": {},
 						"animation": "Recharge"
 							
@@ -71,8 +71,8 @@
 		"default_death":
 		{
 		
-			"transition": "Horizon-ToFall",
-			"animation": "Horizon-Fall",
+			"transition": "Horizon-ToDeath",
+			"animation": "Horizon-Death",
 			"xParam": "20",
 			"yParam": "((500*t)*t)+50",
 			"audio": "ScreamAudio"

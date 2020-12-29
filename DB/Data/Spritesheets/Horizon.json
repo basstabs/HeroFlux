@@ -1,0 +1,82 @@
+{
+	
+	"name": "Horizon",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 12,
+			"frames": [0, 1, 2, 3],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Fire",
+			"frame_rate": 24,
+			"frames": [4, 4, 5, 6, 6, 6],
+			"repeat": 0
+			
+		},
+		{
+		
+			"name": "Shoot",
+			"frame_rate": 12,
+			"frames": [4, 5, 6, 7, 8, 9],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Spawn",
+			"frame_rate": 36,
+			"frames": [10, 11, 12, 13],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToDeath",
+			"frame_rate": 12,
+			"frames": [14, 15, 16],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 12,
+			"frames": [17, 18, 19, 20],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "ToBeam",
+			"frame_rate": 12,
+			"frames": [21, 22, 23],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Beam",
+			"frame_rate": 24,
+			"frames": [24, 25, 26, 27],
+			"repeat": -1
+			
+		},
+		{
+		    
+		    "name": "Recharge",
+		    "frame_rate": 24,
+		    "frames": [28, 29, 30, 31],
+		    "repeat": -1
+		    
+		}
+		
+	]
+	
+}

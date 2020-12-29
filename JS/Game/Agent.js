@@ -296,15 +296,34 @@ export default class Agent extends PoolObject
 		for(var i = 0; i < this.actions.length; i++)
 		{
 			
-			if(this.control.Code(this.actions[i].code) && this.weapons[this.actions[i].weapon].Ready())
+			if(this.control.Code(this.actions[i].code))
 			{
+			    
+			    
+			    if(("weapon" in this.actions[i]) && this.weapons[this.actions[i].weapon].Ready())
+			    {
 				
-				var data = {update: true, exit: {}, enter: {weapon_index: this.actions[i].weapon, move: this.actions[i].move, code: this.actions[i].code, transition: this.actions[i].transition}, duration: this.anims.animationManager.get(this.actions[i].animation).duration * this.actions[i].multiplier, animation: this.actions[i].animation};
+				    var data = {update: true, exit: {}, enter: {weapon_index: this.actions[i].weapon, move: this.actions[i].move, code: this.actions[i].code, transition: this.actions[i].transition}, duration: this.anims.animationManager.get(this.actions[i].animation).duration * this.actions[i].multiplier, animation: this.actions[i].animation};
 				
-				this.ChangeState((this.actions[i].continuous ? CONST_AGENT_CONTINUOUSFIRE : CONST_AGENT_FIRE), data);
+				    this.ChangeState((this.actions[i].continuous ? CONST_AGENT_CONTINUOUSFIRE : CONST_AGENT_FIRE), data);
 				
-				return;
+				    return;
 				
+			    }
+			    
+			    if(("recharge" in this.actions[i]) && this.power >= this.actions[i].cost)
+			    {
+			        
+			        this.power -= this.actions[i].cost;
+			        
+			        var data = {update: true, exit: {}, enter: {speed: this.actions[i].recharge, transition: this.actions[i].transition, code: this.actions[i].code}, duration: 0, animation: this.actions[i].animation};
+			        
+			        this.ChangeState(CONST_AGENT_CHARGE, data);
+			        
+			        return;
+			        
+			    }
+			    
 			}
 			
 		}
@@ -590,7 +609,7 @@ export default class Agent extends PoolObject
 	{
 		
 		//Switch states if necessary
-		if(this.power >= this.max_power)
+		if(this.power >= this.max_power || !this.control.Code(this.charge_code))
 		{
 			
 			var data = {update: false, exit: {}, enter: {}, duration: 0, animation: ""};
@@ -614,6 +633,8 @@ export default class Agent extends PoolObject
 		this.charge_power = -1;
 		this.charge_speed = -1;
 		
+		this.charge_code = -1;
+		
 	}
 	
 	ChargeEnter(data)
@@ -621,6 +642,8 @@ export default class Agent extends PoolObject
 		
 		this.charge_power = this.power;
 		this.charge_speed = data.speed;
+		
+		this.charge_code = data.code;
 		
 		var chargeTransition = function()
 		{
