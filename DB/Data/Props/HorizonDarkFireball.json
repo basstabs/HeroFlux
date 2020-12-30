@@ -1,8 +1,8 @@
 {
 		
-	"key": "DarkFireball",
+	"key": "HorizonDarkFireball",
 	"code": 1,
-	"texture": "DarkFireball",
+	"texture": "HorizonDarkFireball",
 	"width": 20,
 	"height": 12,
 	"tracking": true,
@@ -19,15 +19,15 @@
 	"hostile": true,
 	"value": 1,
 	"death_instruction":
-{
+    {
 				
-			"transition": "Player-ToDeath",
-			"animation": "Player-Death",
-			"xParam": "-200*t",
-			"yParam": "((500*t)*t)+50",
-			"audio": "ScreamAudio",
-			"image": "HorizonGameOverImage"
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "HorizonGameOverImage"
 				
-		}
+	}
 				
 }

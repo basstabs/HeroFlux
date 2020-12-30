@@ -23,7 +23,7 @@
 		{
 		
 			"name": "Shoot",
-			"frame_rate": 12,
+			"frame_rate": 24,
 			"frames": [4, 5, 6, 7, 8, 9],
 			"repeat": -1
 			

@@ -3,6 +3,7 @@ import MathLibrary from "../Tools/Math.js";
 import MessageBox from "../Tools/Messages.js";
 
 import Control from "../Game/Control.js";
+import {CONST_AGENT_CHARGE} from "../Game/Agent.js";
 
 export const CONST_AISTART_MESSAGE_SUFFIX = "_aistart";
 
@@ -74,6 +75,13 @@ export default class AI extends Control
 	
 	Code(code)
 	{
+		
+		if(this.agent.currentState === CONST_AGENT_CHARGE)
+		{
+		    
+		    return this.agent.power < this.agent.max_power;
+		    
+		}
 		
 		return this.current_code === code;
 		

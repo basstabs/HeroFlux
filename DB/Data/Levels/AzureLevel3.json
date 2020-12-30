@@ -918,7 +918,7 @@
 							"x": 1,
 							"y": 0.5,
 							"theta": 0,
-							"xParam": "p-50=3=0=7=-50",
+							"xParam": "p-50=2.5=0=7=-50",
 							"yParam": "0"
 						
 						},
@@ -954,7 +954,7 @@
 							"x": 1,
 							"y": 0.5,
 							"theta": 0,
-							"xParam": "p-50=3=0=7=-50",
+							"xParam": "p-50=2.5=0=7=-50",
 							"yParam": "0"
 						
 						},
@@ -990,7 +990,7 @@
 							"x": 1,
 							"y": 0.25,
 							"theta": 0,
-							"xParam": "p-50=3=0=7=-50",
+							"xParam": "p-50=2.5=0=7=-50",
 							"yParam": "0"
 						
 						},
@@ -1479,24 +1479,6 @@
 						    "xParam": "-25",
 						    "yParam": "0"
 						    
-						},
-						{
-						    
-						    "keys":
-						    [
-						        
-						        "Robot"
-						        
-						    ],
-						    "start": 110,
-						    "delay": 0.5,
-						    "count": 5,
-						    "x": 1,
-						    "y": 0.15,
-						    "theta": 0,
-						    "xParam": "-25",
-						    "yParam": "0"
-						    
 						}
 					    
 					]
@@ -1688,7 +1670,23 @@
 			},
 			{
 				
-				"background_param": "p2+(-0.25*t)=4=0",
+				"background_param": "0",
+				"type": "wave",
+				"music": "Level2Music",
+				"data":
+				{
+					
+					"duration": 2,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "p0.25*t=4=1",
 				"type": "scripted",
 				"duration": 4,
 				"player":
@@ -1716,7 +1714,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "1",
 				"type": "dialogue",
 				"script":
 				[

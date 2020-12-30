@@ -33,7 +33,6 @@
 			"agent": true
 			
 		},
-		
 		"death_instruction": {
 				
 			"xParam": "20*cos(8*t)",

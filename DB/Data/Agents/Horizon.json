@@ -14,6 +14,11 @@
 		"weapons":
 		[
 			
+			{"weapon": "HorizonMain", "audio": "LaserAudio"},
+			{"weapon": "HorizonFireball", "audio": "FireballAudio"},
+			{"weapon": "HorizonDarkFireballWeapon", "audio": "FireballAudio"},
+			{"weapon": "HorizonBeam", "audio": "BeamAudio"}
+			
 		],
 		"actions": [],
 		"bounds":
@@ -33,6 +38,1105 @@
 			"actions":
 			[
 				
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 68,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 223,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 80,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 375,
+							"y": 40,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 250,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 280,
+							"y": 89,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 280,
+							"y": 150,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 450,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 200,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 96,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 180,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 81,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 60,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 232,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 425,
+							"y": 50,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 375,
+							"y": 200,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 250,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 380,
+							"y": 89,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 380,
+							"y": 175,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 375,
+							"y": 116,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 200,
+							"y": 68,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 400,
+							"y": 110,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 250,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 1
+                    
+                },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 200,
+							"y": 180,
+							"duration": 0.35,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 80,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 1000,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 4
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 2000,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 8
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 3000,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 12
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 500,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 2
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 1500,
+							"animation": "Shoot"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 6
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 10
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 10
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 10
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 10
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 3
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 3
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 3
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+                        
+                    ],
+                    "maxHP": 80,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 3
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "Horizon-ToBeam"
+									
+							},
+							"duration": 500,
+							"animation": "Beam"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 20
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "Horizon-ToBeam"
+									
+							},
+							"duration": 750,
+							"animation": "Beam"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 30
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "Horizon-ToBeam"
+									
+							},
+							"duration": 2000,
+							"animation": "Beam"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 80
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "Horizon-ToBeam"
+									
+							},
+							"duration": 1000,
+							"animation": "Beam"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 40
+                    
+                },
+                {
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 1,
+								"transition": "Horizon-ToBeam"
+									
+							},
+							"duration": 250,
+							"animation": "Beam"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 200,
+                    "minHP": 0,
+                    "maxPower": 200,
+                    "minPower": 10
+                    
+                }
+				
 			],
 			"default":
 			{
@@ -45,7 +1149,7 @@
 						"state": "moveto",
 						"x": 300,
 						"y": 135,
-						"duration": 2,
+						"duration": 1,
 						"invuln": false,
 						"animation": "Idle"
 							
@@ -53,7 +1157,7 @@
 					{
 							
 						"state": "charge",
-						"enter": { "speed": 75, "transition": "", "code": 1},
+						"enter": { "speed": 50, "transition": "", "code": 1},
 						"exit": {},
 						"animation": "Recharge"
 							
@@ -62,11 +1166,11 @@
 				]
 					
 			},
-			"markers": []
+			"markers": [0.4]
 			
 		},
 		"damage": 1,
-		"max_health": 150,
+		"max_health": 200,
 		"death": "Horizon-Death",
 		"default_death":
 		{
@@ -78,19 +1182,20 @@
 			"audio": "ScreamAudio"
 			
 		},
-		"death_instruction": {
+		"death_instruction":
+		{
 				
-			"xParam": "-20",
-			"yParam": "-100+(300*t)",
-			"audio": "StruggleAudio",
-			"transition": "Player-ToChains",
-			"animation": "Player-Chains",
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
 			"image": "HorizonGameOverImage"
 				
 		},
-		"power": 500,
+		"power": 200,
 		"empty": "EmptyAudio",
-		"score": 7500
+		"score": 10000
 			
 	}
 		

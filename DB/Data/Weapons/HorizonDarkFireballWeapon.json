@@ -5,17 +5,17 @@
 		
 		{
 			
-			"key": "DarkFireball",
-			"xParam": "200",
+			"key": "HorizonDarkFireball",
+			"xParam": "250",
 			"yParam": "0",
-			"x": -8,
-			"y": -6
+			"x": -16,
+			"y": -9
 			
 		}
 		
 	],
 	"fire_rate": 0.25,
-	"cost": 1,
+	"cost": 3,
 	"aimed":
 	{
 	

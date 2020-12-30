@@ -1,0 +1,39 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+		    
+		    "key": "HorizonFireball",
+		    "xParam": "-200",
+		    "yParam": "0",
+		    "x": 0,
+		    "y": 0
+		    
+		},
+		{
+			
+			"key": "HorizonFireball",
+			"xParam": "-150",
+			"yParam": "-100",
+			"x": 0,
+			"y": 0
+			
+		},
+		{
+			
+			"key": "HorizonFireball",
+			"xParam": "-100",
+			"yParam": "100",
+			"x": 0,
+			"y": 0
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 1,
+	"aimed": false
+	
+}

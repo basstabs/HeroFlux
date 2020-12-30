@@ -1,0 +1,34 @@
+{
+		
+	"key": "HorizonLaser",
+	"code": 1,
+	"texture": "HorizonLaser",
+	"width": 10,
+	"height": 5,
+	"tracking": false,
+	"death": "HorizonLaser-Death",
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 8,
+		"height": 3,
+		"offsetX": 2,
+		"offsetY": 1
+			
+	},
+	"death_instruction":
+	{
+				
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "HorizonGameOverImage"
+				
+    },
+	"hostile": true,
+	"value": 1
+		
+}

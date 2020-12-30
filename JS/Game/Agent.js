@@ -18,7 +18,7 @@ const CONST_AGENT_FIRE = "fire";
 const CONST_AGENT_CONTINUOUSFIRE = "continuous";
 const CONST_AGENT_DEATH = "death";
 export const CONST_AGENT_SCRIPT = "script";
-const CONST_AGENT_CHARGE = "charge";
+export const CONST_AGENT_CHARGE = "charge";
 
 export const CONST_MOVE_MESSAGE_SUFFIX = "_moveto";
 export const CONST_AGENTDEATH_MESSAGE_SUFFIX = "_agentdeath";
@@ -468,18 +468,31 @@ export default class Agent extends PoolObject
 		this.continuous_started = false;
 		this.continuous_code = data.code;
 		
-		var continuousTransition = function()
+		if(data.transition)
 		{
+		    
+		    var continuousTransition = function()
+		    {
 			
-			this.continuous_started = true;
+			    this.continuous_started = true;
 			
-			this.anims.play(this.stage_animation);
+			    this.anims.play(this.stage_animation);
 			
-			this.off("animationcomplete", continuousTransition);
+			    this.off("animationcomplete", continuousTransition);
 			
-		}
+		    }
 		
-		this.anims.play(data.transition).on("animationcomplete", continuousTransition, this);
+		    this.anims.play(data.transition).on("animationcomplete", continuousTransition, this);
+		
+		}
+		else
+		{
+		
+		    this.continuous_started = true;
+		    
+		    this.anims.play(this.stage_animation);
+		    
+		}
 		
 	}
 	
@@ -609,7 +622,7 @@ export default class Agent extends PoolObject
 	{
 		
 		//Switch states if necessary
-		if(this.power >= this.max_power || !this.control.Code(this.charge_code))
+		if(!this.control.Code(this.charge_code))
 		{
 			
 			var data = {update: false, exit: {}, enter: {}, duration: 0, animation: ""};
@@ -648,16 +661,27 @@ export default class Agent extends PoolObject
 		
 		this.charge_code = data.code;
 		
-		var chargeTransition = function()
+		if(data.transition)
 		{
+		    
+		    var chargeTransition = function()
+		    {
 						
-			this.off("animationcomplete", chargeTransition);
+			    this.off("animationcomplete", chargeTransition);
 			
-			this.anims.play(this.stage_animation);
+			    this.anims.play(this.stage_animation);
 			
-		}
+		    }
 		
-		this.anims.play(data.transition).on("animationcomplete", chargeTransition, this);
+		    this.anims.play(data.transition).on("animationcomplete", chargeTransition, this);
+		
+		}
+		else
+		{
+		
+		    this.anims.play(this.stage_animation);
+		    
+		}
 		
 	}
 	

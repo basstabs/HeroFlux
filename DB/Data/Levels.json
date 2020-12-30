@@ -122,7 +122,10 @@
 		[
 		
 			{"prop": "Bullet", "poolSize": 25},
-			{"prop": "MiniOoze", "poolSize": 6}
+			{"prop": "MiniOoze", "poolSize": 6},
+			{"prop": "HorizonLaser", "poolSize": 15},
+			{"prop": "HorizonDarkFireball", "poolSize": 5},
+			{"prop": "HorizonBeam", "poolSize": 20}
 			
 		],
 		"actors":
@@ -134,12 +137,14 @@
 			{"actor": "ChloroGrunt", "poolSize": 10},
 			{"actor": "Drone", "poolSize": 10},
 			{"actor": "Ooze", "poolSize": 5},
-			{"actor": "Autotaper", "poolSize": 15}
+			{"actor": "Autotaper", "poolSize": 15},
+			{"actor": "HorizonFireball", "poolSize": 50}
 			
 		],
 		"agents":
 		[
 			
+			{"agent": "Horizon", "poolSize": 1},
 			{"agent": "Engine", "poolSize": 1}
 			
 		],
@@ -150,7 +155,12 @@
 			{"effect": "Bullet-Death", "poolSize": 2},
 			{"effect": "ChloroGrunt-Death", "poolSize": 3},
 			{"effect": "Ooze-Death", "poolSize": 2},
-			{"effect": "MiniOoze-Death", "poolSize": 2}
+			{"effect": "MiniOoze-Death", "poolSize": 2},
+			{"effect": "HorizonLaser-Death", "poolSize": 3},
+			{"effect": "HorizonFireball-Death", "poolSize": 3},
+			{"effect": "HorizonBeam-Death", "poolSize": 3},
+			{"effect": "DarkFireball-Death", "poolSize": 3},
+			{"effect": "HorizonBeam-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel3",
@@ -232,22 +242,34 @@
 		"props":
 		[
 			
-			{"prop": "Chain", "poolSize": 100}
-			
+			{"prop": "Chain", "poolSize": 100},
+			{"prop": "HorizonLaser", "poolSize": 15},
+			{"prop": "HorizonDarkFireball", "poolSize": 5},
+			{"prop": "HorizonBeam", "poolSize": 20}
+						
 		],
 		"actors":
 		[
+			
+			{"actor": "HorizonFireball", "poolSize": 100}
 			
 		],
 		"agents":
 		[
 			
 			{"agent": "Engine", "poolSize": 1},
-			{"agent": "PainGirl", "poolSize": 1}
+			{"agent": "PainGirl", "poolSize": 1},
+			{"agent": "Horizon", "poolSize": 1}
 			
 		],
 		"effects":
 		[
+			
+			{"effect": "HorizonLaser-Death", "poolSize": 3},
+			{"effect": "HorizonFireball-Death", "poolSize": 3},
+			{"effect": "HorizonBeam-Death", "poolSize": 3},
+			{"effect": "DarkFireball-Death", "poolSize": 3},
+			{"effect": "HorizonBeam-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel7",

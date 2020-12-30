@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "HorizonBeam",
+			"xParam": "-250",
+			"yParam": "0",
+			"x": -14,
+			"y": -8
+			
+		}
+		
+	],
+	"fire_rate": 0.05,
+	"cost": 2,
+	"aimed": false
+	
+}

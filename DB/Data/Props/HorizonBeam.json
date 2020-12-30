@@ -1,0 +1,34 @@
+{
+		
+	"key": "HorizonBeam",
+	"code": 1,
+	"texture": "HorizonBeam",
+	"width": 16,
+	"height": 16,
+	"tracking": false,
+	"death": "HorizonBeam-Death",
+	"bounds":
+	{
+			
+		"type": "box",
+		"width": 16,
+		"height": 12,
+		"offsetX": 0,
+		"offsetY": 2
+			
+	},
+	"death_instruction":
+	{
+				
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "HorizonGameOverImage"
+				
+    },
+	"hostile": true,
+	"value": 2
+		
+}

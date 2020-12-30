@@ -1,0 +1,26 @@
+{
+	
+	"name": "HorizonBeam",
+	"animations":
+	[
+		
+		{
+			
+			"name": "Idle",
+			"frame_rate": 24,
+			"frames": [0, 1, 2, 3, 4, 5, 6],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 24,
+			"frames": [7, 8, 9, 10, 11],
+			"repeat": 0
+			
+		}
+		
+	]
+	
+}
