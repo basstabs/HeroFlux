@@ -1,6 +1,6 @@
 {
 	
-	"background": "DarkTunnel",
+	"background": "TunnelDark",
 	"level":
 	{
 		
@@ -144,7 +144,22 @@
 							"*click*"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "FangDialogue",
+						"name": "Scarlet Fang",
+						"lines":
+						[
+							
+							"Much better."
+							
+							
+						],
+						"color": "#F18A8A",
 						"right": true
 						
 					},
@@ -156,10 +171,10 @@
 						[
 							
 							"Uh... Penny?",
-							"Pardon my french, but what the fuck is happening out there?"
+							"Pardon my french, but what the fuck is happening?"
 							
 						],
-						"color": "#F18A8A",
+						"color": "#8AF1FF",
 						"right": false
 						
 					},
@@ -174,7 +189,7 @@
 							"I'm doing my best, just hang on!"
 							
 						],
-						"color": "#8AF1FF",
+						"color": "#FFFFFF",
 						"right": false
 						
 					},
@@ -189,7 +204,7 @@
 							"They're all over in here!"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#8AF1FF",
 						"right": false
 						
 					},
@@ -201,7 +216,7 @@
 						[
 							
 							"Where are you, my little red-haired RAT?",
-							"Come out and face your punishment!"
+							"Come out and taste your punishment!"
 							
 						],
 						"color": "#F18A8A",
