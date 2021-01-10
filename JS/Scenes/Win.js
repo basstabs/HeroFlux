@@ -74,6 +74,8 @@ export default class Win extends MenuScene
 	    menu_data = JSON.parse(JSON.stringify(menu_data));
 		menu_data.background = "TitleBackground";
 
+		menu_data.music = "ContinueMusic";
+		
 		super.init(menu_data);
 
 		var level = this.cache.json.get("LevelData");

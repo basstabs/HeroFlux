@@ -57,6 +57,8 @@ export default class GameOver extends MenuScene
 	    var menu_data = this.cache.json.get("ContinueScreen");
         menu_data = JSON.parse(JSON.stringify(menu_data));
         
+		menu_data.music = "GameOverMusic";
+		
 		super.init(menu_data);
 		
 		this.image = data.image;
