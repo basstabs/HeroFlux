@@ -4,6 +4,7 @@ import UI from "../Base/UILayer.js";
 
 import Title from "../Scenes/Title.js";
 import Loader from "../Scenes/Loader.js";
+import Shmup from "../Scenes/Shmup.js";
 
 import Input from "../Game/Input.js";
 import Score from "../Game/Score.js";
@@ -102,6 +103,19 @@ export default class GameOver extends MenuScene
 	Continue()
 	{
 	    
+		this.Hide();
+	    
+	    this.time.delayedCall(this.max_animation, function()
+		{
+				
+			this.scene.remove("GameOver");
+				
+			this.scene.add("Shmup", Shmup);
+				
+			this.Start("Shmup", JSON.parse(JSON.stringify(this.remove.original)));
+				
+		}, [], this);
+		
 	}
 	
 	Quit()
@@ -112,7 +126,6 @@ export default class GameOver extends MenuScene
 	    this.time.delayedCall(this.max_animation, function()
 		{
 				
-			this.scene.remove("Win");
 			this.scene.remove("GameOver");
 				
 			var title = new Title();

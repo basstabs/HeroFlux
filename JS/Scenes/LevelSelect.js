@@ -11,8 +11,6 @@ import SaveData from "../Game/SaveData.js";
 import Title from "../Scenes/Title.js";
 import LevelPreloader from "../Scenes/LevelPreloader.js";
 import Shmup from "../Scenes/Shmup.js";
-import Win from "../Scenes/Win.js";
-import GameOver from "../Scenes/GameOver.js";
 
 const CONST_LEVELSELECT_DISPLAYSTART_X = 1.1;
 
@@ -201,8 +199,6 @@ export default class Options extends MenuScene
 			this.Start("LevelPreloader", json);
 		
 			this.scene.add("Shmup", Shmup);
-			this.scene.add("Win", Win);
-			this.scene.add("GameOver", GameOver);
 		
 		}, [], this);
 		

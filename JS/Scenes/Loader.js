@@ -308,6 +308,9 @@ export default class Loader extends BaseScene
 					scene.cache.audio.remove(data[i].id);
 					break;
 				
+				default:
+					break;
+					
 			}
 			
 		}

@@ -1,6 +1,7 @@
 {
 	
 	"background": "TunnelDark",
+	"warning": true,
 	"level":
 	{
 		
@@ -9,7 +10,7 @@
 
 			{
 				
-				"background_param": "5",
+				"background_param": "4",
 				"type": "wave",
 				"music": "Level4Music",
 				"data":
@@ -95,7 +96,312 @@
 			},
 			{
 				
-				"background_param": "5",
+				"background_param": "4",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 50,
+					"spawners":
+					[
+					    
+					    {
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.20,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.7,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Autotaper"
+							
+							],
+							"start": 6,
+							"delay": 5,
+							"count": 6,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Autotaper"
+							
+							],
+							"start": 8,
+							"delay": 5,
+							"count": 6,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Autotaper"
+							
+							],
+							"start": 10,
+							"delay": 5,
+							"count": 6,
+							"x": 1,
+							"y": 0.7,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 15,
+							"delay": 0.25,
+							"count": 12,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"RobotGun"
+								
+							],
+							"start": 23,
+							"delay": 0.25,
+							"count": 13,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 30,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=3=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 30.5,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2.5=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 34,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "p-50=3=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 34.5,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "p-50=2.5=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 38,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "p-50=3=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 38.5,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "p-50=2.5=0=7=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 40,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 40,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						}
+						
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "4",
 				"type": "dialogue",
 				"script":
 				[
@@ -229,7 +535,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "4",
 				"type": "dialogue",
 				"script":
 				[
@@ -359,7 +665,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "4",
 				"type": "dialogue",
 				"script":
 				[

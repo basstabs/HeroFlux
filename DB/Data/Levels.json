@@ -173,9 +173,19 @@
 		"props":
 		[
 			
+			{"prop": "Bullet", "poolSize": 50},
+			{"prop": "MiniOoze", "poolSize": 6}
+
 		],
 		"actors":
 		[
+			
+			{"actor": "Robot", "poolSize": 25},
+			{"actor": "RobotGun", "poolSize": 35},
+			{"actor": "Shieldbot", "poolSize": 10},
+			{"actor": "Drone", "poolSize": 10},
+			{"actor": "Ooze", "poolSize": 5},
+			{"actor": "Autotaper", "poolSize": 15}
 			
 		],
 		"agents":
@@ -184,6 +194,11 @@
 		],
 		"effects":
 		[
+			
+			{"effect": "Explosion-Normal", "poolSize": 15},
+			{"effect": "Bullet-Death", "poolSize": 2},
+			{"effect": "Ooze-Death", "poolSize": 2},
+			{"effect": "MiniOoze-Death", "poolSize": 2}
 			
 		],
 		"level": "AzureLevel4",

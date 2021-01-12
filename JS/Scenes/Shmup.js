@@ -20,6 +20,8 @@ import Weapon from "../Game/Weapon.js";
 import Player, {CONST_PLAYER_SPAWN, CONST_PLAYER_SPAWN_STATE, CONST_PLAYER_DIALOGUE, CONST_PLAYERPAUSE_MESSAGE_CODE, CONST_PLAYERDEATH_MESSAGE_CODE } from "../Game/Player.js";
 
 import Pause from "../Scenes/Pause.js";
+import GameOver from "../Scenes/GameOver.js";
+import Win from "../Scenes/Win.js";
 
 import {CONST_UI_POWER_DATA, CONST_UI_POWERGAUGE_DATA, CONST_UI_ENEMYGAUGE_DATA, CONST_UI_ENEMY_DATA} from "../Constants.js";
 
@@ -84,6 +86,7 @@ export default class Shmup extends GameScene
 	{
 		
 		this.remove_data = data;
+		this.original_data = JSON.parse(JSON.stringify(data));
 		
 	}
 	
@@ -183,7 +186,7 @@ export default class Shmup extends GameScene
 		
 		json.level = this.cache.json.get(json.level);
 		
-		return json;
+		return JSON.parse(JSON.stringify(json));
 		
 	}
 	
@@ -777,6 +780,8 @@ export default class Shmup extends GameScene
 				
 				var data = {image: image, remove: this.RemoveData()};
 			
+				this.scene.add("GameOver", GameOver);
+				
 				this.Start("GameOver", data);
 			
 			}, this);
@@ -810,6 +815,8 @@ export default class Shmup extends GameScene
 				
 				var data = this.RemoveData();
 			
+				this.scene.add("Win", Win);
+				
 				this.Start("Win", data);
 			
 			}, this);
@@ -883,6 +890,8 @@ export default class Shmup extends GameScene
 		
 		this.remove_data.push({type: "json", id: "PlayerData"});
 		this.remove_data.push({type: "json", id: json.level});
+		
+		this.remove_data.original = this.original_data;
 		
 		return this.remove_data;
 		
