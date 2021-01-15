@@ -725,6 +725,312 @@
 						
 						},
 						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 18,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 18.5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.36,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 19,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.64,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 18,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 18.5,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.66,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"RobotGun"
+							
+							],
+							"start": 19,
+							"delay": 1,
+							"count": 3,
+							"x": 1,
+							"y": 0.34,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 25,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 25,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 25,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 25,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 30,
+							"delay": 0.35,
+							"count": 8,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=5=0",
+							"yParam": "p0=5=-50"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 35,
+							"delay": 0.35,
+							"count": 8,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=3=0",
+							"yParam": "p0=3=-50"
+					
+						},
+						{
+					
+							"keys":
+							[
+						
+								"Robot"
+						
+							],
+							"start": 40,
+							"delay": 0.35,
+							"count": 8,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=5=0",
+							"yParam": "p0=5=50"
+					
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 45,
+							"delay": 1,
+							"count": 2,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 48,
+							"delay": 1,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 52,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Drone"
+								
+							],
+							"start": 52,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+						
+						},
+						{
 							
 							"keys":
 							[
@@ -795,7 +1101,7 @@
 							"xParam": "-150+(30*t)",
 							"yParam": "-25"
 							
-						},
+						}
 						
 					]
 					

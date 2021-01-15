@@ -72,8 +72,6 @@ export default class GameOver extends MenuScene
 	create()
 	{
 		
-		super.create();
-		
 		if(this.image)
 		{
 			
@@ -98,6 +96,8 @@ export default class GameOver extends MenuScene
 		
 		UI.AnimateSource(this.text_index, "alpha", 0, CONST_UI_GAMEOVER_DATA.targetAlpha, this.max_animation, false);
 			
+		super.create();
+		
 	}
 	
 	Continue()
