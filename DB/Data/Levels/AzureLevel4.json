@@ -10,7 +10,7 @@
 
 			{
 				
-				"background_param": "4",
+				"background_param": "3",
 				"type": "wave",
 				"music": "Level4Music",
 				"data":
@@ -26,7 +26,7 @@
 			},
 		    {
 				
-				"background_param": "5",
+				"background_param": "3",
 				"type": "dialogue",
 				"script":
 				[
@@ -96,12 +96,12 @@
 			},
 			{
 				
-				"background_param": "4",
+				"background_param": "3",
 				"type": "wave",
 				"data":
 				{
 					
-					"duration": 50,
+					"duration": 55,
 					"spawners":
 					[
 					    
@@ -401,7 +401,7 @@
 			},
 			{
 				
-				"background_param": "4",
+				"background_param": "3",
 				"type": "dialogue",
 				"script":
 				[
@@ -535,7 +535,304 @@
 			},
 			{
 				
-				"background_param": "4",
+				"background_param": "3",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 90,
+					"spawners":
+					[
+					    
+					    {
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.20,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Robot"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.7,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Ooze"
+							
+							],
+							"start": 6,
+							"delay": 8,
+							"count": 6,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.15,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.3,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Shieldbot"
+							
+							],
+							"start": 10,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "p-50=3=0=9=-50",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 56,
+							"delay": 0.25,
+							"count": 12,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 64,
+							"delay": 0.25,
+							"count": 13,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 72,
+							"delay": 0.25,
+							"count": 12,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Robot"
+								
+							],
+							"start": 80,
+							"delay": 0.25,
+							"count": 13,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						},
+						
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "3",
+				"type": "scripted",
+				"duration": 1,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "Fang",
+						"xParam": "p480+(-180*t)=1=300",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "3",
 				"type": "dialogue",
 				"script":
 				[
@@ -665,7 +962,35 @@
 			},
 			{
 				
-				"background_param": "4",
+				"background_param": "3",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "Fang",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "Fang",
+						"required": 1
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "3",
 				"type": "dialogue",
 				"script":
 				[

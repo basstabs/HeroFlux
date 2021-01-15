@@ -1488,7 +1488,7 @@
 			},
 			{
 				
-				"background_param": "p2+(-0.5*t)=2=0",
+				"background_param": "p2+(-0.5*t)=2=1",
 				"type": "scripted",
 				"music": "HorizonMusic",
 				"duration": 2,
@@ -1687,7 +1687,7 @@
 			},
 			{
 				
-				"background_param": "p0.25*t=4=1",
+				"background_param": "p-0.25*t=4=0",
 				"type": "scripted",
 				"duration": 4,
 				"player":
@@ -1715,7 +1715,7 @@
 			},
 			{
 				
-				"background_param": "1",
+				"background_param": "0",
 				"type": "dialogue",
 				"script":
 				[
@@ -1783,7 +1783,7 @@
 			},
 			{
 				
-				"background_param": "1",
+				"background_param": "0",
 				"type": "fight",
 				"launch":
 				[
@@ -1811,7 +1811,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "0",
 				"type": "dialogue",
 				"script":
 				[
