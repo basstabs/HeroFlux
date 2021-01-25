@@ -18,6 +18,7 @@ const CONST_AGENT_FIRE = "fire";
 const CONST_AGENT_CONTINUOUSFIRE = "continuous";
 const CONST_AGENT_DEATH = "death";
 export const CONST_AGENT_SCRIPT = "script";
+const CONST_AGENT_SCRIPTMOVE = "scriptmove";
 export const CONST_AGENT_CHARGE = "charge";
 
 export const CONST_MOVE_MESSAGE_SUFFIX = "_moveto";
@@ -166,6 +167,10 @@ export default class Agent extends PoolObject
 				this.ScriptedUpdate();
 				break;
 				
+			case CONST_AGENT_SCRIPTMOVE:
+				this.ScriptedMoveUpdate();
+				break;
+				
 			case CONST_AGENT_CHARGE:
 				this.ChargeUpdate();
 				
@@ -212,6 +217,10 @@ export default class Agent extends PoolObject
 				this.ScriptedExit(data);
 				break;
 				
+			case CONST_AGENT_SCRIPTMOVE:
+				this.ScriptedMoveExit(data);
+				break;
+				
 			case CONST_AGENT_CHARGE:
 				this.ChargeExit(data);
 				break;
@@ -246,6 +255,9 @@ export default class Agent extends PoolObject
 				this.ScriptedEnter(data);
 				break;
 			
+			case CONST_AGENT_SCRIPTMOVE:
+				this.ScriptedMoveEnter(data);
+				
 			case CONST_AGENT_CHARGE:
 				this.ChargeEnter(data);
 				break;
@@ -311,19 +323,55 @@ export default class Agent extends PoolObject
 				
 			    }
 			    
-			    if(("recharge" in this.actions[i]) && this.power >= this.actions[i].cost)
-			    {
+				if(this.actions[i].cost)
+				{
+				
+					if(this.power >= this.actions[i].cost)
+					{
+					
+			    		if(("recharge" in this.actions[i]) && this.power >= this.actions[i].cost)
+			    		{
 			        
-			        this.power -= this.actions[i].cost;
+			        		this.power -= this.actions[i].cost;
 			        
-			        var data = {update: true, exit: {}, enter: {speed: this.actions[i].recharge, transition: this.actions[i].transition, code: this.actions[i].code}, duration: 0, animation: this.actions[i].animation};
+							var data = {update: true, exit: {}, enter: {speed: this.actions[i].recharge, transition: this.actions[i].transition, code: this.actions[i].code}, duration: 0, animation: this.actions[i].animation};
 			        
-			        this.ChangeState(CONST_AGENT_CHARGE, data);
+							this.ChangeState(CONST_AGENT_CHARGE, data);
 			        
-			        return;
+							if(this.actions[i].audio)
+							{
+						
+								SoundBoard.Play(this.actions[i].audio);
+						
+							}
+					
+			        		return;
 			        
-			    }
+			    		}
 			    
+						if(("xParam" in this.actions[i]) && this.power >= this.actions[i].cost)
+						{
+					
+							this.power -= this.actions[i].cost;
+					
+							var data = {update: true, exit: {}, enter: {xParam: this.actions[i].xParam, yParam: this.actions[i].yParam, flip: this.actions[i].flip, invuln: this.actions[i].invuln, audio: this.actions[i].audio}, 	duration: this.actions[i].duration, animation: this.actions[i].animation};
+					
+							this.ChangeState(CONST_AGENT_SCRIPTMOVE, data);
+					
+							return;
+					
+						}
+						
+					}
+					else
+					{
+						
+						SoundBoard.Play(this.empty);
+						
+					}
+					
+				}
+				
 			}
 			
 		}
@@ -342,6 +390,70 @@ export default class Agent extends PoolObject
 	
 	NormalEnter(data)
 	{
+		
+	}
+	
+	ScriptedMoveUpdate()
+	{
+		
+		//Switch States if necessary
+		if(Timer.RunningMilliseconds() - this.stage_start >= this.stage_duration)
+		{
+			
+			var data = {update: false, exit: {}, enter: {}, duration: 0, animation: ""};
+			
+			this.ChangeState(CONST_AGENT_NORMAL, data);
+			
+			return;
+			
+		}
+		
+		//Perform State Actions
+		var t = (Timer.RunningMilliseconds() - this.stage_start) / 1000;
+	
+		this.setVelocityX(this.xParam(t));
+		this.setVelocityY(this.yParam(t));
+		
+		this.anims.play(this.stage_animation, true);
+		
+	}
+	
+	ScriptedMoveExit(data)
+	{
+		
+		this.xParam = null;
+		this.yParam = null;
+	
+		this.flipX = false;
+		
+	}
+	
+	ScriptedMoveEnter(data)
+	{
+		
+		this.xParam = this.scene.LoadParam(data.xParam);
+		this.yParam = this.scene.LoadParam(data.yParam);
+		
+		if(data.flip)
+		{
+		
+			this.flipX = true;
+			
+		}
+		
+		if(data.invuln)
+		{
+		
+			this.SetInvulnerability(this.stage_duration);
+		
+		}
+		
+		if(data.audio)
+		{
+			
+			SoundBoard.Play(data.audio);
+			
+		}
 		
 	}
 	
@@ -593,7 +705,7 @@ export default class Agent extends PoolObject
 		this.xParam = this.scene.LoadParam(data.xParam);
 		this.yParam = this.scene.LoadParam(data.yParam);
 	
-		this.death_collide = this.collideWorldBounds;
+		this.death_collide = this.body.collideWorldBounds;
 		this.setCollideWorldBounds(false);
 		
 		this.die = true;

@@ -1,0 +1,728 @@
+{
+		
+	"key": "Fang",
+	"collide": true,
+	"texture": "Fang",
+	"width": 40,
+	"height": 48,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+		
+			{"weapon": "FangCCW", "audio": "FireballAudio"},
+			{"weapon": "FangCW", "audio": "FireballAudio"},
+			{"weapon": "FangWeapon", "audio": "FireballAudio"}
+			
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 12,
+			"height": 36,
+			"offsetX": 15,
+			"offsetY": 5
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+			
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "-400",
+								"yParam": "0",
+								"flip": false,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 200,
+							"animation": "Claw",
+							"cost": 5
+								
+						}
+							
+					],
+					"maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 5
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "400",
+								"yParam": "0",
+								"flip": true,
+								"invuln": false,
+								"audio": "SpawnAudio"
+									
+							},
+							"duration": 200,
+							"animation": "Claw",
+							"cost": 5
+								
+								
+						}
+							
+					],
+					"maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 5
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "-400",
+								"yParam": "0",
+								"flip": false,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 400,
+							"animation": "Claw",
+							"cost": 10
+								
+						}
+							
+					],
+					"maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 10
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "400",
+								"yParam": "0",
+								"flip": true,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 400,
+							"animation": "Claw",
+							"cost": 10
+								
+								
+						}
+							
+					],
+					"maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 10
+						
+				},
+				{
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 68,
+							"duration": 0.75,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 223,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 300,
+							"y": 80,
+							"duration": 0.75,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 375,
+							"y": 40,
+							"duration": 0.5,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+		        {
+		      
+		            "states":
+		            [
+		        
+		                {
+								
+							"state": "moveto",
+							"x": 150,
+							"y": 250,
+							"duration": 0.75,
+							"invuln": false
+								
+						}
+		        
+		            ],
+		            "maxHP": 200,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+		        },
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": "Fang-ToCast"
+									
+							},
+							"duration": 3000,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 26
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 250,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 1,
+								"transition": "Fang-ToCast"
+									
+							},
+							"duration": 3000,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 26
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": "Fang-ToCast"
+									
+							},
+							"duration": 1500,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 14
+						
+				},
+				{
+						
+					"states":
+					[
+							
+						{
+								
+							"state": "moveto",
+							"x": 350,
+							"y": 135,
+							"duration": 0.5,
+							"invuln": false
+								
+						},
+						{
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 1,
+								"transition": "Fang-ToCast"
+									
+							},
+							"duration": 1500,
+							"animation": "Cast"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 14
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 1
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 2
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						},
+						{
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "Fire",
+							"animation": "Fire"
+								
+						}
+							
+					],
+					"maxHP": 160,
+					"minHP": 0,
+					"maxPower": 200,
+					"minPower": 3
+						
+				}
+					
+			],
+			"default":
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 380,
+						"y": 135,
+						"duration": 1,
+						"invuln": false
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 40, "transition": "Fang-ToCharge", "code": 1},
+						"exit": {},
+						"animation": "Charge"
+							
+					}
+						
+				]
+					
+			},
+			"activate": null,
+			"markers": [0.8]
+			
+		},
+		"damage": 1,
+		"max_health": 200,
+		"death": "Fang-Death",
+		"default_death":
+		{
+		
+			"transition": "Fang-Death",
+			"animation": "Fang-Death",
+			"xParam": "0",
+			"yParam": "((500*t)*t)+50",
+			"audio": "KabadraScream"
+			
+		},
+		"death_instruction": {
+				
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "FangGameOverImage"
+				
+		},
+		"power": 200,
+		"empty": "EmptyAudio",
+		"score": 15000
+			
+	}
+		
+}

@@ -219,6 +219,18 @@ export default class LevelPreloader extends BaseScene
 			
 			}
 			
+			for(var j = 0; j < json.agent.actions.length; j++)
+			{
+				
+				if(json.agents.actions[j].audio && this.assets.sound.find(function(sound) { return sound.id === json.agent.actions[j].audio; }) === undefined)
+				{
+					
+					this.assets.sound.push({type: "sound", id: json.agent.actions[j].audio, url: "DB/Sound/" + json.agent.actions[j].audio + ".wav"});
+					
+				}
+				
+			}
+			
 			if(json.agent.death_instruction && this.assets.sound.find(function(sound) { return sound.id === json.agent.death_instruction.audio; }) === undefined)
 			{
 			
@@ -310,6 +322,18 @@ export default class LevelPreloader extends BaseScene
 			
 			}
 			
+		}
+		
+		for(var i = 0; i < playerData.agent.actions.length; i++)
+		{
+				
+			if(playerData.agent.actions[i].audio && this.assets.sound.find(function(sound) { return sound.id === playerData.agent.actions[i].audio; }) === undefined)
+			{
+					
+				this.assets.sound.push({type: "sound", id: playerData.agent.actions[i].audio, url: "DB/Sound/" + playerData.agent.actions[i].audio + ".wav"});
+					
+			}
+				
 		}
 		
 		if(this.assets.sound.find(function(sound) { return sound.id === playerData.agent.default_death.audio; }) === undefined)

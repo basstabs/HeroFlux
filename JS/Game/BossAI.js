@@ -132,6 +132,13 @@ export default class AI extends Control
 			
 		}
 		
+		if(state.cost)
+		{
+			
+			this.agent.power -= state.cost;
+			
+		}
+		
 		var data = {update: true, exit: state.exit, enter: state.enter, duration: duration, animation: animation};
 		
 		this.agent.ChangeState(state.state, data);
@@ -175,6 +182,7 @@ export default class AI extends Control
 		}
 		
 		this.currentState = 0;
+		this.current_code = 0;
 		this.RunState(this.currentAction.states[0]);
 		
 	}
@@ -185,6 +193,8 @@ export default class AI extends Control
 				
 		if(!this.started)
 		{
+			
+			this.agent.setCollideWorldBounds(true);
 			
 			this.scene.HookEnemy(this.agent, this.markers);
 			

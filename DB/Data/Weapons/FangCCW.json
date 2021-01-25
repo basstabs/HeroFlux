@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "FangFireball",
+			"xParam": "p-300*(t*cos(5*t))=5=-300",
+			"yParam": "p300*(t*sin(5*t))=5=0",
+			"x": -4,
+			"y": -6
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 2,
+	"aimed": false
+	
+}

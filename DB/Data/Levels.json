@@ -174,7 +174,8 @@
 		[
 			
 			{"prop": "Bullet", "poolSize": 50},
-			{"prop": "MiniOoze", "poolSize": 6}
+			{"prop": "MiniOoze", "poolSize": 6},
+			{"prop": "FangFireball", "poolSize": 50}
 
 		],
 		"actors":
@@ -190,6 +191,8 @@
 		],
 		"agents":
 		[
+		
+			{"agent": "Fang", "poolSize": 1}
 			
 		],
 		"effects":
@@ -198,7 +201,8 @@
 			{"effect": "Explosion-Normal", "poolSize": 15},
 			{"effect": "Bullet-Death", "poolSize": 2},
 			{"effect": "Ooze-Death", "poolSize": 2},
-			{"effect": "MiniOoze-Death", "poolSize": 2}
+			{"effect": "MiniOoze-Death", "poolSize": 2},
+			{"effect": "DarkFireball-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel4",
@@ -260,8 +264,9 @@
 			{"prop": "Chain", "poolSize": 100},
 			{"prop": "HorizonLaser", "poolSize": 15},
 			{"prop": "HorizonDarkFireball", "poolSize": 5},
-			{"prop": "HorizonBeam", "poolSize": 20}
-						
+			{"prop": "HorizonBeam", "poolSize": 20},
+			{"prop": "FangFireball", "poolSize": 50}
+			
 		],
 		"actors":
 		[
@@ -274,7 +279,8 @@
 			
 			{"agent": "Engine", "poolSize": 1},
 			{"agent": "PainGirl", "poolSize": 1},
-			{"agent": "Horizon", "poolSize": 1}
+			{"agent": "Horizon", "poolSize": 1},
+			{"agent": "Fang", "poolSize": 1}
 			
 		],
 		"effects":
