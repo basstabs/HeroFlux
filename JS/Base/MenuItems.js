@@ -19,6 +19,8 @@ export class MenuItem extends Phaser.GameObjects.Zone
 		this.displayData = displayData;
 		this.index = -1;
 		
+		this.active = true;
+		
 	}
 	
 	static Factory(scene, json)
@@ -75,6 +77,20 @@ export class MenuItem extends Phaser.GameObjects.Zone
 	{
 	
 		Logger.LogError("Attempting to call virtual Hide method on abstract MenuItem");
+		
+	}
+	
+	Off()
+	{
+		
+		this.active = false;
+		
+	}
+	
+	On()
+	{
+		
+		this.active = true;
 		
 	}
 	
@@ -241,21 +257,31 @@ export class TextMenuItem extends MenuItem
 	Highlight()
 	{
 		
-		this.text.setColor(this.font.highlight);
+		if(this.active)
+		{
+			
+			this.text.setColor(this.font.highlight);
+		
+		}
 		
 	}
 	
 	Dim()
 	{
 		
-		this.text.setColor(this.font.color);
+		if(this.active)
+		{
+			
+			this.text.setColor(this.font.color);
+		
+		}
 		
 	}
 	
 	Activate(pointer)
 	{
 	
-		if(!this.scene.closing)
+		if(!this.scene.closing && this.active)
 		{
 			
 			SoundBoard.Play("SelectAudio");

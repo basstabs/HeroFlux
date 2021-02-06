@@ -1,0 +1,422 @@
+{
+	
+	"background": "DarkOcean",
+	"warning": true,
+	"level":
+	{
+		
+		"stages":
+		[
+
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"music": "Level5Music",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+		    {
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Penny? Penny?",
+							"Are you there?",
+							"Is anyone there?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "MysteryDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"kzzzzkzz... BWWAAA... zzzkzkzz"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"GAH!",
+							"What the hell is that!?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "MysteryDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"BWWAAA! BWWAAA!"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Who's there!?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"Bohltaq Had, Hget'uh!",
+							"Jahgad hltev'uhg Davmav'uhg!"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What the..."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"...",
+							"...",
+							"PARSING PRIMITIVE LANGUAGE.",
+							"SYNTAX DECODED.",
+							"SUBMIT TO PROCESSING. YOU CANNOT ESCAPE."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"What the..."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"THIS FRAGILE VESSEL CANNOT SAVE YOU, TRAITOR.",
+							"CAPTURE OR DEATH. YOUR CHOICE."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 5,
+					"spawners":
+					[
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "scripted",
+				"duration": 2,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "Commando",
+						"xParam": "p480+(-90*t)=2=300",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"IMPRESSIVE. FOR A SLUG."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Who... what are you?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "Mah'vugh",
+						"lines":
+						[
+							
+							"MY OWN KIND CALLS ME MAH'VUGH. BUT YOU WILL CALL ME MASTER."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Fat chance, weirdo."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "Mah'vugh",
+						"lines":
+						[
+							
+							"YOUR INSOLENCE IS PITIFUL."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"kzzzzkzkkzk... kzkkzkzkzkz...",
+							"zzkzz... come... kkzkzkzk... report!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"This is Azure Burst, come in!",
+							"Come in! Hello?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "Mah'vugh",
+						"lines":
+						[
+							
+							"YOUR FRIENDS CANNOT SAVE YOU NOW."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "Commando",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "Commando",
+						"required": 1
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[	
+				]
+				
+			}
+		
+		]
+	}
+	
+}

@@ -1112,6 +1112,7 @@
 				
 				"background_param": "3",
 				"type": "scripted",
+				"music": "FangMusic",
 				"duration": 1,
 				"player":
 				{
@@ -1169,7 +1170,7 @@
 							"Them?"
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#8AF1FF",
 						"right": false
 						
 					},
@@ -1198,7 +1199,7 @@
 							"You're not making any sense, but then I'd expect nothing less from delusional Villain Corp. morons."
 							
 						],
-						"color": "#FFFFFF",
+						"color": "#8AF1FF",
 						"right": false
 						
 					},
@@ -1214,7 +1215,7 @@
 							"Urgent code... kzkzkzzkz... not... kzzkzz... believe this!"
 							
 						],
-						"color": "#8AF1FF",
+						"color": "#FFFFFF",
 						"right": false
 						
 					},
@@ -1243,7 +1244,7 @@
 							"*click*"
 							
 						],
-						"color": "#8AF1FF",
+						"color": "#FFFFFF",
 						"right": false
 						
 					},

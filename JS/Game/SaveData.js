@@ -301,21 +301,17 @@ export default class SaveData
 	OpenLock(key)
 	{
 		
-		for(var i = 0; i < this.unlocks.length; i++)
+		var unlock = this.unlocks.find(function(unlock)
 		{
 			
-			if(this.unlocks[i].Key() === key)
-			{
-				
-				this.unlocks[i].Unlock();
-				
-				this.SavePlayerData();
-				
-				return;
-				
-			}
-			
-		}
+			return unlock.Key() === key;
+									   
+		});
+		
+		unlock.Unlock();
+		this.SavePlayerData();
+		
+		return;
 		
 	}
 	
@@ -323,6 +319,230 @@ export default class SaveData
 	{
 		
 		SaveData.m_save.OpenLock(key);
+		
+	}
+	
+	CloseLock(key)
+	{
+		
+		var unlock = this.unlocks.find(function(unlock)
+		{
+			
+			return unlock.Key() === key;
+									   
+		});
+		
+		unlock.Lock();
+		this.SavePlayerData();
+		
+		return;
+		
+	}
+	
+	static CloseLock(key)
+	{
+		
+		SaveData.m_save.CloseLock(key);
+		
+	}
+	
+	IsLockOpen(key)
+	{
+		
+		var unlock = this.unlocks.find(function(unlock)
+		{
+			
+			return unlock.Key() === key;
+									   
+		});
+		
+		return unlock.Open();
+
+	}
+	
+	static IsLockOpen(key)
+	{
+		
+		return SaveData.m_save.IsLockOpen(key);
+		
+	}
+	
+	ModifyPlayer(scene, player)
+	{
+		
+		//Scuffed hardcoding because lazy
+		var recovery = {
+			    
+			    	"code": 128,
+			    	"animation": "Player-Recharge",
+			    	"transition": "Player-Recharge",
+			    	"recharge": 5,
+			    	"cost": 25,
+					"audio": "RechargeAudio"
+			    
+		};
+		
+		var backDash = {
+				
+					"code": 256,
+					"animation": "Player-Spawn",
+					"flip": true,
+					"xParam": "-500",
+					"yParam": "0",
+					"duration": 250,
+					"invuln": true,
+					"cost": 5,
+					"audio": "SpawnAudio"
+				
+		};
+		
+		var forwardDash = {
+				
+					"code": 512,
+					"animation": "Player-Spawn",
+					"flip": false,
+					"xParam": "500",
+					"yParam": "0",
+					"duration": 250,
+					"invuln": true,
+					"cost": 5,
+					"audio": "SpawnAudio"
+				
+		};
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Main"; });
+		if(unlock.Open())
+		{
+			
+			scene.anims.remove("Player-Shoot");
+			scene.anims.create({key: "Player-Shoot", frames: [{frame: 4, key: "Player"}, {frame: 5, key: "Player"}, {frame: 6, key: "Player"}, {frame: 7, key: "Player"}, {frame: 8, key: "Player"}, {frame: 9, key: "Player"}], frameRate: 12, repeat: -1}); //Phaser sucks
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Fireball"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.weapons[1].weapon.cost = 3;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Beam"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.weapons[2].weapon.cost = 1;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-CheapRecovery"; });
+		if(unlock.Open())
+		{
+			
+			recovery.cost = 15;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-CheapRecovery2"; });
+		if(unlock.Open())
+		{
+			
+			recovery.cost = 10;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-CheapDash"; });
+		if(unlock.Open())
+		{
+			
+			backDash.cost = 2;
+			forwardDash.cost = 2;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-LongDash"; });
+		if(unlock.Open())
+		{
+			
+			backDash.duration = 400;
+			forwardDash.duration = 400;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-MoveSpeed"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.hVel = 200;
+			player.agent.vVel = 200;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-MoveSpeed2"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.hVel = 250;
+			player.agent.vVel = 250;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Fortify"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.power = 200;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Battery"; });
+		if(unlock.Open())
+		{
+			
+			player.start = 50;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Battery2"; });
+		if(unlock.Open())
+		{
+			
+			player.start = 100;
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-QuickRecovery"; });
+		if(unlock.Open())
+		{
+			
+			recovery.recharge *= 2;
+			
+		}
+		
+		//Add the actions if necessary now that they have been modified
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Recovery"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.actions.push(recovery);
+			
+		}
+		
+		var unlock = this.unlocks.find(function(unlock){ return unlock.Key() === "U-Dash"; });
+		if(unlock.Open())
+		{
+			
+			player.agent.actions.push(backDash);
+			player.agent.actions.push(forwardDash);
+			
+		}
+		
+	}
+	
+	static ModifyPlayer(scene, player)
+	{
+		
+		SaveData.m_save.ModifyPlayer(scene, player);
 		
 	}
 	
@@ -347,6 +567,13 @@ class Unlock
 	{
 		
 		this.open = true;
+		
+	}
+	
+	Lock()
+	{
+		
+		this.open = false;
 		
 	}
 	

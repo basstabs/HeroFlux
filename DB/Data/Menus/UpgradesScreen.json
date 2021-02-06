@@ -1,0 +1,281 @@
+{
+	
+	"background": "TitleBackground",
+	"music": "TitleMusic",
+	"currency": true,
+	"text": [
+	
+	
+	    {
+			
+			"text": "Name:",
+			"font": {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.35,
+					"y": 0.35,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"text": "Reward:",
+			"font": {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.35,
+					"y": 0.7,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		}
+	    
+	],
+	"items":
+	[
+		
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Back",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.05,
+			"y": 0.9,
+			"method": "Back",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.2,
+					"y": 0.9,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.2,
+						"target": 0.05,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Prev",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.25,
+			"y": 0.2,
+			"method": "Previous",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": -0.25,
+					"y": 0.2,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": -0.25,
+						"target": 0.25,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Next",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.75,
+			"y": 0.2,
+			"method": "Next",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 1.25,
+					"y": 0.2,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "x",
+						"start": 1.25,
+						"target": 0.75,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Unlock",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.45,
+			"y": 0.85,
+			"method": "Toggle",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.45,
+					"y": 1.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1.1,
+						"target": 0.85,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		}
+		
+	]
+
+}

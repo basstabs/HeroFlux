@@ -7,6 +7,7 @@ import LevelSelect from "../Scenes/LevelSelect.js";
 import Loader from "../Scenes/Loader.js";
 import Options from "../Scenes/Options.js";
 import Feats from "../Scenes/Feats.js";
+import Upgrades from "../Scenes/Upgrades.js";
 
 import SaveData from "../Game/SaveData.js";
 

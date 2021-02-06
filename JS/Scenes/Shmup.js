@@ -18,6 +18,7 @@ import Agent, {CONST_AGENT_NORMAL, CONST_AGENT_SCRIPT} from "../Game/Agent.js";
 import Prop from "../Game/Prop.js";
 import Weapon from "../Game/Weapon.js";
 import Player, {CONST_PLAYER_SPAWN, CONST_PLAYER_SPAWN_STATE, CONST_PLAYER_DIALOGUE, CONST_PLAYERPAUSE_MESSAGE_CODE, CONST_PLAYERDEATH_MESSAGE_CODE } from "../Game/Player.js";
+import SaveData from "../Game/SaveData.js";
 
 import Pause from "../Scenes/Pause.js";
 import GameOver from "../Scenes/GameOver.js";
@@ -295,6 +296,8 @@ export default class Shmup extends GameScene
 		
 		}
 	
+		SaveData.ModifyPlayer(this, player);
+		
 		this.player = new Player(this, texture, player.code, player);
 		this.objects[CONST_PLAYER_KEY].add(this.player, true);
 		

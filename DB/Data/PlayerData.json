@@ -11,8 +11,8 @@
 	"agent":
 	{
 			
-		"hVel": 200,
-		"vVel": 200,
+		"hVel": 150,
+		"vVel": 150,
 		"weapons":
 		[
 				
@@ -55,42 +55,6 @@
 				"multiplier": 1,
 				"transition": "",
 				"move": false
-				
-			},
-			{
-			    
-			    "code": 128,
-			    "animation": "Player-Recharge",
-			    "transition": "Player-Recharge",
-			    "recharge": 5,
-			    "cost": 25,
-				"audio": "RechargeAudio"
-			    
-			},
-			{
-				
-				"code": 256,
-				"animation": "Player-Spawn",
-				"flip": true,
-				"xParam": "-500",
-				"yParam": "0",
-				"duration": 250,
-				"invuln": true,
-				"cost": 5,
-				"audio": "SpawnAudio"
-				
-			},
-			{
-				
-				"code": 512,
-				"animation": "Player-Spawn",
-				"flip": false,
-				"xParam": "500",
-				"yParam": "0",
-				"duration": 250,
-				"invuln": true,
-				"cost": 5,
-				"audio": "SpawnAudio"
 				
 			}
 			

@@ -1,0 +1,124 @@
+[
+	
+	{
+		
+		"key": "U-Recovery",
+		"name": "Recovery",
+		"description": "Unlocks the ability for Azure Burst to still her mind and body to recover power.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-Dash",
+		"name": "Burst Dash",
+		"description": "Unlocks the ability for Azure Burst to quickly dash forwards and backwards, avoiding damage.",
+		"requirements": []
+		
+	},
+	{
+        
+        "key": "U-Main",
+        "name": "Rapid Fire",
+        "description": "Increase the fire rate of Azure Burst's basic attack by 50%.",
+		"requirements": []
+        
+    },
+	{
+		
+		"key": "U-Fireball",
+		"name": "Efficient Fireball",
+		"description": "Decrease the power cost Azure Burst's fireballs by 40%.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-Beam",
+		"name": "Efficient Beam",
+		"description": "Decrease the power cost of Azure Burst's beam by 50%.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-CheapRecovery",
+		"name": "Improved Meditation",
+		"description": "Decrease the power cost of Recovery by 40%. Requires Recovery",
+		"requirements": ["U-Recovery"]
+		
+	},
+	{
+		
+		"key": "U-CheapRecovery2",
+		"name": "Ultimate Meditation",
+		"description": "Decrease the power cost of Recovery by an additional 20%. Requires Recovery and Improved Meditation.",
+		"requirements": ["U-Recovery", "U-CheapRecovery"]
+		
+	},
+	{
+		
+		"key": "U-CheapDash",
+		"name": "Cardio",
+		"description": "Decreases the power cost of Burst Dash by 60%. Requires Burst Dash.",
+		"requirements": ["U-Dash"]
+		
+	},
+	{
+		
+		"key": "U-MoveSpeed",
+		"name": "Azure Rush",
+		"description": "Increase Azure Burst's base movement speed by 33%.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-MoveSpeed2",
+		"name": "Azure Blitz",
+		"description": "Increase Azure Burst's base movement speed by an additional 33%. Requires Azure Rush.",
+		"requirements": ["U-MoveSpeed"]
+		
+	},
+	{
+	
+		"key": "U-Fortify",
+		"name": "Overcharge",
+		"description": "Double Azure Burst's maximum power.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-Battery",
+		"name": "Preparation",
+		"description": "Double Azure Burst's starting power.",
+		"requirements": []
+		
+	},
+	{
+		
+		"key": "U-Battery2",
+		"name": "Doomsday Preparation",
+		"description": "Double Azure Burst's starting power again. Requires Overcharge and Preparation.",
+		"requirements": ["U-Fortify", "U-Battery"]
+		
+	},
+	{
+		
+		"key": "U-QuickRecovery",
+		"name": "Mind's Eye",
+		"description": "Doubles the speed of Recovery. Requires Recovery.",
+		"requirements": ["U-Recovery"]
+		
+	},
+	{
+		
+		"key": "U-LongDash",
+		"name": "Burst Warp",
+		"description": "Increases the duration of Burst Dash by 60%. Requires Burst Dash.",
+		"requirements": ["U-Dash"]
+		
+	}
+	
+]

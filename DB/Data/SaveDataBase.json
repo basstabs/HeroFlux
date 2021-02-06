@@ -55,7 +55,22 @@
 	    {"key": "F-GGeneral", "cost": -5000, "open": false},
 	    {"key": "F-Destroyer", "cost": -1500, "open": false},
 	    {"key": "F-Obliterator", "cost": -6000, "open": false},
-	    {"key": "F-Super", "cost": -3000, "open": false}
+		{"key": "F-Super", "cost": -3000, "open": false},
+	    {"key": "U-Recovery", "cost": 300, "open": false},
+		{"key": "U-Dash", "cost": 1000, "open": false},
+		{"key": "U-Main", "cost": 1000, "open": false},
+		{"key": "U-Fireball", "cost": 1500, "open": false},
+		{"key": "U-Beam", "cost": 1500, "open": false},
+		{"key": "U-CheapRecovery", "cost": 500, "open": false},
+		{"key": "U-CheapRecovery2", "cost": 250, "open": false},
+		{"key": "U-CheapDash", "cost": 500, "open": false},
+		{"key": "U-MoveSpeed", "cost": 300, "open": false},
+		{"key": "U-MoveSpeed2", "cost": 500, "open": false},
+		{"key": "U-Fortify", "cost": 1000, "open": false},
+		{"key": "U-Battery", "cost": 250, "open": false},
+		{"key": "U-Battery2", "cost": 500, "open": false},
+		{"key": "U-QuickRecovery", "cost": 1000, "open": false},
+		{"key": "U-LongDash", "cost": 500, "open": false}
 	    
 	]
 	

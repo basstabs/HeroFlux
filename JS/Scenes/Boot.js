@@ -58,6 +58,10 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "json", id: "LevelSelectScreen", url: "DB/Data/Menus/LevelSelect.json"});
 		preload_data["assets"].push({type: "image", id: "LevelSelectImage", url: "DB/Images/Menus/LevelSelectImage.png"});
 		
+		//Upgrades Assets
+		preload_data["assets"].push({type: "json", id: "Upgrades", url: "DB/Data/Upgrades.json"});
+		preload_data["assets"].push({type: "json", id: "UpgradesScreen", url: "DB/Data/Menus/UpgradesScreen.json"});
+		
 		//Feats Assets
 		preload_data["assets"].push({type: "json", id: "Feats", url: "DB/Data/Feats.json"});
 		preload_data["assets"].push({type: "json", id: "FeatsScreen", url: "DB/Data/Menus/FeatsScreen.json"});
@@ -75,6 +79,7 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "sound", id: "WarningAudio", url: "DB/Sound/Warning.wav"});
 		preload_data["assets"].push({type: "sound", id: "TypeAudio", url: "DB/Sound/Type.wav"});
 		preload_data["assets"].push({type: "sound", id: "SpawnAudio", url: "DB/Sound/SpawnAudio.wav"});
+		preload_data["assets"].push({type: "sound", id: "RechargeAudio", url: "DB/Sound/RechargeAudio.wav"});
 		preload_data["assets"].push({type: "image", id: "PowerGauge", url: "DB/Images/PowerGauge.png"});
 		preload_data["assets"].push({type: "image", id: "EnemyGauge", url: "DB/Images/EnemyGauge.png"});
 		preload_data["assets"].push({type: "image", id: "LifeBar", url: "DB/Images/LifeBar.png"});
