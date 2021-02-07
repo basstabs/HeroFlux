@@ -53,7 +53,7 @@ export default class Remap extends MenuScene
 
             this.command_data[CONST_ACTIONS[i]] = {};
             
-            var text = (this.controller ? "" : TranslateKeyCode(Settings.Instance().AccessKeyBinding(CONST_ACTIONS[i])));
+            var text = (this.controller ? TranslateButtonCode(Settings.Instance().AccessButtonBinding(CONST_ACTIONS[i])) : TranslateKeyCode(Settings.Instance().AccessKeyBinding(CONST_ACTIONS[i])));
             
             this.command_data[CONST_ACTIONS[i]].text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, text, CONST_REMAP_SCREEN_DATA.font);
 		    this.command_data[CONST_ACTIONS[i]].index = UI.AddSource(this.command_data[CONST_ACTIONS[i]].text.canvas, CONST_REMAP_SCREEN_DATA.data[CONST_ACTIONS[i]]);
@@ -106,6 +106,8 @@ export default class Remap extends MenuScene
 	    if(this.controller)
 	    {
 	        
+			this.input.gamepad.on("up", SetCommand, this);
+			
 	    }
 	    else
 	    {
@@ -118,13 +120,23 @@ export default class Remap extends MenuScene
 	
 }
 
-function SetCommand(event)
+function SetCommand(event, button)
 {
     
     
     if(this.controller)
     {
         
+		this.input.gamepad.off("up");
+		
+		var new_button = button.index;
+		
+		Settings.Instance().ChangeButtonBinding(this.active_command, new_button);
+		
+		Input.ChangeButton(this.active_command, new_button);
+		
+		this.command_data[this.active_command].text.setText(TranslateButtonCode(new_button));
+		
     }
     else
     {
@@ -145,6 +157,123 @@ function SetCommand(event)
     
     this.active_command = "";
     
+}
+
+function TranslateButtonCode(code)
+{
+	
+	if(code === 0)
+	{
+		
+		return "A";
+		
+	}
+	
+	if(code === 1)
+	{
+		
+		return "B";
+		
+	}
+	
+	if(code === 2)
+	{
+		
+		return "X";
+		
+	}
+	
+	if(code === 3)
+	{
+		
+		return "Y";
+		
+	}
+	
+	if(code === 4)
+	{
+		
+		return "LB";
+		
+	}
+	
+	if(code === 5)
+	{
+		
+		return "RB";
+		
+	}
+	
+	if(code === 6)
+	{
+		
+		return "LT";
+		
+	}
+	
+	if(code === 7)
+	{
+		
+		return "RT";
+		
+	}
+	
+	if(code === 8)
+	{
+		
+		return "Back";
+		
+	}
+	
+	if(code === 9)
+	{
+		
+		return "Start";
+		
+	}
+	
+	if(code === 10)
+	{
+		
+		return "LS";
+		
+	}
+	
+	if(code === 11)
+	{
+		
+		return "RS";
+		
+	}
+	
+	if(code === 12)
+	{
+		
+		return "Up";
+		
+	}
+	
+	if(code === 13)
+	{
+		
+		return "Down";
+		
+	}
+	
+	if(code === 14)
+	{
+		
+		return "Left";
+		
+	}
+	
+	if(code === 15)
+	{
+		
+		return "Right";
+		
+	}
+	
 }
 
 function TranslateKeyCode(code)

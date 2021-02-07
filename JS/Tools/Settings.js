@@ -9,7 +9,82 @@ export default class Settings
 		
 		this.data =
 		{
-			
+			buttons: {
+				
+				left:
+                {
+
+                	button: 14
+
+                },
+                right:
+                {
+
+                    button: 15
+
+                },
+                up:
+                {
+
+                    button: 12
+
+                },
+                down:
+                {
+
+                    button: 13
+
+                },
+                A:
+                {
+
+                    button: 0
+
+                },
+                B:
+                {
+
+                    button: 1
+
+                },
+				X:
+				{
+				
+					button: 2
+					
+				},
+				Y:
+				{
+					
+					button: 3
+					
+				},
+				L:
+				{
+					
+					button: 4
+					
+				},
+				R:
+				{
+					
+					button: 5
+					
+				},
+				confirm:
+				{
+					
+					button: 9
+					
+				},
+				pause:
+				{
+					
+					button: 8
+					
+				}
+				
+			},
 			keybinds: {
 			
 			    left:
@@ -195,6 +270,20 @@ export default class Settings
 		
 		return this.data[key];
 		
+	}
+	
+	AccessButtonBinding(command)
+	{
+	    
+	    return this.data.buttons[command].button;
+	    
+	}
+	
+	ChangeButtonBinding(command, button)
+	{
+	    
+	    this.data.buttons[command] = {button: button};
+	    
 	}
 	
 	Change(key, value)

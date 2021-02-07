@@ -28,12 +28,22 @@ class Input extends Control
 		PadInput.Initialize(input);
 		KeyInput.Initialize(input);
 		
+		input.keyboard.off("keydown");
+		input.keyboard.on("keydown", Keys, Input.m_input);
+		
 	}
 	
 	static Access()
 	{
 		
 		return Input.m_input;
+		
+	}
+	
+	static ChangeButton(command, button)
+	{
+		
+		Input.m_input.pad_input.ChangeButton(command, button);
 		
 	}
 	
@@ -152,10 +162,216 @@ class PadInput extends Control
 		
 		super();
 		
+		this.buttons = {};
+		
+		for(var i = 0; i < CONST_ACTIONS.length; i++)
+		{
+
+			this.buttons[CONST_ACTIONS[i]] = {};
+
+		}
+		
+		this.input = null;
+		
+		this.skipDown = false;
+		this.advanceDown = false;
+		
 	}
 	
 	static Initialize(input)
 	{
+		
+		Input.m_input.pad_input.input = input;
+
+		input.gamepad.once("connected", RegisterPad, Input.m_input.pad_input);
+		input.gamepad.once("down", RegisterPad, Input.m_input.pad_input);
+		
+	}
+	
+	ChangeButton(command, button)
+	{
+		
+		this.buttons[command] = this.pad.buttons[button];
+		
+	}
+	
+	Movement()
+	{
+		
+		var velocity = super.Movement();
+		
+		if(this.Left())
+		{
+
+			velocity.x += -1;
+
+		}
+
+		if(this.Right())
+		{
+
+			velocity.x += 1;
+
+		}
+
+
+		if(this.Up())
+		{
+
+			velocity.y -= 1;
+
+		}
+
+    	if(this.Down())
+		{
+    
+			velocity.y += 1;
+        
+		}
+		
+		if(this.pad.rightStick.x)
+		{
+			
+			velocity.x = this.pad.rightStick.x;
+			
+		}
+		
+		if(this.pad.leftStick.x)
+		{
+			
+			velocity.x = this.pad.leftStick.x;
+			
+		}
+		
+		if(this.pad.rightStick.y)
+		{
+			
+			velocity.y = this.pad.rightStick.y;
+			
+		}
+		
+		if(this.pad.leftStick.y)
+		{
+			
+			velocity.y = this.pad.leftStick.y;
+			
+		}
+		
+		return velocity;
+		
+	}
+	
+	Left()
+	{
+
+		return this.buttons.left.pressed;
+
+	}
+
+	Right()
+	{
+
+		return this.buttons.right.pressed;
+
+	}
+
+	Up()
+	{
+
+		return this.buttons.up.pressed;
+
+	}
+
+	Down()
+	{
+
+		return this.buttons.down.pressed;
+
+	}
+
+	AButton()
+	{
+		
+		return this.buttons.A.pressed;
+		
+	}
+	
+	BButton()
+	{
+		
+		return this.buttons.B.pressed;
+		
+	}
+	
+	XButton()
+	{
+		
+		return this.buttons.X.pressed;
+		
+	}
+	
+	YButton()
+	{
+		
+		return this.buttons.Y.pressed;
+		
+	}
+	
+	LButton()
+	{
+		
+		return this.buttons.L.pressed;
+		
+	}
+	
+	RButton()
+	{
+		
+		return this.buttons.R.pressed;
+		
+	}
+	
+	DialoguePress()
+	{
+		
+		if(this.buttons.confirm.pressed && !this.advanceDown)
+		{
+			
+			this.advanceDown = true;
+			return true;
+			
+		}
+		
+		if(!this.buttons.confirm.pressed)
+		{
+			
+			this.advanceDown = false;
+			
+		}
+		
+		return false;
+		
+	}
+	
+	DialogueSkip()
+	{
+		
+		if(this.buttons.pause.pressed && !this.skipDown)
+		{
+			
+			this.skipDown = true;
+			return true;
+			
+		}
+		
+		if(!this.buttons.pause.pressed)
+		{
+			
+			this.skipDown = false;
+			
+		}
+		
+		return false;
 		
 	}
 	
@@ -327,6 +543,48 @@ class KeyInput extends Control
 		
 		return Phaser.Input.Keyboard.JustDown(this.keys.pause);
 		
+	}
+	
+}
+
+function Pad()
+{
+		
+	this.pad = true;
+		
+}
+	
+function Keys()
+{
+		
+	this.pad = false;
+		
+}
+
+function RegisterPad(pad)
+{
+	
+	if(!this.pad)
+	{
+		
+		this.pad = pad;
+		
+		var buttons = Settings.Instance().Access("buttons");
+		
+		for(var i = 0; i < CONST_ACTIONS.length; i++)
+		{
+
+			var button = buttons[CONST_ACTIONS[i]];
+
+			this.buttons[CONST_ACTIONS[i]] = this.pad.buttons[button.button];
+
+		}
+	
+		pad.setAxisThreshold(0.5);
+	
+		pad.off("down");
+		pad.on("down", Pad, Input.m_input);
+	
 	}
 	
 }

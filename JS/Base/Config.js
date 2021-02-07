@@ -2,6 +2,11 @@ export default
 {
       
 	type: Phaser.AUTO,
+	input: {
+	
+		gamepad: true
+		
+	},
     parent: 'game-container',
 	width: 480,
     height: 270,
