@@ -118,6 +118,19 @@ export const CONST_UPGRADES_SCREEN_DATA = {
     
 };
 
+export const CONST_GALLERY_SCREEN_DATA = {
+    
+    name_data: {"x": 0.5, "y": 0.35, "alpha": 0},
+    description_data: {"x": 0.5, "y": 0.45, "alpha": 0},
+    cost_image_data: {"x": 0.5, "y": 0.67, "alpha": 0},
+    cost_data: {"x": 0.57, "y": 0.7, "alpha": 0},
+    font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},
+	description_font: {"fontFamily": "chunk", "fontSize": "96px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},
+    unlocked_color: "#F9E113",
+	inactive_color: "#666666"
+    
+};
+
 export const CONST_REMAP_SCREEN_DATA = {
     
     font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},

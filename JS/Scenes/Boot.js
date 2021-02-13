@@ -44,6 +44,7 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "json", id: "TitleScreen", url: "DB/Data/Menus/TitleScreen.json"});
 		preload_data["assets"].push({type: "music", id: "TitleMusic", url: "DB/Music/TitleMusic.mp3"});
 		preload_data["assets"].push({type: "sound", id: "SelectAudio", url: "DB/Sound/Select.wav"});
+		preload_data["assets"].push({type: "sound", id: "CancelAudio", url: "DB/Sound/EmptyAudio.wav"});
 		
 		//Options Screen Assets
 		preload_data["assets"].push({type: "image", id: "OptionsSliderImage", url: "DB/Images/Menus/OptionsSlider.png"});
@@ -65,6 +66,11 @@ export default class Boot extends BaseScene
 		//Feats Assets
 		preload_data["assets"].push({type: "json", id: "Feats", url: "DB/Data/Feats.json"});
 		preload_data["assets"].push({type: "json", id: "FeatsScreen", url: "DB/Data/Menus/FeatsScreen.json"});
+		
+		//Gallery Assets
+		preload_data["assets"].push({type: "json", id: "Gallery", url: "DB/Data/Gallery.json"});
+		preload_data["assets"].push({type: "json", id: "GalleryScreen", url: "DB/Data/Menus/GalleryScreen.json"});
+		preload_data["assets"].push({type: "json", id: "ViewerScreen", url: "DB/Data/Menus/ViewerScreen.json"});
 		
 		//Game Over/Continue Assets
 		preload_data["assets"].push({type: "image", id: "GameOverImage", url: "DB/Images/GameOver/GameOver.png"});

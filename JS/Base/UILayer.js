@@ -50,16 +50,23 @@ export default class UI
 	AddSource(source, parameters)
 	{
 	
-		this.sources.push({source: source, x: parameters.x, y: parameters.y, alpha: parameters.alpha});
+		this.sources.push({source: source, x: parameters.x, y: parameters.y, alpha: parameters.alpha, display: true});
 	
 		return this.sources.length - 1; //Return an index for accessing the added elements
 		
 	}
 
-	RemoveSource(source)
+	static RemoveSource(index)
 	{
 		
-		this.sources[source].source = null; //Keeps the entry in the array, but removes the image so it is never used
+		UI.m_ui.RemoveSource(index);
+		
+	}
+	
+	RemoveSource(index)
+	{
+		
+		this.sources[index].source = null; //Keeps the entry in the array, but removes the image so it is never used
 		
 	}
 	
@@ -88,21 +95,21 @@ export default class UI
 		
 		}
 		
-		if(parameters && parameters.x)
+		if(parameters && "x" in parameters)
 		{
 			
 			this.sources[index].x = parameters.x;
 			
 		}
 		
-		if(parameters && parameters.y)
+		if(parameters && "y" in parameters)
 		{
 			
 			this.sources[index].y = parameters.y;
 			
 		}
 		
-		if(parameters && parameters.alpha)
+		if(parameters && "alpha" in parameters)
 		{
 			
 			this.sources[index].alpha = parameters.alpha;
@@ -211,7 +218,7 @@ export default class UI
 		for(var i = 0; i < this.sources.length; i++)
 		{
 		
-			if(this.sources[i] && this.sources[i].source)
+			if(this.sources[i] && this.sources[i].source && this.sources[i].display)
 			{
 				
 				this.context.globalAlpha = this.sources[i].alpha;
@@ -223,6 +230,46 @@ export default class UI
 	
 	}
 
+	Stash()
+	{
+		
+		for(var i = 0; i < this.sources.length; i++)
+		{
+			
+			this.sources[i].display = false;
+			
+		}
+		
+	}
+	
+	static Stash()
+	{
+		
+		UI.m_ui.Stash();
+		
+	}
+	
+	Unstash()
+	{
+		
+		for(var i = 0; i < this.sources.length; i++)
+		{
+			
+			this.sources[i].display = true;
+			
+		}
+		
+		this.Draw();
+		
+	}
+	
+	static Unstash()
+	{
+		
+		 UI.m_ui.Unstash();
+		
+	}
+	
 }
 
 class Animation

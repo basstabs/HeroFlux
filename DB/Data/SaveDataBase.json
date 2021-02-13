@@ -70,8 +70,27 @@
 		{"key": "U-Battery", "cost": 250, "open": false},
 		{"key": "U-Battery2", "cost": 500, "open": false},
 		{"key": "U-QuickRecovery", "cost": 1000, "open": false},
-		{"key": "U-LongDash", "cost": 500, "open": false}
-	    
+		{"key": "U-LongDash", "cost": 500, "open": false},
+		{"key": "G-Azure", "cost": 100, "open": false},
+	    {"key": "G-Hero", "cost": 200, "open": false},
+		{"key": "G-Penny", "cost": 200, "open": false},
+		{"key": "G-Villain", "cost": 1000, "open": false},
+		{"key": "G-Kitty", "cost": 1000, "open": false},
+		{"key": "G-Symbio", "cost": 1500, "open": false},
+		{"key": "G-Kabadra", "cost": 1500, "open": false},
+		{"key": "G-PG", "cost": 2000, "open": false},
+		{"key": "G-Chloro", "cost": 2000, "open": false},
+		{"key": "G-Taper", "cost": 2000, "open": false},
+		{"key": "G-Horizon", "cost": 2500, "open": false},
+		{"key": "G-Engine", "cost": 3000, "open": false},
+		{"key": "G-Fang", "cost": 3500, "open": false},
+		{"key": "G-Snuggler", "cost": 4000, "open": false},
+		{"key": "G-Commando", "cost": 4000, "open": false},
+		{"key": "G-Aliens", "cost": 4000, "open": false},
+		{"key": "G-FF", "cost": 4000, "open": false},
+		{"key": "G-Shackles", "cost": 5000, "open": false},
+		{"key": "G-Commander", "cost": 6000, "open": false}
+		
 	]
 	
 }

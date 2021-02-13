@@ -1,0 +1,490 @@
+[
+	
+	{
+		
+		"key": "G-Azure",
+		"name": "Azure Burst",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/AzureDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Shoot",
+				"frames": [4, 5, 6, 7, 8, 9],
+				"frameRate": 8,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Spawn",
+				"frames": [10, 11, 12, 13],
+				"frameRate": 36,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Falling",
+				"frames": [14, 15, 16, 17, 18, 19, 20, 17, 18, 19, 20, 17, 18, 19, 20],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Beam",
+				"frames": [21, 22, 23, 24, 25, 26, 27, 24, 25, 26, 27, 24, 25, 26, 27],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/GameOver",
+				"requirements": []
+				
+			},
+			{
+		    
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Recharge",
+		    	"frameRate": 24,
+		    	"frames": [63, 64, 65, 66],
+		    	"requirements": []
+		    
+			}
+			
+		],
+		"requirements": ["AzureTutorial"]
+		
+	},
+	{
+		
+		"key": "G-Hero",
+		"name": "Hero Corp",
+		"description": "",
+		"images": [],
+		"requirements": ["AzureTutorial"]
+		
+	},
+	{
+		
+		"key": "G-Penny",
+		"name": "Penny Sexton",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/PennyDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "Dialogue/PennyBoundDialogue",
+				"requirements": ["AzureLevel2"]
+				
+			}
+			
+		],
+		"requirements": ["AzureTutorial"]
+		
+	},
+	{
+		
+		"key": "G-Villain",
+		"name": "Villain Corp",
+		"description": "",
+		"images": [],
+		"requirements": ["AzureLevel1"]
+		
+	},
+	{
+		
+		"key": "G-Kitty",
+		"name": "Kitty Sexton",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/KittyDialogue",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel1"]
+		
+	},
+	{
+		
+		"key": "G-Symbio",
+		"name": "Symbios",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Ooze",
+				"frames": [28, 29, 30, 31, 32, 33, 34, 31, 32, 33, 34, 31, 32, 33, 34],
+				"frameRate": 6,
+				"requirements": ["AzureLevel1"]
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/OozeGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel1"]
+		
+	},
+	{
+		
+		"key": "G-Kabadra",
+		"name": "Kabadra",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/KabadraDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Kabadra",
+				"frames": [35, 36, 37, 38, 39, 40, 41, 38, 39, 40, 41, 38, 39, 40, 41],
+				"frameRate": 6,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/BossGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel1"]
+		
+	},
+	{
+		
+		"key": "G-PG",
+		"name": "Pain Girl",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/PainDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/PainGirlGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel2"]
+		
+	},
+	{
+		
+		"key": "G-Chloro",
+		"name": "Chloro Grunt",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Chloro",
+				"frames": [42, 43, 44, 45, 46, 47, 48, 48, 48, 48, 48, 48],
+				"frameRate": 6,
+				"requirements": ["AzureLevel2"]
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/ChloroGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel3"]
+		
+	},
+	{
+		
+		"key": "G-Taper",
+		"name": "Autotaper",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "GameOver/TapeGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel3"]
+		
+	},
+	{
+		
+		"key": "G-Horizon",
+		"name": "Horizon",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/HorizonBadDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "Dialogue/HorizonDialogue",
+				"requirements": ["AzureLevel5"]
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel3"]
+		
+	},
+	{
+		
+		"key": "G-Engine",
+		"name": "Reconstruction Engine",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "GameOver/HorizonGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel3"]
+		
+	},
+	{
+		
+		"key": "G-Fang",
+		"name": "Scarlet Fang",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/FangDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/FangGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel4"]
+		
+	},
+	{
+		
+		"key": "G-Snuggler",
+		"name": "Snuggler",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "GameOver/SnugglerGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel5"]
+		
+	},
+	{
+		
+		"key": "G-Commando",
+		"name": "Mah'vugh",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/CommandoDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/CommandoGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel5"]
+		
+	},
+	{
+		
+		"key": "G-Aliens",
+		"name": "Assimilators",
+		"description": "",
+		"images": [],
+		"requirements": ["AzureLevel6"]
+		
+	},
+	{
+		
+		"key": "G-FF",
+		"name": "Assimilator Force Field",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "GameOver/ForceFieldGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel6"]
+		
+	},
+	{
+		
+		"key": "G-Shackles",
+		"name": "Assimilator Shackles",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "GameOver/ShacklesGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel7"]
+		
+	},
+	{
+		
+		"key": "G-Commander",
+		"name": "Qal Akesh",
+		"description": "",
+		"images": [
+			
+			{
+				
+				"type": "image",
+				"key": "Dialogue/CommanderDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/CommanderGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel7"]
+		
+	}
+	
+]

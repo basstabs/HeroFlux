@@ -290,6 +290,13 @@ export class TextMenuItem extends MenuItem
 		
 		}
 		
+		if(!this.scene.closing && !this.active)
+		{
+			
+			SoundBoard.Play("CancelAudio");
+			
+		}
+		
 	}
 	
 	Hide()

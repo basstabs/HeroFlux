@@ -8,6 +8,7 @@ import Loader from "../Scenes/Loader.js";
 import Options from "../Scenes/Options.js";
 import Feats from "../Scenes/Feats.js";
 import Upgrades from "../Scenes/Upgrades.js";
+import Gallery from "../Scenes/Gallery.js";
 
 import SaveData from "../Game/SaveData.js";
 
