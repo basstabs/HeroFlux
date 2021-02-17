@@ -1,0 +1,39 @@
+{
+	
+	"key": "Ship",
+	"code": 1,
+	"texture": "Ship",
+	"width": 36,
+	"height": 16,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": true,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "GreenExplosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 9,
+			"offsetX": 5,
+			"offsetY": 2
+			
+		},
+		"damage": 1,
+		"max_health": 3,
+		"aimed": 
+		{
+			
+			"speed": 125,
+			"actor": true,
+			"agent": true
+			
+		},
+		"score": 75
+		
+	}
+	
+}

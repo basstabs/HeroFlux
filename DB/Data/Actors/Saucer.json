@@ -1,0 +1,32 @@
+{
+		
+	"key": "Saucer",
+	"code": 1,
+	"texture": "Saucer",
+	"width": 16,
+	"height": 12,
+	"collide": false,
+	"actor":
+	{
+			
+		"tracking": false,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "GreenExplosion-Normal",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 6,
+			"offsetX": 3,
+			"offsetY": 2
+				
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": false,
+		"score": 20
+			
+	}
+		
+}

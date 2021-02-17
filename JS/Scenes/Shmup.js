@@ -14,6 +14,7 @@ import Level, {CONST_WIN_MESSAGE_CODE, CONST_DIALOGUEENTER_MESSAGE_CODE, CONST_D
 import Input from "../Game/Input.js";
 import Actor from "../Game/Actor.js";
 import Kamikaze from "../Game/Kamikaze.js";
+import Homing from "../Game/Homing.js";
 import Agent, {CONST_AGENT_NORMAL, CONST_AGENT_SCRIPT} from "../Game/Agent.js";
 import Prop from "../Game/Prop.js";
 import Weapon from "../Game/Weapon.js";
@@ -376,7 +377,32 @@ export default class Shmup extends GameScene
 			for(var j = 0; j < actors[i].poolSize; j++)
 			{
 				
-				var newActor = (actor.kamikaze ? new Kamikaze(this, texture, json, actor.code) : new Actor(this, texture, json, actor.code));
+				var newActor = null;
+				
+				if(actor.kamikaze)
+				{
+					
+					if(json.aimed && json.aimed.delay)
+					{
+						
+						newActor = new Homing(this, texture, json, actor.code);
+						
+					}
+					else
+					{
+						
+						newActor = new Kamikaze(this, texture, json, actor.code);
+						
+					}
+					
+				}
+				else
+				{
+					
+					newActor = new Actor(this, texture, json, actor.code);
+					
+				}
+
 				this.objects[actor.key].add(newActor, true);
 				
 				newActor.SetBounds(json.bounds);

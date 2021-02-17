@@ -1,0 +1,41 @@
+{
+	
+	"key": "Snuggler",
+	"kamikaze": true,
+	"code": 1,
+	"texture": "Snuggler",
+	"width": 22,
+	"height": 14,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": true,
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "Snuggler-Death",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 5,
+			"offsetX": 2,
+			"offsetY": 2
+			
+		},
+		"damage": 1,
+		"max_health": 5,
+		"aimed": 
+		{
+			
+			"speed": 75,
+			"actor": false,
+			"agent": true,
+			"delay": 250
+			
+		},
+		"score": 500
+		
+	}
+	
+}

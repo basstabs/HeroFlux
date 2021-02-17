@@ -17,11 +17,15 @@ export default class Pause extends BaseScene
 	preload()
 	{
 		
+		super.preload();
+		
 	}
 	
 	create()
 	{
 				
+		super.create();
+		
 		Input.Initialize(this.input);
 		
 		var screenWidth = this.cameras.main.width;
@@ -34,6 +38,8 @@ export default class Pause extends BaseScene
 
 	update()
 	{
+		
+		super.update();
 		
 		if(Input.Access().DialogueSkip())
 		{

@@ -1,7 +1,7 @@
 {
 	
 	"background": "DarkOcean",
-	"warning": true,
+	"warning": false,
 	"level":
 	{
 		
@@ -87,9 +87,273 @@
 				"data":
 				{
 					
-					"duration": 5,
+					"duration": 47,
 					"spawners":
 					[
+						
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 3,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "-150",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 6,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 9,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 12,
+							"delay": 3,
+							"count": 4,
+							"x": 0,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 13,
+							"delay": 3,
+							"count": 4,
+							"x": 0,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 14,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=2=0=3=100",
+							"yParam": "p0=2=-100=3=0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 20,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=2=0=3=100",
+							"yParam": "p0=2=100=3=0"
+						
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 24,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 27,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 30,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 33,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 36,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 39,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 36,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 40,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						}
+						
 					]
 					
 				}
@@ -217,9 +481,435 @@
 				"data":
 				{
 					
-					"duration": 5,
+					"duration": 92,
 					"spawners":
 					[
+						
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 3,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 6,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 10,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 10,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 15,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 16,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 17,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 18,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 28,
+							"delay": 0,
+							"count": 1,
+							"x": 0,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 28,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 36,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 38,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 42,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 42,
+							"delay": 2,
+							"count": 2,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 48,
+							"delay": 6,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 51,
+							"delay": 6,
+							"count": 2,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 49.5,
+							"delay": 3,
+							"count": 2,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 58,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 63,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 65,
+							"delay": 0.25,
+							"count": 8,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 70,
+							"delay": 0.25,
+							"count": 8,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150",
+							"yParam": "0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 75,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 80,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 85,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						}
+						
 					]
 					
 				}
@@ -242,7 +932,7 @@
 					
 					{
 						
-						"key": "Commando",
+						"key": "Engine",
 						"xParam": "p480+(-90*t)=2=300",
 						"yParam": "135",
 						"x": 1,
@@ -333,7 +1023,7 @@
 					{
 						
 						"speaker": "KittyDialogue",
-						"name": "???",
+						"name": "Kitty Sexton",
 						"lines":
 						[
 							
@@ -387,7 +1077,7 @@
 					
 					{
 						
-						"key": "Commando",
+						"key": "Engine",
 						"count": 1
 						
 					}
@@ -398,7 +1088,7 @@
 					
 					{
 						
-						"key": "Commando",
+						"key": "Engine",
 						"required": 1
 						
 					}
@@ -411,7 +1101,212 @@
 				"background_param": "2",
 				"type": "dialogue",
 				"script":
-				[	
+				[
+					
+					{
+						
+						"speaker": "CommandoDialogue",
+						"name": "Mah'vugh",
+						"lines":
+						[
+							
+							"YOUR... PETTY RESISTANCE IS... IN VAIN.",
+							"WE SHALL WIPE YOU ASIDE... LIKE THE SUMMER CHAFF."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"..."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"..kzkkz... kkzzkk... all Hero Corp agents! Paging All Hero Corp agents!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...Kitty? What the hell is going on? Where's Penny!?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"She's been taken. Like everyone else.",
+							"Listen, I don't have time to explain, but I need you to trust me.",
+							"I'm sending you coordinates, head there ASAP."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Trust you? TRUST YOU!?",
+							"If you haven't noticed I'm fighting for my life out here because Villain Corp attacked US! And now you want me to trust you!?",
+							"Go to hell!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Listen, I know..."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"It's okay, Azure Burst. We're all on the same team right now.",
+							"Do as she says, I'll meet you there."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Horizon!? You're okay!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"Yes, and I'll be sure to thank you properly for that once this is all over.",
+							"For now we need to work together with Villain Corp, or none of us will be around to argue."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...Affirmative. On my way now."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Good, we'll explain on the way."
+							
+						],
+						"color": "#F18A8A",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "Mystery2Dialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"YOU CANNOT ESSCAAAPE..."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...What the...?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					}
+					
 				]
 				
 			}

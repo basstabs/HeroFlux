@@ -215,21 +215,36 @@
 		"props":
 		[
 			
+			{"prop": "Bolt", "poolSize": 30}
+			
 		],
 		"actors":
 		[
 
+			{"actor": "Saucer", "poolSize": 40},
+			{"actor": "Ship", "poolSize": 5},
+			{"actor": "ShipGun", "poolSize": 10},
+			{"actor": "Snuggler", "poolSize": 5},
+			{"actor": "BigSaucer", "poolSize": 2}
+			
 		],
 		"agents":
 		[
+			
+			{"agent": "Engine", "poolSize": 1}
 			
 		],
 		"effects":
 		[
 			
+			{"effect": "GreenExplosion-Normal", "poolSize": 20},
+			{"effect": "BigExplosion-Normal", "poolSize": 2},
+			{"effect": "Bolt-Death", "poolSize": 5},
+			{"effect": "Snuggler-Death", "poolSize": 3}
+			
 		],
 		"level": "AzureLevel5",
-		"title": "Level 5",
+		"title": "Abduct Tape",
 		"life": "Life"
 		
 	},

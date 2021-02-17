@@ -1,9 +1,9 @@
-	{
+{
 		
-		"key": "Explosion-Normal",
-		"texture": "Explosion",
-		"width": 40,
-		"height": 40,
-		"audio": "ExplosionAudio"
+	"key": "Explosion-Normal",
+	"texture": "Explosion",
+	"width": 40,
+	"height": 40,
+	"audio": "ExplosionAudio"
 		
-	}
+}

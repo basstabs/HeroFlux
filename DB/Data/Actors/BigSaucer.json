@@ -1,0 +1,69 @@
+{
+	
+	"key": "BigSaucer",
+	"code": 1,
+	"texture": "BigSaucer",
+	"width": 48,
+	"height": 32,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+			
+			{"weapon": "SaucerWeapon", "audio": "BeamAudio"},
+			{"weapon": "SaucerAimedWeapon", "audio": "BeamAudio"},
+			{"weapon": "SaucerSpreadWeapon", "audio": "BeamAudio"}
+			
+		],
+		"fire_conditions": [
+			
+			{
+					
+				"weapon": 0,
+				"time": 1,
+				"fire_rate": 2,
+				"ammo": 3,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 1,
+				"time": 2,
+				"fire_rate": 2,
+				"ammo": 3,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 2,
+				"time": 9,
+				"fire_rate": 0,
+				"ammo": 1,
+				"animation": null
+					
+			}
+			
+		],
+		"death": "BigExplosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 46,
+			"height": 28,
+			"offsetX": 2,
+			"offsetY": 0
+			
+		},
+		"damage": 1,
+		"max_health": 10,
+		"aimed": false,
+		"score": 1000
+		
+	}
+	
+}

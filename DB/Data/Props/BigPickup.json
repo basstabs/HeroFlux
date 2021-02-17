@@ -1,0 +1,22 @@
+{
+	
+	"key": "BigPickup",
+	"code": 5,
+	"texture": "BigPickup",
+	"width": 12,
+	"height": 12,
+	"tracking": false,
+	"death": "BigPickup-Death",
+	"bounds":
+	{
+		
+		"type": "circle",
+		"radius": 7,
+		"offsetX": -1,
+		"offsetY": -1
+		
+	},
+	"hostile": false,
+	"value": 5
+		
+}

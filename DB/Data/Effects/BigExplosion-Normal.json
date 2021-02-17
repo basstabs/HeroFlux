@@ -1,0 +1,9 @@
+{
+		
+	"key": "BigExplosion-Normal",
+	"texture": "BigExplosion",
+	"width": 60,
+	"height": 60,
+	"audio": "LargeExplosionAudio"
+		
+}

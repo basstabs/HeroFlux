@@ -1,0 +1,49 @@
+{
+	
+	"key": "ShipGun",
+	"code": 1,
+	"texture": "ShipGun",
+	"width": 36,
+	"height": 16,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+				
+			{"weapon": "ShipWeapon", "audio": "BeamAudio"}
+				
+		],
+		"fire_conditions": [
+				
+			{
+					
+				"weapon": 0,
+				"time": 0.35,
+				"fire_rate": 1,
+				"ammo": 3,
+				"animation": null
+					
+			}
+				
+		],
+		"death": "GreenExplosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 25,
+			"height": 12,
+			"offsetX": 5,
+			"offsetY": 2
+			
+		},
+		"damage": 1,
+		"max_health": 2,
+		"aimed": false,
+		"score": 90
+		
+	}
+	
+}

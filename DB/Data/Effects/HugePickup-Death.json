@@ -1,0 +1,9 @@
+{
+		
+	"key": "HugePickup-Death",
+	"texture": "HugePickup",
+	"width": 16,
+	"height": 16,
+	"audio": "PickupAudio"
+		
+}

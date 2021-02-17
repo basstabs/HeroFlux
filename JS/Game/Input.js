@@ -18,12 +18,23 @@ class Input extends Control
 		
 		this.pad = false;
 		
+		this.L_up = true;
+		this.R_up = true;
+		this.confirm_up = true;
+		this.pause_up = true;
+		
+		
 	}
 	
 	static Initialize(input)
 	{
 		
-		Input.m_input = new Input();
+		if(!Input.m_input)
+		{
+			
+			Input.m_input = new Input();
+		
+		}
 		
 		PadInput.Initialize(input);
 		KeyInput.Initialize(input);
@@ -127,28 +138,128 @@ class Input extends Control
 	LButton()
 	{
 		
-		return this.Active().LButton();
+		if(this.L_up)
+		{
+			
+			if(this.Active().LButton())
+			{
+				
+				this.L_up = false;
+				
+				return true;
+				
+			}
+			
+		}
+		else
+		{
+			
+			if(!this.Active().LButton())
+			{
+				
+				this.L_up = true;
+				
+			}
+			
+		}
+		
+		return false;
 		
 	}
 	
 	RButton()
 	{
 		
-		return this.Active().RButton();
+		if(this.R_up)
+		{
+			
+			if(this.Active().RButton())
+			{
+				
+				this.R_up = false;
+				
+				return true;
+				
+			}
+			
+		}
+		else
+		{
+			
+			if(!this.Active().RButton())
+			{
+				
+				this.R_up = true;
+				
+			}
+			
+		}
+		
+		return false;
 		
 	}
 	
 	DialoguePress()
 	{
 		
-		return this.Active().DialoguePress();
+		if(this.confirm_up)
+		{
+			
+			if(this.Active().DialoguePress())
+			{
+				
+				this.confirm_up = false;
+				
+				return true;
+				
+			}
+			
+		}
+		else
+		{
+			
+			if(!this.Active().DialoguePress())
+			{
+				
+				this.confirm_up = true;
+				
+			}
+			
+		}
+		
+		return false;
 		
 	}
 	
 	DialogueSkip()
 	{
 		
-		return this.Active().DialogueSkip();
+		if(this.pause_up)
+		{
+			
+			if(this.Active().DialogueSkip())
+			{
+				
+				this.pause_up = false;
+				
+				return true;
+				
+			}
+			
+		}
+		else
+		{
+			
+			if(!this.Active().DialogueSkip())
+			{
+				
+				this.pause_up = true;
+				
+			}
+			
+		}
+		
+		return false;
 		
 	}
 	
@@ -173,18 +284,27 @@ class PadInput extends Control
 		
 		this.input = null;
 		
-		this.skipDown = false;
-		this.advanceDown = false;
-		
 	}
 	
 	static Initialize(input)
 	{
 		
 		Input.m_input.pad_input.input = input;
-
-		input.gamepad.once("connected", RegisterPad, Input.m_input.pad_input);
-		input.gamepad.once("down", RegisterPad, Input.m_input.pad_input);
+		Input.m_input.pad_input.pad = null;
+		
+		if(input.gamepad.total > 0)
+		{
+			
+			RegisterPad.call(Input.m_input.pad_input, input.gamepad.pad1);
+			
+		}
+		else
+		{
+			
+			input.gamepad.once("connected", RegisterPad, Input.m_input.pad_input);
+			input.gamepad.once("down", RegisterPad, Input.m_input.pad_input);
+		
+		}
 		
 	}
 	
@@ -334,44 +454,14 @@ class PadInput extends Control
 	DialoguePress()
 	{
 		
-		if(this.buttons.confirm.pressed && !this.advanceDown)
-		{
-			
-			this.advanceDown = true;
-			return true;
-			
-		}
-		
-		if(!this.buttons.confirm.pressed)
-		{
-			
-			this.advanceDown = false;
-			
-		}
-		
-		return false;
+		return this.buttons.confirm.pressed;
 		
 	}
 	
 	DialogueSkip()
 	{
 		
-		if(this.buttons.pause.pressed && !this.skipDown)
-		{
-			
-			this.skipDown = true;
-			return true;
-			
-		}
-		
-		if(!this.buttons.pause.pressed)
-		{
-			
-			this.skipDown = false;
-			
-		}
-		
-		return false;
+		return this.buttons.pause.pressed;
 		
 	}
 	
@@ -534,14 +624,14 @@ class KeyInput extends Control
 	DialoguePress()
 	{
 		
-		return Phaser.Input.Keyboard.JustDown(this.keys.confirm);
+		return this.keys.confirm.isDown;
 		
 	}
 	
 	DialogueSkip()
 	{
 		
-		return Phaser.Input.Keyboard.JustDown(this.keys.pause);
+		return this.keys.pause.isDown;
 		
 	}
 	

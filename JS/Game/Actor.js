@@ -15,7 +15,11 @@ import {CONST_PICKUP_SPEED} from "../Constants.js";
 
 export const CONST_DEATH_MESSAGE_CODE = "ActorDead";
 
-export const CONST_DEATH_PICKUP_KEY = "Pickup";
+const CONST_DEATH_PICKUP_KEY = "Pickup";
+const CONST_DEATH_BIG_FLOOR = 100;
+const CONST_DEATH_BIGPICKUP_KEY = "BigPickup";
+const CONST_DEATH_HUGE_FLOOR = 1000;
+const CONST_DEATH_HUGEPICKUP_KEY = "HugePickup";
 
 export default class Actor extends Prop
 {
@@ -146,7 +150,27 @@ export default class Actor extends Prop
 			velocity.normalize();
 			velocity.scale(CONST_PICKUP_SPEED);
 		
-			var message = new PoolMessage(CONST_DEATH_PICKUP_KEY, velocity.x.toString(), velocity.y.toString());
+			var pickup = CONST_DEATH_PICKUP_KEY;
+			
+			if(this.score >= CONST_DEATH_BIG_FLOOR)
+			{
+				
+				if(this.score >= CONST_DEATH_HUGE_FLOOR)
+				{
+				
+					pickup = CONST_DEATH_HUGEPICKUP_KEY;
+					
+				}
+				else
+				{
+					
+					pickup = CONST_DEATH_BIGPICKUP_KEY;
+					
+				}
+				
+			}
+			
+			var message = new PoolMessage(pickup, velocity.x.toString(), velocity.y.toString(), this.score);
 			message.Launch(this.x, this.y, 0);
 		
 			MessageBox.PostMessage(message);
@@ -207,7 +231,7 @@ class FireCondition
 		
 		time = (Timer.RunningMilliseconds() - this.last) / 1000;
 		
-		if(time <= this.fire_rate)
+		if(time <= this.fire_rate && this.last > this.start)
 		{
 		
 			return false;

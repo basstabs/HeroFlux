@@ -195,6 +195,8 @@ export default class PoolObject extends Phaser.Physics.Arcade.Sprite
 			
 				this.rotation = -Math.atan2(this.body.velocity.y, -this.body.velocity.x);
 			
+				this.flipX = false;
+				
 			}
 			
         }
