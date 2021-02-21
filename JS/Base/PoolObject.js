@@ -179,24 +179,46 @@ export default class PoolObject extends Phaser.Physics.Arcade.Sprite
 	update()
 	{
 
-		if(this.tracking)
+		if(this.tracking) //Bad ugly code because of late additions and being too lazy to go back and change data files
         {
-			
-			if(this.body.velocity.x >= 0)
+		
+			if(this.tracking.flip)
 			{
 			
-            	this.rotation = Math.atan2(this.body.velocity.y, this.body.velocity.x);
+				if(this.body.velocity.x >= 0)
+				{
 				
-				this.flipX = true;
+					this.flipX = true;
+				
+				}
+				else
+				{
+			
+					this.flipX = false;
+				
+				}
 				
 			}
 			else
 			{
 			
-				this.rotation = -Math.atan2(this.body.velocity.y, -this.body.velocity.x);
+				if(this.body.velocity.x >= 0)
+				{
 			
-				this.flipX = false;
+            		this.rotation = Math.atan2(this.body.velocity.y, this.body.velocity.x);
 				
+					this.flipX = true;
+				
+				}
+				else
+				{
+			
+					this.rotation = -Math.atan2(this.body.velocity.y, -this.body.velocity.x);
+			
+					this.flipX = false;
+				
+				}
+			
 			}
 			
         }

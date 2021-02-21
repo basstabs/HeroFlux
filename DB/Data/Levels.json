@@ -257,6 +257,8 @@
 		"actors":
 		[
 			
+			{"actor": "Shackles", "poolSize": 5}
+			
 		],
 		"agents":
 		[
@@ -264,6 +266,8 @@
 		],
 		"effects":
 		[
+			
+			{"effect": "GreenExplosion-Normal", "poolSize": 20}
 			
 		],
 		"level": "AzureLevel6",

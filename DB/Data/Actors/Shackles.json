@@ -1,0 +1,52 @@
+{
+	
+	"key": "Shackles",
+	"kamikaze": true,
+	"code": 1,
+	"texture": "Shackles",
+	"width": 24,
+	"height": 13,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": {"flip": true},
+		"weapons": [],
+		"fire_conditions": [],
+		"death": "GreenExplosion-Normal",
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 24,
+			"height": 13,
+			"offsetX": 0,
+			"offsetY": 0
+			
+		},
+		"damage": 1,
+		"max_health": 1,
+		"aimed": 
+		{
+			
+			"speed": 125,
+			"actor": false,
+			"agent": true,
+			"delay": 250
+			
+		},
+		"death_instruction": {
+				
+			"xParam": "(50*t)*t",
+			"yParam": "15*sin(4*t)",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToShackles",
+			"animation": "Player-Shackles",
+			"image": "SnugglerGameOverImage"
+				
+		},
+		"score": 75
+		
+	}
+	
+}

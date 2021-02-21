@@ -171,6 +171,22 @@
 			"frames": [70, 71, 72],
 			"repeat": -1
 			
+		},
+		{
+			
+			"name": "ToShackles",
+			"frame_rate": 6,
+			"frames": [73, 74, 75],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Shackles",
+			"frame_rate": 9,
+			"frames": [76, 77, 78],
+			"repeat": -1
+			
 		}
 		
 	]

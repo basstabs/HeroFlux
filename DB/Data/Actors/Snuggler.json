@@ -29,7 +29,7 @@
 		{
 			
 			"speed": 75,
-			"actor": false,
+			"actor": true,
 			"agent": true,
 			"delay": 250
 			
