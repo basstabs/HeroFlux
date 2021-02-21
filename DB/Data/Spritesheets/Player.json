@@ -155,6 +155,22 @@
 		    "frames": [63, 64, 65, 66],
 		    "repeat": -1
 		    
+		},
+		{
+			
+			"name": "ToSnuggler",
+			"frame_rate": 6,
+			"frames": [67, 68, 69],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "Snuggler",
+			"frame_rate": 6,
+			"frames": [70, 71, 72],
+			"repeat": -1
+			
 		}
 		
 	]

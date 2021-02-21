@@ -87,16 +87,15 @@ export default class GameOver extends MenuScene
 		
 		this.image_index = UI.AddSource(this.image.source[0].source, CONST_GAMEOVER_IMAGE_DATA);
 		
-		UI.AnimateSource(this.image_index, "alpha", 0, 1, this.max_animation, false);
-		
 		this.text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, CONST_GAMEOVER_TEXT, {fontFamily: "plasma", fontSize: CONST_UI_GAMEOVER_DATA.size, fill: CONST_UI_GAMEOVER_DATA.color, stroke: CONST_UI_GAMEOVER_DATA.stroke, strokeThickness: CONST_UI_GAMEOVER_DATA.thickness});
 		this.text.setOrigin(0.5, 0.5);
 		
 		this.text_index = UI.AddSource(this.text.canvas, CONST_UI_GAMEOVER_DATA);
 		
-		UI.AnimateSource(this.text_index, "alpha", 0, CONST_UI_GAMEOVER_DATA.targetAlpha, this.max_animation, false);
-			
 		super.create();
+		
+		UI.AnimateSource(this.image_index, "alpha", 0, 1, this.max_animation, false);
+		UI.AnimateSource(this.text_index, "alpha", 0, CONST_UI_GAMEOVER_DATA.targetAlpha, this.max_animation, false);
 		
 	}
 	

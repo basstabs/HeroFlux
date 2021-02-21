@@ -34,6 +34,16 @@
 			"delay": 250
 			
 		},
+		"death_instruction": {
+				
+			"xParam": "15*sin(4*t)",
+			"yParam": "-50*t",
+			"audio": "StruggleAudio",
+			"transition": "Player-ToSnuggler",
+			"animation": "Player-Snuggler",
+			"image": "SnugglerGameOverImage"
+				
+		},
 		"score": 500
 		
 	}
