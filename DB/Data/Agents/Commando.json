@@ -1,0 +1,235 @@
+{
+		
+	"key": "Commando",
+	"collide": true,
+	"texture": "Commando",
+	"width": 64,
+	"height": 84,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+			
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 12,
+			"height": 36,
+			"offsetX": 15,
+			"offsetY": 5
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+			
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "-450",
+								"yParam": "0",
+								"flip": false,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 100,
+							"animation": "Charge",
+							"cost": 5
+								
+						}
+							
+					],
+					"maxHP": 400,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 5
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "450",
+								"yParam": "0",
+								"flip": true,
+								"invuln": false,
+								"audio": "SpawnAudio"
+									
+							},
+							"duration": 100,
+							"animation": "Charge",
+							"cost": 5
+								
+								
+						}
+							
+					],
+					"maxHP": 400,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 5
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "-450",
+								"yParam": "0",
+								"flip": false,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 300,
+							"animation": "Charge",
+							"cost": 8
+								
+						}
+							
+					],
+					"maxHP": 400,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 8
+						
+				},
+				{
+					
+					"states":
+					[
+							
+						{
+								
+							"state":  "scriptmove",
+							"exit": {},
+							"enter":
+							{
+									
+								"code": 2,
+								"xParam": "450",
+								"yParam": "0",
+								"flip": true,
+								"invuln": false,
+								"audio": "SpawnAudio"
+								
+									
+							},
+							"duration": 300,
+							"animation": "Charge",
+							"cost": 8
+								
+								
+						}
+							
+					],
+					"maxHP": 400,
+					"minHP": 0,
+					"maxPower": 100,
+					"minPower": 8
+						
+				}
+				
+			],
+			"default":
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 380,
+						"y": 135,
+						"duration": 1,
+						"invuln": false
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 25, "transition": "Commando-RightToShoot", "code": 1},
+						"exit": {},
+						"animation": "Recharge"
+							
+					}
+						
+				]
+					
+			},
+			"activate": null,
+			"markers": [0.5]
+			
+		},
+		"damage": 1,
+		"max_health": 400,
+		"death": "Commando-Death",
+		"default_death":
+		{
+		
+			"transition": "Commando-Death",
+			"animation": "Commando-Death",
+			"xParam": "2*sin(2*t)",
+			"yParam": "75",
+			"audio": "LargeExplosionAudio"
+			
+		},
+		"death_instruction": {
+				
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "CommandoGameOverImage"
+				
+		},
+		"power": 100,
+		"empty": "EmptyAudio",
+		"score": 15000
+			
+	}
+		
+}

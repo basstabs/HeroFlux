@@ -1,0 +1,90 @@
+{
+
+	"name": "Commando",
+	"animations":
+	[
+	
+		{
+		
+			"name": "Idle",
+			"frame_rate": 12,
+			"frames": [0, 1, 2, 3],
+			"repeat": -1
+		
+		},
+		{
+			
+			"name": "LeftFire",
+			"frame_rate": 12,
+			"frames": [4, 5, 6, 7, 8, 9, 10, 11],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "LeftToShoot",
+			"frame_rate": 12,
+			"frames": [4, 5, 6],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "LeftShoot",
+			"frame_rate": 12,
+			"frames": [7, 8, 9, 10, 11],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "RightFire",
+			"frame_rate": 12,
+			"frames": [12, 13, 14, 15, 16, 17, 18, 19],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "RightToShoot",
+			"frame_rate": 12,
+			"frames": [12, 13, 14],
+			"repeat": 0
+			
+		},
+		{
+			
+			"name": "RightShoot",
+			"frame_rate": 12,
+			"frames": [15, 16, 17, 18, 19],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Charge",
+			"frame_rate": 12,
+			"frames": [20, 21, 22],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Recharge",
+			"frame_rate": 12,
+			"frames": [15, 16, 17, 16],
+			"repeat": -1
+			
+		},
+		{
+			
+			"name": "Death",
+			"frame_rate": 12,
+			"frames": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+			"repeat": -1
+			
+		}
+	
+	]
+
+}
