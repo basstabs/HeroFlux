@@ -215,7 +215,9 @@
 		"props":
 		[
 			
-			{"prop": "Bolt", "poolSize": 30}
+			{"prop": "Bolt", "poolSize": 30},
+			{"prop": "CommandoMiniFireball", "poolSize": 18},
+			{"prop": "CommandoBolt", "poolSize": 25}
 			
 		],
 		"actors":
@@ -225,13 +227,15 @@
 			{"actor": "Ship", "poolSize": 5},
 			{"actor": "ShipGun", "poolSize": 10},
 			{"actor": "Snuggler", "poolSize": 5},
-			{"actor": "BigSaucer", "poolSize": 2}
+			{"actor": "BigSaucer", "poolSize": 2},
+			{"actor": "CommandoBigBolt", "poolSize": 3},
+			{"actor": "CommandoFireball", "poolSize": 3}
 			
 		],
 		"agents":
 		[
 			
-			{"agent": "Engine", "poolSize": 1}
+			{"agent": "Commando", "poolSize": 1}
 			
 		],
 		"effects":
@@ -240,7 +244,10 @@
 			{"effect": "GreenExplosion-Normal", "poolSize": 20},
 			{"effect": "BigExplosion-Normal", "poolSize": 2},
 			{"effect": "Bolt-Death", "poolSize": 5},
-			{"effect": "Snuggler-Death", "poolSize": 3}
+			{"effect": "Snuggler-Death", "poolSize": 3},
+			{"effect": "MiniGreenFireball-Death", "poolSize": 6},
+			{"effect": "BigBolt-Death", "poolSize": 3},
+			{"effect": "GreenFireball-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel5",
@@ -280,17 +287,44 @@
 		"props":
 		[
 			
+		],
+		"actors":
+		[
+			
+		],
+		"agents":
+		[
+			
+		],
+		"effects":
+		[	
+			
+		],
+		"level": "AzureLevel7",
+		"title": "Level 7",
+		"life": "Life"
+		
+	},
+	{
+		
+		"props":
+		[
+			
 			{"prop": "Chain", "poolSize": 100},
 			{"prop": "HorizonLaser", "poolSize": 15},
 			{"prop": "HorizonDarkFireball", "poolSize": 5},
 			{"prop": "HorizonBeam", "poolSize": 20},
-			{"prop": "FangFireball", "poolSize": 50}
+			{"prop": "FangFireball", "poolSize": 50},
+			{"prop": "CommandoMiniFireball", "poolSize": 18},
+			{"prop": "CommandoBolt", "poolSize": 25}
 			
 		],
 		"actors":
 		[
 			
-			{"actor": "HorizonFireball", "poolSize": 100}
+			{"actor": "HorizonFireball", "poolSize": 100},
+			{"actor": "CommandoBigBolt", "poolSize": 3},
+			{"actor": "CommandoFireball", "poolSize": 3}
 			
 		],
 		"agents":
@@ -299,7 +333,8 @@
 			{"agent": "Engine", "poolSize": 1},
 			{"agent": "PainGirl", "poolSize": 1},
 			{"agent": "Horizon", "poolSize": 1},
-			{"agent": "Fang", "poolSize": 1}
+			{"agent": "Fang", "poolSize": 1},
+			{"agent": "Commando", "poolSize": 1}
 			
 		],
 		"effects":
@@ -309,11 +344,16 @@
 			{"effect": "HorizonFireball-Death", "poolSize": 3},
 			{"effect": "HorizonBeam-Death", "poolSize": 3},
 			{"effect": "DarkFireball-Death", "poolSize": 3},
-			{"effect": "HorizonBeam-Death", "poolSize": 3}
+			{"effect": "HorizonBeam-Death", "poolSize": 3},
+			{"effect": "MiniGreenFireball-Death", "poolSize": 6},
+			{"effect": "BigBolt-Death", "poolSize": 3},
+			{"effect": "GreenFireball-Death", "poolSize": 3},
+			{"effect": "Bolt-Death", "poolSize": 5}
+			
 			
 		],
-		"level": "AzureLevel7",
-		"title": "Level 7",
+		"level": "AzureLevel8",
+		"title": "Level 8",
 		"life": "Life"
 		
 	}

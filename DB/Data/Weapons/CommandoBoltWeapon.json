@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "CommandoBolt",
+			"xParam": "-300",
+			"yParam": "0",
+			"x": -20,
+			"y": -15
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 1,
+	"aimed": false
+	
+}

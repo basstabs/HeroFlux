@@ -27,10 +27,10 @@ export const CONST_AGENTDEATH_MESSAGE_SUFFIX = "_agentdeath";
 export default class Agent extends PoolObject
 {
 	
-	constructor(scene, key, texture, code, json)
+	constructor(scene, key, texture, code, json, textureKey)
 	{
 
-		super(scene, texture, false, json.death, json.max_health, code);
+		super(scene, texture, false, json.death, json.max_health, code, textureKey);
 		
     	this.control = null;
 		
@@ -77,7 +77,7 @@ export default class Agent extends PoolObject
 		this.charge_power = -1;
 		this.charge_speed = -1;
 		
-		this.idle = key + "-Idle";
+		this.idle = textureKey + "-Idle";
 		
 		this.score = json.score;
 		

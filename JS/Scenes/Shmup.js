@@ -299,7 +299,7 @@ export default class Shmup extends GameScene
 	
 		SaveData.ModifyPlayer(this, player);
 		
-		this.player = new Player(this, texture, player.code, player);
+		this.player = new Player(this, texture, player.code, player, player.texture);
 		this.objects[CONST_PLAYER_KEY].add(this.player, true);
 		
 		this.player.SetBounds(json.bounds);
@@ -335,7 +335,7 @@ export default class Shmup extends GameScene
 			for(var j = 0; j < agents[i].poolSize; j++)
 			{
 				
-				var newAgent = new Agent(this, agent.key, texture, agent.code, json);
+				var newAgent = new Agent(this, agent.key, texture, agent.code, json, agent.texture);
 				this.objects[agent.key].add(newAgent, true);
 				
 				newAgent.SetBounds(json.bounds);
@@ -385,13 +385,13 @@ export default class Shmup extends GameScene
 					if(json.aimed && json.aimed.delay)
 					{
 						
-						newActor = new Homing(this, texture, json, actor.code);
+						newActor = new Homing(this, texture, json, actor.code, actor.texture);
 						
 					}
 					else
 					{
 						
-						newActor = new Kamikaze(this, texture, json, actor.code);
+						newActor = new Kamikaze(this, texture, json, actor.code, actor.texture);
 						
 					}
 					
@@ -399,7 +399,7 @@ export default class Shmup extends GameScene
 				else
 				{
 					
-					newActor = new Actor(this, texture, json, actor.code);
+					newActor = new Actor(this, texture, json, actor.code, actor.texture);
 					
 				}
 
@@ -432,7 +432,7 @@ export default class Shmup extends GameScene
 			for(var j = 0; j < props[i].poolSize; j++) //Create a pool for each type of bullet
 			{
 				
-				var newProp = new Prop(this, texture, prop.tracking, prop.value, prop.hostile, 0, prop.death, prop.death_instruction, prop.code);
+				var newProp = new Prop(this, texture, prop.tracking, prop.value, prop.hostile, 0, prop.death, prop.death_instruction, prop.code, prop.texture);
 				this.objects[prop.key].add(newProp, true);
 				
 				newProp.SetBounds(prop.bounds);
@@ -646,8 +646,8 @@ export default class Shmup extends GameScene
 				var scaleX = (message.World() ? this.physics.world.bounds.width : 1);
 				var scaleY = (message.World() ? this.physics.world.bounds.height : 1);
 				
-				obj.Launch(message.X() * scaleX, message.Y() * scaleY, this.LoadParam(message.XParam()), this.LoadParam(message.YParam()), message.Theta(), message.Key() + "-Idle");
-				obj.anims.play(message.Key() + "-Idle");
+				obj.Launch(message.X() * scaleX, message.Y() * scaleY, this.LoadParam(message.XParam()), this.LoadParam(message.YParam()), message.Theta(), obj.textureKey + "-Idle");
+				obj.anims.play(obj.textureKey + "-Idle");
 				obj.anims.setRepeat(-1);
 				
 				this.active.add(obj, false);

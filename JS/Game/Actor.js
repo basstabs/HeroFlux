@@ -24,10 +24,10 @@ const CONST_DEATH_HUGEPICKUP_KEY = "HugePickup";
 export default class Actor extends Prop
 {
 	
-	constructor(scene, texture, json, code)
+	constructor(scene, texture, json, code, textureKey)
 	{
 
-		super(scene, texture, json.tracking, json.damage, true, json.max_health, json.death, json.death_instruction, code);
+		super(scene, texture, json.tracking, json.damage, true, json.max_health, json.death, json.death_instruction, code, textureKey);
 		
 		this.weapons = [];
 		for(var i = 0; i < json.weapons.length; i++)
@@ -150,33 +150,38 @@ export default class Actor extends Prop
 			velocity.normalize();
 			velocity.scale(CONST_PICKUP_SPEED);
 		
-			var pickup = CONST_DEATH_PICKUP_KEY;
-			
-			if(this.score >= CONST_DEATH_BIG_FLOOR)
+			if(this.score > 0)
 			{
 				
-				if(this.score >= CONST_DEATH_HUGE_FLOOR)
-				{
-				
-					pickup = CONST_DEATH_HUGEPICKUP_KEY;
-					
-				}
-				else
-				{
-					
-					pickup = CONST_DEATH_BIGPICKUP_KEY;
-					
-				}
-				
-			}
+				var pickup = CONST_DEATH_PICKUP_KEY;
 			
-			var message = new PoolMessage(pickup, velocity.x.toString(), velocity.y.toString(), this.score);
-			message.Launch(this.x, this.y, 0);
+				if(this.score >= CONST_DEATH_BIG_FLOOR)
+				{
+				
+					if(this.score >= CONST_DEATH_HUGE_FLOOR)
+					{
+				
+						pickup = CONST_DEATH_HUGEPICKUP_KEY;
+					
+					}
+					else
+					{
+					
+						pickup = CONST_DEATH_BIGPICKUP_KEY;
+					
+					}
+				
+				}
+			
+				var message = new PoolMessage(pickup, velocity.x.toString(), velocity.y.toString(), this.score);
+				message.Launch(this.x, this.y, 0);
 		
-			MessageBox.PostMessage(message);
-			MessageBox.PostMessage(new ScoreMessage(this.score));
+				MessageBox.PostMessage(message);
+				MessageBox.PostMessage(new ScoreMessage(this.score));
 			
-			SaveData.AddKill();
+				SaveData.AddKill();
+			
+			}
 			
 		}
 		

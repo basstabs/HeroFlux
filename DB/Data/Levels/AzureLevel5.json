@@ -919,6 +919,7 @@
 				
 				"background_param": "2",
 				"type": "scripted",
+				"music": "CommandoMusic",
 				"duration": 2,
 				"player":
 				{
@@ -932,7 +933,7 @@
 					
 					{
 						
-						"key": "Engine",
+						"key": "Commando",
 						"xParam": "p480+(-90*t)=2=300",
 						"yParam": "135",
 						"x": 1,
@@ -1077,7 +1078,7 @@
 					
 					{
 						
-						"key": "Engine",
+						"key": "Commando",
 						"count": 1
 						
 					}
@@ -1088,7 +1089,7 @@
 					
 					{
 						
-						"key": "Engine",
+						"key": "Commando",
 						"required": 1
 						
 					}

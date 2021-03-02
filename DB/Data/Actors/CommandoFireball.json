@@ -1,0 +1,59 @@
+{
+		
+	"key": "CommandoFireball",
+	"code": 1,
+	"texture": "GreenFireball",
+	"width": 20,
+	"height": 12,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+			
+			{"weapon": "FireballCommandoWeapon", "audio": "FireballAudio"}
+			
+		],
+		"fire_conditions": [
+			
+			{
+				
+				"weapon": 0,
+				"time": 1,
+				"fire_rate": 1,
+				"ammo": 6,
+				"animation": null
+				
+			}
+			
+		],
+		"death": "GreenFireball-Death",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 4,
+			"offsetX": 8,
+			"offsetY": 2
+			
+		},
+		"death_instruction":
+		{
+				
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "CommandoGameOverImage"
+				
+		},
+		"damage": 1,
+		"max_health": 3,
+		"aimed": false,
+		"score": 0
+		
+	}
+		
+}

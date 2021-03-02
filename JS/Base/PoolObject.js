@@ -78,10 +78,12 @@ export class PoolSprite extends Phaser.GameObjects.Sprite
 export default class PoolObject extends Phaser.Physics.Arcade.Sprite
 {
 
-	constructor(scene, texture, tracking, death_animation, maxHealth, code)
+	constructor(scene, texture, tracking, death_animation, maxHealth, code, textureKey)
 	{
 
-		super(scene, CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, texture);
+		super(scene, CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, texture, textureKey);
+		
+		this.textureKey = textureKey;
 		
 		this.scene = scene;
 		

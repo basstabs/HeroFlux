@@ -9,10 +9,10 @@ import Parametrizer from "../Tools/Parametrizer.js";
 export default class Prop extends PoolObject
 {
 	
-	constructor(scene, texture, tracking, value, hostile, maxHealth, death_animation, death_instruction, code)
+	constructor(scene, texture, tracking, value, hostile, maxHealth, death_animation, death_instruction, code, textureKey)
 	{
 
-		super(scene, texture, tracking, death_animation, maxHealth, code);
+		super(scene, texture, tracking, death_animation, maxHealth, code, textureKey);
 		
 		this.Pool();
 		

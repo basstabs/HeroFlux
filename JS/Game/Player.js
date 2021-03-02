@@ -39,10 +39,10 @@ const CONST_PLAYER_INVULNTIME = 3000;
 export default class Player extends Agent
 {
 
-	constructor(shmup, texture, code, json)
+	constructor(shmup, texture, code, json, textureKey)
 	{
 	
-		super(shmup, "Player", texture, code, json.agent);
+		super(shmup, "Player", texture, code, json.agent, textureKey);
 	
 		this.death_power = json.death;
 		this.super_power = json.super;
