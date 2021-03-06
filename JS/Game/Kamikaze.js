@@ -4,10 +4,10 @@ import Code from "../Game/Code.js";
 export default class Kamikaze extends Actor
 {
 	
-	constructor(scene, texture, json, code)
+	constructor(scene, texture, json, code, textureKey)
 	{
 		
-		super(scene, texture, json, code);
+		super(scene, texture, json, code, textureKey);
 		
 	}
 	

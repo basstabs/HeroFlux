@@ -6,10 +6,10 @@ import Timer from "../Tools/Timer.js";
 export default class Homing extends Kamikaze
 {
 	
-	constructor(scene, texture, json, code)
+	constructor(scene, texture, json, code, textureKey)
 	{
 		
-		super(scene, texture, json, code);
+		super(scene, texture, json, code, textureKey);
 		
 		this.last = 0;
 		
