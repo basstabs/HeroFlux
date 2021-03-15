@@ -13,14 +13,18 @@ export default class Kamikaze extends Actor
 	
 	Handle(obj)
 	{
-		
-		super.Handle(obj);
 
 		if(Code.Pickup(obj.code))
 		{
 			
 			this.Pool();
 		
+		}
+		else
+		{
+			
+			super.Handle(obj);
+			
 		}
 		
 	}

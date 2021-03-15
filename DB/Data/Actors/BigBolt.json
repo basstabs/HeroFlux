@@ -1,0 +1,70 @@
+{
+		
+	"key": "BigBolt",
+	"code": 1,
+	"texture": "BigBolt",
+	"width": 27,
+	"height": 27,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+			
+			{"weapon": "BBCrossWeapon", "audio": "BeamAudio"},
+			{"weapon": "BBDiagonalWeapon", "audio": "BeamAudio"}
+			
+		],
+		"fire_conditions":
+		[
+			
+			{
+				
+				"weapon": 0,
+				"time": 1,
+				"fire_rate": 2,
+				"ammo": 4,
+				"animation": null
+				
+			},
+			{
+				
+				"weapon": 1,
+				"time": 2,
+				"fire_rate": 2,
+				"ammo": 4,
+				"animation": null
+				
+			}
+			
+		],
+		"death": "BigBolt-Death",
+		"bounds":
+		{
+			
+			"type": "circle",
+			"radius": 13,
+			"offsetX": 1,
+			"offsetY": 1
+			
+		},
+		"death_instruction":
+		{
+				
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "AlienGameOverImage"
+				
+		},
+		"damage": 1,
+		"max_health": 5,
+		"aimed": false,
+		"score": 0
+		
+	}
+		
+}

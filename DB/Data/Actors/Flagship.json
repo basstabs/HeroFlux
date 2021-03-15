@@ -1,0 +1,99 @@
+{
+	
+	"key": "Flagship",
+	"code": 1,
+	"texture": "Flagship",
+	"width": 96,
+	"height": 57,
+	"collide": false,
+	"actor":
+	{
+		
+		"tracking": false,
+		"weapons": [
+			
+			{"weapon": "FlagshipUpWeapon", "audio": "BeamAudio"},
+			{"weapon": "FlagshipDownWeapon", "audio": "BeamAudio"},
+			{"weapon": "FlagshipAimedWeapon", "audio": "BeamAudio"},
+			{"weapon": "FlagshipBoltWeapon", "audio": "VortexAudio"},
+			{"weapon": "FlagshipShacklesWeapon", "audio": "BulletAudio"}
+			
+		],
+		"fire_conditions": [
+			
+			{
+					
+				"weapon": 0,
+				"time": 1,
+				"fire_rate": 2,
+				"ammo": 10,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 1,
+				"time": 1.25,
+				"fire_rate": 2,
+				"ammo": 10,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 2,
+				"time": 3,
+				"fire_rate": 3,
+				"ammo": 10,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 4,
+				"time": 9,
+				"fire_rate": 0,
+				"ammo": 1,
+				"animation": null
+					
+			},
+			{
+					
+				"weapon": 3,
+				"time": 5,
+				"fire_rate": 5,
+				"ammo": 3,
+				"animation": null
+					
+			}
+			
+		],
+		"death": "BigExplosion-Normal",
+		"death_instruction": {
+		
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "AlienGameOverImage"
+			
+		},
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 68,
+			"height": 36,
+			"offsetX": 0,
+			"offsetY": 4
+			
+		},
+		"damage": 1,
+		"max_health": 25,
+		"aimed": false,
+		"score": 5000
+		
+	}
+	
+}

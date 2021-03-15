@@ -1,0 +1,48 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Bolt",
+			"xParam": "-125",
+			"yParam": "25",
+			"x": -44,
+			"y": 24
+			
+		},
+		{
+			
+			"key": "Bolt",
+			"xParam": "-100",
+			"yParam": "50",
+			"x": -44,
+			"y": 24
+			
+		},
+		{
+			
+			"key": "Bolt",
+			"xParam": "-75",
+			"yParam": "75",
+			"x": -44,
+			"y": 24
+			
+		},
+		{
+			
+			"key": "Bolt",
+			"xParam": "-50",
+			"yParam": "100",
+			"x": -44,
+			"y": 24
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 0,
+	"aimed": false
+	
+}

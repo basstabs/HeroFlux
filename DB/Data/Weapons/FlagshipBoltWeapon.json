@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "BigBolt",
+			"xParam": "-75",
+			"yParam": "0",
+			"x": -34,
+			"y": -22
+			
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 0,
+	"aimed": false
+	
+}

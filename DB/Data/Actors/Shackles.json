@@ -42,7 +42,7 @@
 			"audio": "StruggleAudio",
 			"transition": "Player-ToShackles",
 			"animation": "Player-Shackles",
-			"image": "SnugglerGameOverImage"
+			"image": "ShacklesGameOverImage"
 				
 		},
 		"score": 75

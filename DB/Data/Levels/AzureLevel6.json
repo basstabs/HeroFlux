@@ -27,58 +27,217 @@
 			{
 				
 				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+											
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"This is Azure Burst. I'm one mile out from the Northwest reactor."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Keep going, but watch out for resistance.",
+							"Alarms are going off throughout the ship, seems like they've detected at least one of you.",
+							"Their sensors don't seem to be able to pick you up directly, but my guess is since they're here for your symbiotes they have some way of tracking them."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"I'm in position at the central reactor.",
+							"Waiting on both your signals."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Just don't go blowing things up too early.",
+							"I don't want to have aliens crawling up my ass while I'm saving your friends, gorgeous."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Maybe if you'd told me you were expecting a hostile invasion instead of trying to brainwash me we wouldn't be in this mess.",
+							"Just a thought, cupcake."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"No one asked you, red!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"ENOUGH!",
+							"We can bicker about this later. Right now we have a flagship to torch."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...Yes, ma'am."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Heads up, Bursty, on your twelve!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"...Bursty?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"She does that."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "Mystery2Dialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"YOUR FOOOLISH RESSSISSSTANCE WILL NOT GO UNPUNISSSHHHED..."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
+						
+				]
+			
+			},
+			{
+				
+				"background_param": "2",
 				"type": "wave",
 				"data":
 				{
 					
-					"duration": 47,
+					"duration": 75,
 					"spawners":
 					[
 						
 						{
-						
+							
 							"keys":
 							[
-							
+								
 								"Shackles"
-							
+								
 							],
 							"start": 3,
 							"delay": 2,
-							"count": 5,
+							"count": 10,
 							"x": 1,
-							"y": 0.45,
+							"y": 0.5,
 							"theta": 0,
-							"xParam": "-150",
+							"xParam": "p-50=1=0=11=-25+(-25*t)",
 							"yParam": "0"
-						
+							
 						}
-						
-					]
-					
-				}
-				
-			},
-			{
-				
-				"background_param": "2",
-				"type": "dialogue",
-				"script":
-				[
-					
-				]
-				
-			},
-			{
-				
-				"background_param": "2",
-				"type": "wave",
-				"data":
-				{
-					
-					"duration": 92,
-					"spawners":
-					[
 						
 					]
 					
@@ -103,7 +262,7 @@
 					{
 						
 						"key": "Engine",
-						"xParam": "p480+(-90*t)=2=300",
+						"xParam": "p480+(-50*t)=2=380",
 						"yParam": "135",
 						"x": 1,
 						"y": 0.5
@@ -119,6 +278,79 @@
 				"type": "dialogue",
 				"script":
 				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"I've reached the target. Permission to light it up?"
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"The central reactor has been destroyed. Moving towards the second target now. Go hot."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KabadraDialogue",
+						"name": "Kabadra",
+						"lines":
+						[
+							
+							"Hurk... little busy here!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Permission granted. We're still on schedule.",
+							"Just be carefule. Enemy forces are moving in to protect the reactor."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "Mystery2Dialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"CEASSSE THIS AT ONCCCE!"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
 					
 				]
 				
@@ -157,6 +389,341 @@
 				"type": "dialogue",
 				"script":
 				[
+					
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"Northwest reactor is toast.",
+							"Moving to the data core now."
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Belay that, Bursty.",
+							"Kabby needs help to rescue the prisoners."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "HorizonDialogue",
+						"name": "Horizon",
+						"lines":
+						[
+							
+							"I'm closer. I'll pull back and cover Kabadra. Azure Burst, take the Northeast reactor."
+							
+						],
+						"color": "#8AF1FF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"On it!"
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "Mystery2Dialogue",
+						"name": "???",
+						"lines":
+						[
+							
+							"THIS SSSHIP WILL BE YOUR GRAAAVE."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"You planning to just whisper in my ear the whole time like a creep or are you going to show yourself?"
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"YOU'RE PRRROVING QUITE THE THORN IN MY SSSIDE, TRRRAITOR.",
+							"I'LL ENJOY CARRRVING UP YOUR MEMBRRRANE AND ASSSSSIMILATING IT. RIGHT AFFFTER I'VE FINISSSHED WITH YOUR WEAK NEW VESSSSEL."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"How charming. Think I'll pass, though."
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 120,
+					"spawners":
+					[
+						
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "scripted",
+				"duration": 2,
+				"player":
+				{
+					
+					"x": 100,
+					"y": 135
+					
+				},
+				"spawns":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"xParam": "p480+(-50*t)=2=380",
+						"yParam": "135",
+						"x": 1,
+						"y": 0.5
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"SSSTOP THIS FOOLISSSHNESS NOW, TRRRAITOR.",
+							"IF YOU DEFFFILE THE FINAL RRREACTOR, THIS SSSHIP WILL TAKE YOU AND YOUR VESSSSEL DOWN WITH IT.",
+							"JUSSST SSSUBMIT."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"In case you haven't noticed by now, I'm not exactly the submissive type.",
+							"Kitty, I've arrived at the final reactor, taking it down now!"
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"The prisoners are free and on their way out, so you're clear to fire.",
+							"Stay frosty, more hostiles closing to defend the reactor."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"UNDERSSSTAND THAT YOUR ACTIONSSS HAVE CONSSSEQUENCCCES, TRRRAITOR."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "fight",
+				"launch":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"count": 1
+						
+					}
+					
+				],
+				"finish":
+				[
+					
+					{
+						
+						"key": "Engine",
+						"required": 1
+						
+					}
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"Reactor down!",
+							"It might be a little tight, but I think I can make it to the data core before this places comes down."
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Ignore the data! A large squadron of enemies has left the ship and are heading towards the city.",
+							"Kabby and Horizon are still getting the others to safety, you're the only one free to pursue!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+						
+							"Shit! What's the closest exit?"
+							
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Through the damn hull."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
 					
 				]
 				
