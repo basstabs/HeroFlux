@@ -216,10 +216,294 @@
 				"data":
 				{
 					
-					"duration": 75,
+					"duration": 80,
 					"spawners":
 					[
 						
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 3,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=-75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 5,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=-75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 7,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.55,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=-75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 9,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 11,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 13,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=75"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 18,
+							"delay": 0.25,
+							"count": 8,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-180+(40*t)",
+							"yParam": "35"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 22,
+							"delay": 0.25,
+							"count": 8,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-180+(40*t)",
+							"yParam": "-35"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 20,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 30,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 31,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 32,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 33,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 28,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 34,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 42,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
 						{
 							
 							"keys":
@@ -228,15 +512,123 @@
 								"Shackles"
 								
 							],
-							"start": 3,
-							"delay": 2,
-							"count": 10,
+							"start": 56,
+							"delay": 5,
+							"count": 2,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Shackles"
+								
+							],
+							"start": 57,
+							"delay": 5,
+							"count": 2,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Shackles"
+								
+							],
+							"start": 58,
+							"delay": 5,
+							"count": 2,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Shackles"
+								
+							],
+							"start": 59,
+							"delay": 5,
+							"count": 2,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"Ship",
+								"ShipGun"
+								
+							],
+							"start": 58,
+							"delay": 1,
+							"count": 8,
 							"x": 1,
 							"y": 0.5,
 							"theta": 0,
-							"xParam": "p-50=1=0=11=-25+(-25*t)",
+							"xParam": "-100",
 							"yParam": "0"
 							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 68,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 72,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
 						}
 						
 					]
@@ -523,6 +915,507 @@
 					"duration": 120,
 					"spawners":
 					[
+						
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 3,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 15,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 32,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=8=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 32,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=8=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 35,
+							"delay": 0.5,
+							"count": 8,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "20"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 35.25,
+							"delay": 0.5,
+							"count": 8,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-20"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 40,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 44,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 42,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=-25*t",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 55,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 57,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.35,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 59,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.45,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 62,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=-75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 64,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.65,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=-75"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 66,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.55,
+							"theta": 0,
+							"xParam": "p-150=2=75",
+							"yParam": "p0=2=-75"
+						
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 70,
+							"delay": 3,
+							"count": 6,
+							"x": 0,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 71.5,
+							"delay": 3,
+							"count": 6,
+							"x": 0,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 75,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=8=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 78,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=8=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 84,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.2,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 85,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.4,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 86,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.6,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 87,
+							"delay": 4,
+							"count": 2,
+							"x": 1,
+							"y": 0.8,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 92,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 95,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship",
+								"ShipGun"
+								
+							],
+							"start": 100,
+							"delay": 1,
+							"count": 8,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-100",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 110,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=-50"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 112,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-150=1=-100",
+							"yParam": "p0=1=50"
+						
+						}
 						
 					]
 					
