@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "ShipGun",
+			"xParam": "-150",
+			"yParam": "0",
+			"x": 100,
+			"y": 0
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 2,
+	"aimed": false
+	
+}

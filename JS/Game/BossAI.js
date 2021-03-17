@@ -37,7 +37,7 @@ export default class AI extends Control
 		this.markers = json.markers;
 		
 	}
-
+	
 	Hook(agent)
 	{
 		
@@ -239,6 +239,13 @@ export default class AI extends Control
 	{
 		
 		this.scene.UnhookEnemy();
+		
+	}
+
+	Clean()
+	{
+		
+		this.started = false;
 		
 	}
 	

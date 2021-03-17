@@ -279,7 +279,7 @@
 		"agents":
 		[
 						
-			{"agent": "Engine", "poolSize": 1}
+			{"agent": "Reactor", "poolSize": 1}
 			
 		],
 		"effects":
@@ -326,6 +326,7 @@
 		"props":
 		[
 			
+			{"prop": "Bolt", "poolSize": 60},
 			{"prop": "Chain", "poolSize": 100},
 			{"prop": "HorizonLaser", "poolSize": 15},
 			{"prop": "HorizonDarkFireball", "poolSize": 5},
@@ -340,7 +341,15 @@
 			
 			{"actor": "HorizonFireball", "poolSize": 100},
 			{"actor": "CommandoBigBolt", "poolSize": 3},
-			{"actor": "CommandoFireball", "poolSize": 3}
+			{"actor": "CommandoFireball", "poolSize": 3},
+			{"actor": "Saucer", "poolSize": 40},
+			{"actor": "Ship", "poolSize": 5},
+			{"actor": "ShipGun", "poolSize": 10},
+			{"actor": "Snuggler", "poolSize": 5},
+			{"actor": "BigSaucer", "poolSize": 2},
+			{"actor": "Shackles", "poolSize": 5},
+			{"actor": "Flagship", "poolSize": 2},
+			{"actor": "BigBolt", "poolSize": 4}
 			
 		],
 		"agents":
@@ -350,7 +359,8 @@
 			{"agent": "PainGirl", "poolSize": 1},
 			{"agent": "Horizon", "poolSize": 1},
 			{"agent": "Fang", "poolSize": 1},
-			{"agent": "Commando", "poolSize": 1}
+			{"agent": "Commando", "poolSize": 1},
+			{"agent": "Reactor", "poolSize": 1}
 			
 		],
 		"effects":
@@ -364,8 +374,10 @@
 			{"effect": "MiniGreenFireball-Death", "poolSize": 6},
 			{"effect": "BigBolt-Death", "poolSize": 3},
 			{"effect": "GreenFireball-Death", "poolSize": 3},
-			{"effect": "Bolt-Death", "poolSize": 5}
-			
+			{"effect": "Bolt-Death", "poolSize": 5},
+			{"effect": "GreenExplosion-Normal", "poolSize": 20},
+			{"effect": "BigExplosion-Normal", "poolSize": 2},
+			{"effect": "Snuggler-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel8",

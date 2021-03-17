@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Ship",
+			"xParam": "0",
+			"yParam": "0",
+			"x": -380,
+			"y": 0
+			
+		}
+		
+	],
+	"fire_rate": 0.75,
+	"cost": 3,
+	"aimed": false
+	
+}

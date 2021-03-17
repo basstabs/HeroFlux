@@ -1,0 +1,30 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Saucer",
+			"xParam": "-180+(40*t)",
+			"yParam": "25",
+			"x": 100,
+			"y": -80
+			
+		},
+		{
+			
+			"key": "Saucer",
+			"xParam": "-180+(40*t)",
+			"yParam": "-25",
+			"x": 100,
+			"y": 80
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 2,
+	"aimed": false
+	
+}

@@ -1,0 +1,460 @@
+{
+		
+	"key": "Reactor",
+	"collide": true,
+	"texture": "Reactor",
+	"width": 64,
+	"height": 64,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+			
+			{"weapon": "ReactorSaucerWeapon", "audio": ""},
+			{"weapon": "ReactorSaucer2Weapon", "audio": ""},
+			{"weapon": "ReactorSaucer3Weapon", "audio": ""},
+			{"weapon": "ReactorShipWeapon", "audio": ""},
+			{"weapon": "ReactorGunWeapon", "audio": ""},
+			{"weapon": "ReactorGun2Weapon", "audio": ""},
+			{"weapon": "ReactorGun3Weapon", "audio": ""},
+			{"weapon": "ReactorSnugglerWeapon", "audio": ""},
+			{"weapon": "ReactorShacklesWeapon", "audio": ""},
+			{"weapon": "ReactorBigSaucerWeapon", "audio": ""}
+			
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 64,
+			"height": 64,
+			"offsetX": 0,
+			"offsetY": 0
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[
+				
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 1000,
+							"animation": "Idle"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 5
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "continuous",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 1,
+								"transition": null
+									
+							},
+							"duration": 1000,
+							"animation": "Idle"
+								
+                        }
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 10
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 0,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 1
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 1,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 2
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 2,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 2
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 3,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 3
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 4,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 2
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 5,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 4
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 6,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 4
+                    
+                },
+								{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 7,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 15
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 8,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 10
+                    
+                },
+				{
+                    
+                    "states":
+                    [
+                        
+                        {
+								
+							"state":  "fire",
+							"exit": {},
+							"enter":
+							{
+									
+								"weapon_index": 9,
+								"move": false,
+								"code": 0,
+								"transition": null
+									
+							},
+							"durationAnimation": "SlowIdle",
+							"animation": "SlowIdle"
+								
+						}
+                        
+                    ],
+                    "maxHP": 500,
+                    "minHP": 0,
+                    "maxPower": 100,
+                    "minPower": 30
+                    
+                }
+				
+			],
+			"default":
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 20, "transition": "Reactor-FastIdle", "code": 1},
+						"exit": {},
+						"animation": "FastIdle"
+							
+					}
+						
+				]
+					
+			},
+			"activate": null,
+			"markers": []
+			
+		},
+		"damage": 1,
+		"max_health": 500,
+		"death": "Reactor-Death",
+		"default_death":
+		{
+		
+			"transition": "Reactor-Death",
+			"animation": "Reactor-Death",
+			"xParam": "2*sin(2*t)",
+			"yParam": "75",
+			"audio": "LargeExplosionAudio"
+			
+		},
+		"death_instruction": {
+				
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "AlienGameOverImage"
+				
+		},
+		"power": 100,
+		"empty": "EmptyAudio",
+		"score": 7000
+			
+	}
+		
+}

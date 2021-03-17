@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Snuggler",
+			"xParam": "0",
+			"yParam": "0",
+			"x": 0,
+			"y": -135
+			
+		}
+		
+	],
+	"fire_rate": 5,
+	"cost": 15,
+	"aimed": false
+	
+}

@@ -1,0 +1,21 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "BigSaucer",
+			"xParam": "p-50=2=0=6=-25+(-25*t)",
+			"yParam": "0",
+			"x": 100,
+			"y": -50
+			
+		}
+		
+	],
+	"fire_rate": 5,
+	"cost": 30,
+	"aimed": false
+	
+}

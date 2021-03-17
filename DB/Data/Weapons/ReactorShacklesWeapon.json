@@ -1,0 +1,30 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "Shackles",
+			"xParam": "0",
+			"yParam": "0",
+			"x": 0,
+			"y": -135
+			
+		},
+		{
+			
+			"key": "Shackles",
+			"xParam": "0",
+			"yParam": "0",
+			"x": 0,
+			"y": 135
+			
+		}
+		
+	],
+	"fire_rate": 0.75,
+	"cost": 10,
+	"aimed": false
+	
+}

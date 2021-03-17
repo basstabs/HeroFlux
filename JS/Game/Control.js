@@ -127,4 +127,9 @@ export default class Control
 		
 	}
 	
+	Clean()
+	{
+		
+	}
+	
 }

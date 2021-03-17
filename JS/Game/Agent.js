@@ -121,6 +121,14 @@ export default class Agent extends PoolObject
 		
 		}
 		
+		this.control.Clean();
+		if(Code.Enemy(this.code))
+		{
+		
+			this.power = this.max_power;
+			
+		}
+		
 	}
 	
 	Pool()

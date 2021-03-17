@@ -155,7 +155,7 @@ export default class LevelPreloader extends BaseScene
 				
 				}
 			
-				if(this.assets.sound.find(function(sound) { return sound.id === weapon.audio; }) === undefined)
+				if(weapon.audio && this.assets.sound.find(function(sound) { return sound.id === weapon.audio; }) === undefined)
 				{
 			
 					this.assets.sound.push({type: "sound", id: weapon.audio, url: "DB/Sound/" + weapon.audio + ".wav"});
@@ -210,7 +210,7 @@ export default class LevelPreloader extends BaseScene
 				
 				}
 			
-				if(this.assets.sound.find(function(sound) { return sound.id === weapon.audio; }) === undefined)
+				if(weapon.audio && this.assets.sound.find(function(sound) { return sound.id === weapon.audio; }) === undefined)
 				{
 			
 					this.assets.sound.push({type: "sound", id: weapon.audio, url: "DB/Sound/" + weapon.audio + ".wav"});
