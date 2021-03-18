@@ -1,32 +1,105 @@
 {
 	
-	"background": "Skyline",
+	"background": "DarkTunnel",
 	"warning": true,
 	"level":
 	{
 		
 		"stages":
 		[
-			
+
 			{
 				
 				"background_param": "2",
 				"type": "wave",
-				"music": "Level1Music",
+				"music": "Level6Music",
 				"data":
 				{
 					
-					"duration": 3,
-					"spawners": []
+					"duration": 5,
+					"spawners":
+					[
+					]
 					
 				}
 				
 			},
 			{
 				
-				"background_param": "p5+(-1.666*t)=3=0",
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+						
+				]
+			
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 80,
+					"spawners":
+					[
+						
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 3,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-150=1=-75",
+							"yParam": "p0=1=-75"
+						
+						}
+						
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "wave",
+				"data":
+				{
+					
+					"duration": 120,
+					"spawners":
+					[
+						
+					]
+					
+				}
+				
+			},
+			{
+				
+				"background_param": "2",
 				"type": "scripted",
-				"duration": 3,
+				"duration": 2,
 				"player":
 				{
 					
@@ -39,8 +112,8 @@
 					
 					{
 						
-						"key": "Fang",
-						"xParam": "p480+(-33*t)=3=380",
+						"key": "Commander",
+						"xParam": "p480+(-50*t)=2=380",
 						"yParam": "135",
 						"x": 1,
 						"y": 0.5
@@ -52,14 +125,24 @@
 			},
 			{
 				
-				"background_param": "0",
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+				]
+				
+			},
+			{
+				
+				"background_param": "2",
 				"type": "fight",
 				"launch":
 				[
 					
 					{
 						
-						"key": "Fang",
+						"key": "Commander",
 						"count": 1
 						
 					}
@@ -70,17 +153,26 @@
 					
 					{
 						
-						"key": "Fang",
+						"key": "Commander",
 						"required": 1
 						
 					}
 					
 				]
 				
+			},
+			{
+				
+				"background_param": "2",
+				"type": "dialogue",
+				"script":
+				[
+					
+				]
+				
 			}
-			
+		
 		]
-
 	}
 	
 }
