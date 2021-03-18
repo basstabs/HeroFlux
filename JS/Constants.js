@@ -131,6 +131,10 @@ export const CONST_GALLERY_SCREEN_DATA = {
     
 };
 
+export const CONST_WIN_SCREEN_DATA = {
+	font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"}
+}
+
 export const CONST_REMAP_SCREEN_DATA = {
     
     font: {"fontFamily": "chunk", "fontSize": "128px", "color": "#DDDDDD", "wordWrap": { width: 3420 }, "align": "center"},

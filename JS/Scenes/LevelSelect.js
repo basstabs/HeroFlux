@@ -26,9 +26,9 @@ const CONST_LEVELSELECT_ACTIVE_FONT = {fontFamily: "chunk", fontSize: "125px", c
 const CONST_LEVELSELECT_DISABLED_FONT = {fontFamily: "chunk", fontSize: "125px", color: "#444444"};
 const CONST_LEVELSELECT_SCORE_FONT = {fontFamily: "silkscreen", fontSize: "80px", color: "#44FF44"};
 
-const CONST_PLAYER_PROPS = [{prop: "Laser", poolSize: 15}, {prop: "Beam", poolSize: 30}, {prop: "MiniFireball", poolSize: 15}, {prop: "Pickup", poolSize: 30}, {prop: "BigPickup", poolSize: 10}, {prop: "HugePickup", poolSize: 10}];
-const CONST_PLAYER_ACTORS = [{actor: "Fireball", poolSize: 4}];
-const CONST_PLAYER_EFFECTS = [{effect: "Laser-Death", poolSize: 15}, {effect: "Beam-Death", poolSize: 15}, {effect: "Fireball-Death", poolSize: 4}, {effect: "Pickup-Death", poolSize: 10}, {effect: "BigPickup-Death", poolSize: 4}, {effect: "HugePickup-Death", poolSize: 2}, {effect: "MiniFireball-Death", poolSize: 15}];
+export const CONST_PLAYER_PROPS = [{prop: "Laser", poolSize: 15}, {prop: "Beam", poolSize: 30}, {prop: "MiniFireball", poolSize: 15}, {prop: "Pickup", poolSize: 30}, {prop: "BigPickup", poolSize: 10}, {prop: "HugePickup", poolSize: 10}];
+export const CONST_PLAYER_ACTORS = [{actor: "Fireball", poolSize: 4}];
+export const CONST_PLAYER_EFFECTS = [{effect: "Laser-Death", poolSize: 15}, {effect: "Beam-Death", poolSize: 15}, {effect: "Fireball-Death", poolSize: 4}, {effect: "Pickup-Death", poolSize: 10}, {effect: "BigPickup-Death", poolSize: 4}, {effect: "HugePickup-Death", poolSize: 2}, {effect: "MiniFireball-Death", poolSize: 15}];
 
 export default class Options extends MenuScene
 {
