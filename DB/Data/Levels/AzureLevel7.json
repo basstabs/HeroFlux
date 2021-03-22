@@ -1,6 +1,6 @@
 {
 	
-	"background": "DarkTunnel",
+	"background": "CloudSkyline",
 	"warning": true,
 	"level":
 	{
@@ -10,7 +10,7 @@
 
 			{
 				
-				"background_param": "2",
+				"background_param": "5",
 				"type": "wave",
 				"music": "Level6Music",
 				"data":
@@ -26,26 +26,16 @@
 			},
 			{
 				
-				"background_param": "2",
-				"type": "dialogue",
-				"script":
-				[
-						
-				]
-			
-			},
-			{
-				
-				"background_param": "2",
+				"background_param": "5",
 				"type": "wave",
 				"data":
 				{
 					
-					"duration": 80,
+					"duration": 60,
 					"spawners":
 					[
 						
-						{				
+						{
 						
 							"keys":
 							[
@@ -53,14 +43,14 @@
 								"Force"
 							
 							],
-							"start": 3,
-							"delay": 0.25,
+							"start": 5,
+							"delay": 5,
 							"count": 5,
 							"x": 1,
-							"y": 0.75,
+							"y": 0.45,
 							"theta": 0,
-							"xParam": "p-150=1=-75",
-							"yParam": "p0=1=-75"
+							"xParam": "-100",
+							"yParam": "0"
 						
 						}
 						
