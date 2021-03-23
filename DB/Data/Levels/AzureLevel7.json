@@ -27,6 +27,31 @@
 			{
 				
 				"background_param": "5",
+				"type": "dialogue",
+				"script":
+				[
+				
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							""
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
+					
+				]
+			
+			},
+			{
+				
+				"background_param": "5",
 				"type": "wave",
 				"data":
 				{
@@ -35,25 +60,6 @@
 					"spawners":
 					[
 						
-						{
-						
-							"keys":
-							[
-							
-								"Force"
-							
-							],
-							"start": 5,
-							"delay": 5,
-							"count": 5,
-							"x": 1,
-							"y": 0.45,
-							"theta": 0,
-							"xParam": "-100",
-							"yParam": "0"
-						
-						}
-						
 					]
 					
 				}
@@ -61,7 +67,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "5",
 				"type": "dialogue",
 				"script":
 				[
@@ -71,7 +77,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "5",
 				"type": "wave",
 				"data":
 				{
@@ -87,7 +93,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "p5-t=2=3",
 				"type": "scripted",
 				"duration": 2,
 				"player":
@@ -115,7 +121,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "3",
 				"type": "dialogue",
 				"script":
 				[
@@ -125,7 +131,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "3",
 				"type": "fight",
 				"launch":
 				[
@@ -153,7 +159,7 @@
 			},
 			{
 				
-				"background_param": "2",
+				"background_param": "p3-t=3=0",
 				"type": "dialogue",
 				"script":
 				[
