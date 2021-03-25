@@ -491,7 +491,7 @@
 						"lines":
 						[
 							
-							"I have no clue, all of my sensors are still down. We're flying blind here.",
+							"I have no clue, the base sensors are still down. We're flying blind out there.",
 							"I'm doing my best, just hang on!"
 							
 						],
@@ -1210,9 +1210,9 @@
 						"lines":
 						[
 							
-							"kzzzkkkkkz... kkzzzkkkkzz.. urst, come in!",
-							"You have to... kkzkkzz... there... kzkzkzkz... surface.",
-							"Urgent code... kzkzkzzkz... not... kzzkzz... believe this!"
+							"*kzzzkkkkkz*... *kkzzzkkkkzz*.. urst, come in!",
+							"You have to... *kkzkkzz*... there... *kzkzkzkz*... surface.",
+							"Urgent code... *kzkzkzzkz*... not... *kzzkzz*... believe this!"
 							
 						],
 						"color": "#FFFFFF",
@@ -1240,7 +1240,7 @@
 						"lines":
 						[
 							
-							"kzzkkzkz... thank... too late... kzzkzkz... warn...",
+							"*kzzkkzkz*... thank... too late... *kzzkzkz*... warn...",
 							"*click*"
 							
 						],

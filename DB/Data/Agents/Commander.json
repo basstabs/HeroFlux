@@ -1,0 +1,97 @@
+{
+		
+	"key": "Commander",
+	"collide": true,
+	"texture": "Commander",
+	"width": 40,
+	"height": 48,
+	"code": 1,
+	"agent":
+	{
+			
+		"hVel": 0,
+		"vVel": 0,
+		"weapons":
+		[
+				
+		],
+		"actions": [],
+		"bounds":
+		{
+			
+			"type": "box",
+			"width": 12,
+			"height": 36,
+			"offsetX": 15,
+			"offsetY": 5
+				
+		},
+		"control":
+		{
+			
+			"type": "ai",
+			"actions":
+			[		
+			],
+			"default":
+			{
+					
+				"states":
+				[
+						
+					{
+							
+						"state": "moveto",
+						"x": 380,
+						"y": 135,
+						"duration": 2,
+						"invuln": false
+							
+					},
+					{
+							
+						"state": "charge",
+						"enter": { "speed": 40, "transition": "Commander-ToCharge", "code": 1},
+						"exit": {},
+						"animation": "Charge"
+							
+					}
+						
+				]
+					
+			},
+			"activate": null,
+			"markers": [0.25, 0.75]
+			
+		},
+		"damage": 1,
+		"max_health": 500,
+		"death": "Commander-Death",
+		"default_death":
+		{
+		
+			"transition": "Commander-Death",
+			"animation": "Commander-Death",
+			"xParam": "0",
+			"yParam": "((500*t)*t)+50",
+			"audio": "CommanderDeathAudio"
+			
+		},
+		"death_instruction":
+		{
+			
+			"transition": "Player-ToDeath",
+			"animation": "Player-Death",
+			"xParam": "-200*t",
+			"yParam": "((500*t)*t)+50",
+			"audio": "ScreamAudio",
+			"image": "CommanderGameOverImage"
+				
+		},
+		"power": 200,
+		"empty": "EmptyAudio",
+		"score": 30000
+			
+	}
+		
+}

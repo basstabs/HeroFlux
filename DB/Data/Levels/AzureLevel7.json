@@ -12,7 +12,7 @@
 				
 				"background_param": "5",
 				"type": "wave",
-				"music": "Level6Music",
+				"music": "Level7Music",
 				"data":
 				{
 					
@@ -38,11 +38,101 @@
 						"lines":
 						[
 							
-							""
+							"YOU HUMANSSS CCCERTAINLY ARE... PESSSKY."
 							
 						],
 						"color": "#8AFFB1",
 						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Oh, now you're talking to me and not my little friend."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"I WILL ADMIT, YOU HAVE EXCCCEEDED MY LOW EXPECTATIONSSS.",
+							"THISSS FORM DOES HAVE ITS ADVANTAGESSS.",
+							"THIS PETTY DRIVE FOR VENGEANCE IS UNNECCCESSARY. JOIN USSS, WE CAN MAKE YOU RULER OF THISSS ENTIRE CCCIVILIZATION!"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"You villains are all the same, always looking to make a deal only when you're running with your tail between your legs.",
+							"You're in no position to bargain."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"YOU MAY KILL ME, AZZZURE BURSSST. BUT MY PEOPLE WILL FLATTEN YOURSSS LIKE THE VERMIN THEY ARE!",
+							"MORE OF USSS WILL COME LIKE THE UNENDING TIDE!"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "KittyDialogue",
+						"name": "Kitty Sexton",
+						"lines":
+						[
+							
+							"Burstie, all prisoners have been evacuated and the flagship is coming apart.",
+							"Debris is raining towards the harbor district, but Horizon and Kabby are working on it.",
+							"You'll have to take down jarhead on your own."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"*Crack* With pleasure."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
 						
 					}
 					
@@ -60,6 +150,834 @@
 					"spawners":
 					[
 						
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 3,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.23,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 3,
+							"delay": 0.75,
+							"count": 5,
+							"x": 1,
+							"y": 0.27,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 8,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.73,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 8,
+							"delay": 0.75,
+							"count": 5,
+							"x": 1,
+							"y": 0.77,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 15,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 14,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 24,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 23,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=1=0=8=-50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 32,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 32,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=1=0=8=50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 44,
+							"delay": 1,
+							"count": 10,
+							"x": 0,
+							"y": 0.9,
+							"theta": 0,
+							"xParam": "p75=3=0=6=-75",
+							"yParam": "p0=3=-75=6=0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 46,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+							
+						}
+						
 					]
 					
 				}
@@ -72,6 +990,77 @@
 				"script":
 				[
 					
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Heads up, Azure Burst, enemy reinforcements are catching up. Watch your six and your twelve."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							"Penny! You're okay!",
+							"Where's Kitty?"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Coordinating the debris destruction with the others.",
+							"I'm taking over here."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							"Works for me. Let's kick this bastard's slimy ass!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Fuck yeah!"
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
+					
 				]
 				
 			},
@@ -82,9 +1071,1138 @@
 				"data":
 				{
 					
-					"duration": 120,
+					"duration": 125,
 					"spawners":
 					[
+						
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 3,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 5,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 7,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 8,
+							"delay": 4,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 8,
+							"delay": 4,
+							"count": 5,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 8,
+							"delay": 4,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 29,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-100=2=0=3=100",
+							"yParam": "p0=2=-100=3=0"
+						
+						},
+						{
+						
+							"keys":
+							[
+							
+								"Saucer"
+							
+							],
+							"start": 34,
+							"delay": 0.25,
+							"count": 5,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-100=2=0=3=100",
+							"yParam": "p0=2=100=3=0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Snuggler"
+								
+							],
+							"start": 30,
+							"delay": 0,
+							"count": 1,
+							"x": 0,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 38,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 0,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p50=2=0=8=-50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 39,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 42,
+							"delay": 5,
+							"count": 5,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"BigSaucer"
+								
+							],
+							"start": 51,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=6=-25+(-25*t)",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 50,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2=0=8=50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.1,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.2,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.3,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.4,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.5,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.6,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.7,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.8,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 62,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0.9,
+							"y": 1,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "p-50=2.7=0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 62,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Flagship"
+								
+							],
+							"start": 74,
+							"delay": 0,
+							"count": 1,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "p-50=2=0=12=25*t",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 70,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 72,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Ship"
+								
+							],
+							"start": 74,
+							"delay": 6,
+							"count": 4,
+							"x": 0,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "0",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"x": 0,
+							"y": 0.1,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.2,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.3,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.4,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.5,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.6,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.7,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.8,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force"
+							
+							],
+							"start": 84,
+							"delay": 0.5,
+							"count": 1,
+							"y": 0.9,
+							"x": 0,
+							"theta": 0,
+							"yParam": "0",
+							"xParam": "p50=1=0=8=-50"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 86,
+							"delay": 2,
+							"count": 4,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 88,
+							"delay": 2,
+							"count": 4,
+							"x": 1,
+							"y": 0.5,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{
+							"keys":
+							[
+								
+								"ShipGun"
+								
+							],
+							"start": 90,
+							"delay": 2,
+							"count": 4,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-75",
+							"yParam": "0"
+							
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 100,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.73,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 100,
+							"delay": 0.75,
+							"count": 5,
+							"x": 1,
+							"y": 0.77,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 105,
+							"delay": 0.5,
+							"count": 5,
+							"x": 1,
+							"y": 0.23,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{				
+						
+							"keys":
+							[
+							
+								"Force",
+								"Saucer",
+								"Saucer",
+								"Saucer",
+								"Saucer"
+							
+							],
+							"start": 105,
+							"delay": 0.75,
+							"count": 5,
+							"x": 1,
+							"y": 0.27,
+							"theta": 0,
+							"xParam": "-125",
+							"yParam": "0"
+						
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 110,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.25,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "25"
+							
+						},
+						{
+							
+							"keys":
+							[
+								
+								"Saucer"
+								
+							],
+							"start": 115,
+							"delay": 0.25,
+							"count": 10,
+							"x": 1,
+							"y": 0.75,
+							"theta": 0,
+							"xParam": "-150+(30*t)",
+							"yParam": "-25"
+							
+						}
 						
 					]
 					
@@ -93,7 +2211,8 @@
 			},
 			{
 				
-				"background_param": "p5-t=2=3",
+				"background_param": "p5+(-t)=2=3",
+				"music": "CommanderMusic",
 				"type": "scripted",
 				"duration": 2,
 				"player":
@@ -125,6 +2244,52 @@
 				"type": "dialogue",
 				"script":
 				[
+					
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"DESSSPITE YOUR FRAGILE FORM, YOU JUST WON'T SSSTAY DOWN.",
+							"A COMMENDABLE TRAIT, BRAVERY, IF FOOLISSSH."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Nothing left to hide behind, bucket brain.",
+							"Let's see how fragile that dome is."
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"I WON'T WAIT FOR MY BRETHREN TO ASSSSSIST ME.",
+							"I'LL TEAR YOUR PLANET APART MYSELF."
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					}
 					
 				]
 				
@@ -159,10 +2324,58 @@
 			},
 			{
 				
-				"background_param": "p3-t=3=0",
+				"background_param": "p3+(-t)=3=0",
 				"type": "dialogue",
 				"script":
 				[
+					
+					{
+						
+						"speaker": "CommanderDialogue",
+						"name": "Qal Akesh",
+						"lines":
+						[
+							
+							"NOOOOOOOOOOOOOOOO!",
+							"IT CANNOT... END... LIKE... THISSSS...",
+							"*squelch*"
+							
+						],
+						"color": "#8AFFB1",
+						"right": true
+						
+					},
+					{
+						
+						"speaker": "AzureDialogue",
+						"name": "Azure Burst",
+						"lines":
+						[
+							
+							"Eat that, fishbowl! Woohoo!"
+							
+						],
+						"color": "#8AF1FF",
+						"right": false
+						
+					},
+					{
+						
+						"speaker": "PennyDialogue",
+						"name": "Penny Sexton",
+						"lines":
+						[
+							
+							"Nice work, Azure Burst.",
+							"Head back to HQ, or what's left of it.",
+							"I think I might be able to scrounge up some of the brass's fancy wine for you.",
+							"You've earned it."
+							
+						],
+						"color": "#FFFFFF",
+						"right": true
+						
+					}
 					
 				]
 				

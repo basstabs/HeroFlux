@@ -54,7 +54,7 @@
 						"lines":
 						[
 							
-							"kzzzzkzz... BWWAAA... zzzkzkzz"
+							"*kzzzzkzz*... *BWWAAA*... *zzzkzkzz*"
 							
 						],
 						"color": "#8AFFB1",
@@ -373,7 +373,7 @@
 						"lines":
 						[
 							
-							"BWWAAA! BWWAAA!"
+							"*BWWAAA!* *BWWAAA!*"
 							
 						],
 						"color": "#8AFFB1",
@@ -1028,8 +1028,8 @@
 						"lines":
 						[
 							
-							"kzzzzkzkkzk... kzkkzkzkzkz...",
-							"zzkzz... come... kkzkzkzk... report!"
+							"*kzzzzkzkkzk*... *kzkkzkzkzkz*...",
+							"*zzkzz*... come... *kkzkzkzk*... report!"
 							
 						],
 						"color": "#FFFFFF",
@@ -1140,7 +1140,7 @@
 						"lines":
 						[
 							
-							"..kzkkz... kkzzkk... all Hero Corp agents! Paging All Hero Corp agents!"
+							"..*kzkkz*... *kkzzkk*... all Hero Corp agents! Paging All Hero Corp agents!"
 							
 						],
 						"color": "#FFFFFF",
@@ -1300,7 +1300,7 @@
 						"lines":
 						[
 							
-							"...What the...?"
+							"...What the hell?"
 							
 						],
 						"color": "#8AF1FF",
