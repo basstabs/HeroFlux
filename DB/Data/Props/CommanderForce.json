@@ -1,0 +1,33 @@
+{
+		
+	"key": "CommanderForce",
+	"code": 1,
+	"texture": "Force",
+	"width": 16,
+	"height": 16,
+	"tracking": false,
+	"death": "Force-Death",
+	"death_instruction": {
+		
+		"xParam": "-20",
+		"yParam": "100+(-300*t)",
+		"audio": "StruggleAudio",
+		"transition": "Player-ToForce",
+		"animation": "Player-Force",
+		"image": "CommanderGameOverImage"
+			
+	},
+	"bounds":
+	{
+		
+		"type": "box",
+		"width": 16,
+		"height": 16,
+		"offsetX": 0,
+		"offsetY": 0
+			
+	},
+	"hostile": true,
+	"value": 1
+		
+}

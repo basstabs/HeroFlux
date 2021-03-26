@@ -1,0 +1,75 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -9
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": 3
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -22
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": 15
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -34
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": 27
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -46
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 3,
+	"aimed": false
+	
+}

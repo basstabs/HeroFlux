@@ -1,0 +1,39 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "CommanderBolt",
+			"xParam": "-250",
+			"yParam": "0",
+			"x": -16,
+			"y": -9
+			
+		},
+		{
+			
+			"key": "CommanderBolt",
+			"xParam": "-225",
+			"yParam": "-25",
+			"x": -16,
+			"y": -8
+			
+		},
+		{
+			
+			"key": "CommanderBolt",
+			"xParam": "-225",
+			"yParam": "25",
+			"x": -16,
+			"y": -10
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 1,
+	"aimed": false
+	
+}

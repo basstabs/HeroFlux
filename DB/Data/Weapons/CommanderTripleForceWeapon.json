@@ -1,0 +1,39 @@
+{
+	
+	"fire_modes":
+	[
+		
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -9
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": 3
+			
+		},
+		{
+			
+			"key": "CommanderForce",
+			"xParam": "-20",
+			"yParam": "0",
+			"x": -16,
+			"y": -22
+			
+		}
+		
+	],
+	"fire_rate": 0.25,
+	"cost": 2,
+	"aimed": false
+	
+}

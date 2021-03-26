@@ -1,0 +1,33 @@
+{
+	
+	"key": "CommanderMiniFireball",
+	"code": 1,
+	"texture": "MiniGreenFireball",
+	"width": 12,
+	"height": 6,
+	"tracking": true,
+	"death": "MiniGreenFireball-Death",
+	"bounds":
+	{
+		
+		"type": "circle",
+		"radius": 3,
+		"offsetX": 6,
+		"offsetY": 0
+		
+	},
+	"hostile": true,
+	"value": 1,
+	"death_instruction":
+	{
+				
+		"transition": "Player-ToDeath",
+		"animation": "Player-Death",
+		"xParam": "-200*t",
+		"yParam": "((500*t)*t)+50",
+		"audio": "ScreamAudio",
+		"image": "CommanderGameOverImage"
+				
+	}
+		
+}

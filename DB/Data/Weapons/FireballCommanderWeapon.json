@@ -1,0 +1,27 @@
+{
+
+	"fire_modes":
+	[
+	
+		{
+		
+			"key": "CommanderMiniFireball",
+			"xParam": "400",
+			"yParam": "0",
+			"x": 0,
+			"y": 0
+	
+		}
+		
+	],
+	"fire_rate": 0,
+	"cost": 0,
+	"aimed":
+	{
+	
+		"actor": true,
+		"agent": true
+	
+	}
+
+}
