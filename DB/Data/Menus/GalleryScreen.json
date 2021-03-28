@@ -40,7 +40,7 @@
 		},
 		{
 			
-			"text": "Reward:",
+			"text": "Cost:",
 			"font": {"fontFamily": "chunk", "fontSize": "128px", "color": "#8AF1FF"},
 			"display":
 			{

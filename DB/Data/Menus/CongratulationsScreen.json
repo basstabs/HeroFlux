@@ -1,0 +1,113 @@
+{
+	
+	"background": "",
+	"music": "",
+	"currency": false,
+	"text": [],
+	"items":
+	[
+		
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Continue",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.43,
+			"y": 0.9,
+			"method": "Continue",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.43,
+					"y": 1.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": 1.1,
+						"target": 0.9,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"type": "text",
+			"text":
+			{
+				
+				"text": "Copy to Clipboard",
+				"font":  {"fontFamily": "chunk", "fontSize": "125px", "color": "#8AF1FF", "highlight": "#F9E113"}
+				
+			},
+			"x": 0.35,
+			"y": 0.75,
+			"method": "Copy",
+			"arg": "",
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.4,
+					"y": -0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+					
+					{
+						
+						"key": "y",
+						"start": -0.1,
+						"target": 0.75,
+						"time": 500
+						
+					},
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		}
+		
+	]
+
+}

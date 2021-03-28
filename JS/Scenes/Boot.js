@@ -79,7 +79,10 @@ export default class Boot extends BaseScene
 		preload_data["assets"].push({type: "music", id: "ContinueMusic", url: "DB/Music/ContinueMusic.mp3"});
 		preload_data["assets"].push({type: "image", id: "MissionImage", url: "DB/Images/Menus/MissionImage.png"});
 		preload_data["assets"].push({type: "image", id: "CompleteImage", url: "DB/Images/Menus/CompleteImage.png"});
-	
+		preload_data["assets"].push({type: "json", id: "EndTextScreen", url: "DB/Data/Menus/EndTextScreen.json"});
+		preload_data["assets"].push({type: "json", id: "CongratulationsScreen", url: "DB/Data/Menus/CongratulationsScreen.json"});
+		preload_data["assets"].push({type: "music", id: "WinMusic", url: "DB/Music/WinMusic.mp3"});
+		
 		//Universal Game Assets
 		preload_data["assets"].push({type: "image", id: "Warning", url: "DB/Images/Warning.png"});
 		preload_data["assets"].push({type: "image", id: "DialogueBox", url: "DB/Images/DialogueBox.png"});

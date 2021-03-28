@@ -12,6 +12,7 @@ import Loader from "../Scenes/Loader.js";
 import {CONST_PLAYER_PROPS, CONST_PLAYER_ACTORS, CONST_PLAYER_EFFECTS} from "../Scenes/LevelSelect.js";
 import LevelPreloader from "../Scenes/LevelPreloader.js";
 import Shmup from "../Scenes/Shmup.js";
+import EndText from "../Scenes/EndText.js";
 
 import Timer from "../Tools/Timer.js";
 
@@ -139,6 +140,13 @@ export default class Win extends MenuScene
 		
 				this.scene.add("Shmup", Shmup);
 		
+			}
+			else
+			{
+			
+				this.scene.add("EndText", EndText);
+				this.Start("EndText");
+				
 			}
 			
 		}, [], this);

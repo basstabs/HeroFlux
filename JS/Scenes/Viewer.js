@@ -86,6 +86,9 @@ export default class Viewer extends MenuScene
 	create()
 	{
 		
+		this.locked_text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, "Locked", CONST_FONT);
+		this.index = UI.AddSource(this.locked_text.canvas, CONST_LOCKED_DATA);
+		
 		super.create();
 		
 		this.cameras.main.backgroundColor = Phaser.Display.Color.HexStringToColor("#000000");
@@ -96,7 +99,7 @@ export default class Viewer extends MenuScene
 			if(this.data[i].type !== "image")
 			{
 				
-				this.anims.create({key: this.data[i].animation_key,
+				this.anims.create({key: this.data[i].key + this.data[i].animation_key,
 						frames: this.CreateFrames(this.data[i].key, this.data[i].frames),
 						frameRate: this.data[i].frameRate,
 						repeat: -1
@@ -105,9 +108,6 @@ export default class Viewer extends MenuScene
 			}
 			
 		}
-		
-		this.locked_text = this.add.text(CONST_POOL_LOCATION_X, CONST_POOL_LOCATION_Y, "Locked", CONST_FONT);
-		this.index = UI.AddSource(this.locked_text.canvas, CONST_LOCKED_DATA);
 		
 		this.image = this.add.sprite(Config.width / 2, Config.height / 2, "Player").anims.play("Idle");
 		this.image.setOrigin(0.5, 0.5);
@@ -152,7 +152,7 @@ export default class Viewer extends MenuScene
 		else
 		{
 			
-			this.SelectAnimation(entry.key, entry.animation_key);
+			this.SelectAnimation(entry.key, entry.key + entry.animation_key);
 			
 		}
 		
@@ -218,7 +218,15 @@ export default class Viewer extends MenuScene
 			UI.Unstash();
 			
 			this.scene.remove("Viewer");
-		
+			this.image.destroy();
+			
+			for(var i = 0; i < this.loadedSheets.length; i++)
+			{
+				
+				this.textures.remove(this.loadedSheets[i]);
+				
+			}
+			
 			for(var i = 0; i < this.data.length; i++)
 			{
 				
@@ -231,16 +239,9 @@ export default class Viewer extends MenuScene
 				else
 				{
 					
-					this.anims.remove(this.data[i].animation_key);
+					this.anims.remove(this.data[i].key + this.data[i].animation_key);
 				
 				}
-				
-			}
-			
-			for(var i = 0; i < this.loadedSheets.length; i++)
-			{
-				
-				this.textures.remove(this.data[i].key);
 				
 			}
 			

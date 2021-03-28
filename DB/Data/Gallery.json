@@ -4,7 +4,7 @@
 		
 		"key": "G-Azure",
 		"name": "Azure Burst",
-		"description": "",
+		"description": "A rookie heroine freshly inducted into Hero Corp. Her powers show great promise, but they'll be tested sooner than anyone can imagine.",
 		"images": [
 			
 			{
@@ -52,8 +52,8 @@
 				"type": "animation",
 				"key": "Player",
 				"dimensions": {"frameWidth": 40, "frameHeight": 40},
-				"animation_key": "Falling",
-				"frames": [14, 15, 16, 17, 18, 19, 20, 17, 18, 19, 20, 17, 18, 19, 20],
+				"animation_key": "Beam",
+				"frames": [21, 22, 23, 24, 25, 26, 27, 24, 25, 26, 27, 24, 25, 26, 27],
 				"frameRate": 12,
 				"requirements": []
 				
@@ -63,16 +63,9 @@
 				"type": "animation",
 				"key": "Player",
 				"dimensions": {"frameWidth": 40, "frameHeight": 40},
-				"animation_key": "Beam",
-				"frames": [21, 22, 23, 24, 25, 26, 27, 24, 25, 26, 27, 24, 25, 26, 27],
+				"animation_key": "Falling",
+				"frames": [14, 15, 16, 17, 18, 19, 20, 17, 18, 19, 20, 17, 18, 19, 20],
 				"frameRate": 12,
-				"requirements": []
-				
-			},
-			{
-				
-				"type": "image",
-				"key": "GameOver/GameOver",
 				"requirements": []
 				
 			},
@@ -86,6 +79,13 @@
 		    	"frames": [63, 64, 65, 66],
 		    	"requirements": []
 		    
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/GameOver",
+				"requirements": []
+				
 			}
 			
 		],
@@ -96,8 +96,33 @@
 		
 		"key": "G-Hero",
 		"name": "Hero Corp",
-		"description": "",
-		"images": [],
+		"description": "A loose organization of moral (and moral-ish) heroes dedicated to upholding peace and resisting the evil influence of Villain Corp. Accepting payment for good deeds never hurt anyone, after all.",
+		"images": [
+			
+			{
+		    
+				"type": "animation",
+				"key": "Goodbot",
+				"dimensions": {"frameWidth": 28, "frameHeight": 16},
+				"animation_key": "Idle",
+		    	"frameRate": 48,
+		    	"frames": [0, 1, 2, 3, 4, 5],
+		    	"requirements": []
+		    
+			},
+			{
+		    
+				"type": "animation",
+				"key": "Gunbot",
+				"dimensions": {"frameWidth": 28, "frameHeight": 16},
+				"animation_key": "Idle",
+		    	"frameRate": 48,
+		    	"frames": [0, 1, 2, 3, 4, 5],
+		    	"requirements": []
+		    
+			}
+			
+		],
 		"requirements": ["AzureTutorial"]
 		
 	},
@@ -105,7 +130,7 @@
 		
 		"key": "G-Penny",
 		"name": "Penny Sexton",
-		"description": "",
+		"description": "Hero Corp.'s head of field operations. She provides tactical support and situation monitoring for all active agents from Hero Corp. HQ, although she has no superpowers of her own.",
 		"images": [
 			
 			{
@@ -131,8 +156,55 @@
 		
 		"key": "G-Villain",
 		"name": "Villain Corp",
-		"description": "",
-		"images": [],
+		"description": "An underground coalition of ne'er-do-wells who use their powers for personal profit and selfish endeavors. Sworn enemies of Hero Corp.",
+		"images": [
+			
+			{
+				
+				"type": "animation",
+				"key": "Robot",
+				"dimensions": {"frameWidth": 23, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4],
+				"frameRate": 48,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "RobotGun",
+				"dimensions": {"frameWidth": 26, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4],
+				"frameRate": 48,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Drone",
+				"dimensions": {"frameWidth": 32, "frameHeight": 24},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 48,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Shieldbot",
+				"dimensions": {"frameWidth": 32, "frameHeight": 20},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4],
+				"frameRate": 48,
+				"requirements": ["AzureLevel2"]
+				
+			}
+			
+		],
 		"requirements": ["AzureLevel1"]
 		
 	},
@@ -140,7 +212,7 @@
 		
 		"key": "G-Kitty",
 		"name": "Kitty Sexton",
-		"description": "",
+		"description": "A freelance information specialist that coordinates Villain Corp.'s field operations. Penny's fraternal twin.",
 		"images": [
 			
 			{
@@ -159,9 +231,20 @@
 		
 		"key": "G-Symbio",
 		"name": "Symbios",
-		"description": "",
+		"description": "Mysterious life forms from another galaxy. They are amorphous and sentient, forming symbiotic relationships with humans and granting them extraordinairy abilities. Little is known about their origins. Many have yet to bond and move about in their natural state.",
 		"images": [
 			
+			{
+				
+				"type": "animation",
+				"key": "Ooze",
+				"dimensions": {"frameWidth": 32, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+				"frameRate": 12,
+				"requirements": ["AzureLevel1"]
+				
+			},
 			{
 				
 				"type": "animation",
@@ -189,13 +272,68 @@
 		
 		"key": "G-Kabadra",
 		"name": "Kabadra",
-		"description": "",
+		"description": "A low level member of Villain Corp. His abilities are more suited to children's birthday parties than combat, although he doesn't let that damage his self-worth.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/KabadraDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Kabadra",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 1],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Kabadra",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Fire",
+				"frames": [4, 5, 6, 7, 8, 8, 0, 1, 2, 3, 1],
+				"frameRate": 18,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Kabadra",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Cast",
+				"frames": [9, 10, 11, 12, 13, 14, 15, 12, 13, 14, 15, 12, 13, 14, 15],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Kabadra",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Charge",
+				"frames": [16, 17, 18, 19, 20, 21, 22, 19, 20, 21, 22, 19, 20, 21, 22],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Kabadra",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Death",
+				"frames": [23, 24, 25],
+				"frameRate": 12,
 				"requirements": []
 				
 			},
@@ -226,13 +364,101 @@
 		
 		"key": "G-PG",
 		"name": "Pain Girl",
-		"description": "",
+		"description": "A deviant and deranged member of Villain Corp. While strong, her self-destructive urges often lead to her own downfall.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/PainDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 1],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Break",
+				"frames": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 15, 14, 15, 16, 15],
+				"frameRate": 9,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Fight",
+				"frames": [14, 15, 16, 15],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Recharge",
+				"frames": [16, 17, 18, 19],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Shoot",
+				"frames": [20, 21, 22, 23, 24, 25, 24, 23, 24, 25, 24, 23, 24, 25, 24],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Fire",
+				"frames": [26, 26, 27, 28, 28, 14, 15, 16, 15, 14, 15, 16, 15],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "PainGirl",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Death",
+				"frames": [23, 24, 25],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Chain",
+				"frames": [49, 50, 51, 52, 53, 54, 55, 52, 53, 54, 55, 52, 53, 54, 55],
+				"frameRate": 6,
 				"requirements": []
 				
 			},
@@ -252,18 +478,40 @@
 		
 		"key": "G-Chloro",
 		"name": "Chloro Grunt",
-		"description": "",
+		"description": "Brainwashed members of Hero Corp., subjected to the reconstruction engine to force them to serve Villain Corp.'s whims.",
 		"images": [
 			
+			{
+				
+				"type": "animation",
+				"key": "ChloroGrunt",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "ChloroGrunt",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Chloro",
+				"frames": [4, 5, 6, 7, 7, 7, 7, 7, 7, 7, 7],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
 			{
 				
 				"type": "animation",
 				"key": "Player",
 				"dimensions": {"frameWidth": 40, "frameHeight": 40},
 				"animation_key": "Chloro",
-				"frames": [42, 43, 44, 45, 46, 47, 48, 48, 48, 48, 48, 48],
+				"frames": [42, 43, 44, 45, 46, 47, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48],
 				"frameRate": 6,
-				"requirements": ["AzureLevel2"]
+				"requirements": []
 				
 			},
 			{
@@ -282,9 +530,31 @@
 		
 		"key": "G-Taper",
 		"name": "Autotaper",
-		"description": "",
+		"description": "A small robotic drone which can dispense adhesive strips at a quick rate. They were formerly used by police to subdue suspects, but Villain Corp. stole the designs and increased their potency tenfold.",
 		"images": [
 			
+			{
+				
+				"type": "animation",
+				"key": "Autotaper",
+				"dimensions": {"frameWidth": 12, "frameHeight": 8},
+				"animation_key": "Idle",
+				"frames": [0, 1],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Tape",
+				"frames": [56, 57, 58, 59, 60, 61, 62, 59, 60, 61, 62, 59, 60, 61, 62],
+				"frameRate": 6,
+				"requirements": []
+				
+			},
 			{
 				
 				"type": "image",
@@ -301,13 +571,68 @@
 		
 		"key": "G-Horizon",
 		"name": "Horizon",
-		"description": "",
+		"description": "One of Hero Corp.'s most powerful agents, and a primary focus of Villain Corp.'s initial ambush. Overwhelmed by their sheer numbers, she was forcefully subjected to the reconstruction engine.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/HorizonBadDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Horizon",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Horizon",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Shoot",
+				"frames": [4, 5, 6, 7, 8, 9],
+				"frameRate": 24,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Horizon",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Spawn",
+				"frames": [10, 11, 12, 13],
+				"frameRate": 36,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Horizon",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Beam",
+				"frames": [21, 22, 23, 24, 25, 26, 27, 24, 25, 26, 27, 24, 25, 26, 27],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Horizon",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Falling",
+				"frames": [14, 15, 16, 17, 18, 19, 20, 17, 18, 19, 20, 17, 18, 19, 20],
+				"frameRate": 12,
 				"requirements": []
 				
 			},
@@ -327,9 +652,31 @@
 		
 		"key": "G-Engine",
 		"name": "Reconstruction Engine",
-		"description": "",
+		"description": "An insidious device built by Hero Corp. to brainwash and control enemy agents. Seized and used against it by Villain Corp., but later destroyed by Azure Burst.",
 		"images": [
 			
+			{
+			
+				"type": "animation",
+				"key": "Engine",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Idle",
+				"frameRate": 6,
+				"frames": [0, 1, 2, 1],
+				"requirements": []
+		
+			},
+			{
+		    
+		    	"type": "animation",
+				"key": "Engine",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Death",
+		    	"frameRate": 24,
+		    	"frames": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+		    	"requirements": []
+		    
+			},
 			{
 				
 				"type": "image",
@@ -346,13 +693,79 @@
 		
 		"key": "G-Fang",
 		"name": "Scarlet Fang",
-		"description": "",
+		"description": "A powerful member of Villain Corp. Despite his immense strength, his quick temper often makes him a danger to allies and enemies alike.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/FangDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Fire",
+				"frames": [4, 5, 6, 7, 8, 8, 0, 1, 2, 3, 1],
+				"frameRate": 18,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Cast",
+				"frames": [9, 10, 11, 12, 13, 14, 15, 12, 13, 14, 15, 12, 13, 14, 15],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Charge",
+				"frames": [16, 17, 18, 19, 20, 21, 22, 19, 20, 21, 22, 19, 20, 21, 22],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Claw",
+				"frames": [26, 27, 28, 29],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Fang",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Death",
+				"frames": [23, 24, 25],
+				"frameRate": 12,
 				"requirements": []
 				
 			},
@@ -370,11 +783,118 @@
 	},
 	{
 		
-		"key": "G-Snuggler",
-		"name": "Snuggler",
-		"description": "",
+		"key": "G-Aliens",
+		"name": "Assimilators",
+		"description": "A mysterious alien force seemingly drawn to Earth by the symbios. Villain Corp. had advance warning of their arrival, but attempted to exploit this kowledge for their own gain, to disastrous results.",
 		"images": [
 			
+			{
+				
+				"type": "animation",
+				"key": "Saucer",
+				"dimensions": {"frameWidth": 16, "frameHeight": 12},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2],
+				"frameRate": 24,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Ship",
+				"dimensions": {"frameWidth": 36, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2],
+				"frameRate": 24,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "ShipGun",
+				"dimensions": {"frameWidth": 36, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2],
+				"frameRate": 24,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "BigSaucer",
+				"dimensions": {"frameWidth": 48, "frameHeight": 32},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 24,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "FlagShip",
+				"dimensions": {"frameWidth": 96, "frameHeight": 57},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 24,
+				"requirements": ["AzureLevel6"]
+				
+			},
+			{
+				
+				"type": "image",
+				"key": "GameOver/AlienGameOverImage",
+				"requirements": []
+				
+			}
+			
+		],
+		"requirements": ["AzureLevel5"]
+		
+	},
+	{
+		
+		"key": "G-Snuggler",
+		"name": "Snuggler",
+		"description": "A semi-elastic alien creature allied with the assimilators. It seems to doggedly seek out sources of warmth, sometimes to its own detriment.",
+		"images": [
+			
+			{
+				
+				"type": "animation",
+				"key": "Snuggler",
+				"dimensions": {"frameWidth": 22, "frameHeight": 14},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Snuggler",
+				"dimensions": {"frameWidth": 22, "frameHeight": 14},
+				"animation_key": "Death",
+				"frames": [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 5, 6, 7, 8],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Snuggler",
+				"frames": [67, 68, 69, 70, 71, 72, 70, 71, 72, 70, 71, 72, 70, 71, 72],
+				"frameRate": 6,
+				"requirements": []
+				
+			},
 			{
 				
 				"type": "image",
@@ -391,13 +911,79 @@
 		
 		"key": "G-Commando",
 		"name": "Mah'vugh",
-		"description": "",
+		"description": "An assimilator shock trooper tasked with hunting down symbio-bonded humans and capturing them.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/CommandoDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "LeftShoot",
+				"frames": [4, 5, 6, 7, 8, 9, 10, 11, 7, 8, 9, 10, 11],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "RightShoot",
+				"frames": [12, 13, 14, 15, 16, 17, 18, 19, 15, 16, 17, 18, 19],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "Charge",
+				"frames": [20, 21, 22],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "Recharge",
+				"frames": [15, 16, 17, 16],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commando",
+				"dimensions": {"frameWidth": 64, "frameHeight": 84},
+				"animation_key": "Death",
+				"frames": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+				"frameRate": 12,
 				"requirements": []
 				
 			},
@@ -415,24 +1001,37 @@
 	},
 	{
 		
-		"key": "G-Aliens",
-		"name": "Assimilators",
-		"description": "",
-		"images": [],
-		"requirements": ["AzureLevel6"]
-		
-	},
-	{
-		
-		"key": "G-FF",
-		"name": "Assimilator Force Field",
-		"description": "",
+		"key": "G-Shackles",
+		"name": "Assimilator Shackles",
+		"description": "A mechanized capture device which is engineered for the human form. Its design suggests a surprising and disturbing level of preparation prior to the invasion.",
 		"images": [
 			
 			{
 				
+				"type": "animation",
+				"key": "Shackles",
+				"dimensions": {"frameWidth": 24, "frameHeight": 13},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2],
+				"frameRate": 18,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Shackles",
+				"frames": [73, 74, 75, 76, 77, 78, 76, 77, 78, 76, 77, 78, 76, 77, 78],
+				"frameRate": 6,
+				"requirements": []
+				
+			},
+			{
+				
 				"type": "image",
-				"key": "GameOver/ForceFieldGameOverImage",
+				"key": "GameOver/ShacklesGameOverImage",
 				"requirements": []
 				
 			}
@@ -443,15 +1042,48 @@
 	},
 	{
 		
-		"key": "G-Shackles",
-		"name": "Assimilator Shackles",
-		"description": "",
+		"key": "G-FF",
+		"name": "Assimilator Force Field",
+		"description": "A liquid-like substance composed of magnetic forces and nanomachines. Capable of maneuvering around and manipulating objects in close proximity.",
 		"images": [
 			
 			{
 				
+				"type": "animation",
+				"key": "Force",
+				"dimensions": {"frameWidth": 16, "frameHeight": 16},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Force",
+				"dimensions": {"frameWidth": 16, "frameHeight": 16},
+				"animation_key": "Death",
+				"frames": [11, 12, 13, 14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Player",
+				"dimensions": {"frameWidth": 40, "frameHeight": 40},
+				"animation_key": "Force",
+				"frames": [79, 80, 81, 82, 83, 84, 85, 82, 83, 84, 85, 82, 83, 84, 85],
+				"frameRate": 6,
+				"requirements": []
+				
+			},
+			{
+				
 				"type": "image",
-				"key": "GameOver/ShacklesGameOverImage",
+				"key": "GameOver/ForceGameOverImage",
 				"requirements": []
 				
 			}
@@ -464,13 +1096,68 @@
 		
 		"key": "G-Commander",
 		"name": "Qal Akesh",
-		"description": "",
+		"description": "A corrupted symbio leading the assimilators. Seems to have a personal vendetta against the Earth symbios, and the power to act on it.",
 		"images": [
 			
 			{
 				
 				"type": "image",
 				"key": "Dialogue/CommanderDialogue",
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commander",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Idle",
+				"frames": [0, 1, 2, 3, 1],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commander",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Fire",
+				"frames": [4, 5, 6, 7, 8, 8, 0, 1, 2, 3, 1, 0, 1, 2, 3, 1],
+				"frameRate": 12,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commander",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Cast",
+				"frames": [9, 10, 11, 12, 13, 14, 15, 12, 13, 14, 15, 12, 13, 14, 15],
+				"frameRate": 9,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commander",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Charge",
+				"frames": [16, 17, 18, 19, 20, 21, 22, 19, 20, 21, 22, 19, 20, 21, 22],
+				"frameRate": 9,
+				"requirements": []
+				
+			},
+			{
+				
+				"type": "animation",
+				"key": "Commander",
+				"dimensions": {"frameWidth": 40, "frameHeight": 48},
+				"animation_key": "Death",
+				"frames": [23, 24, 25],
+				"frameRate": 12,
 				"requirements": []
 				
 			},
