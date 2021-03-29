@@ -3,8 +3,130 @@
 	"background": "",
 	"music": "",
 	"currency": false,
-	"text": [],
-	"items":
+	"text":
+	[
+		
+		{
+			
+			"text": "Congratulations!",
+			"font": {"fontFamily": "chunk", "fontSize": "256px", "fill": "#F18A8A", "stroke": "#F9E113", "strokeThickness": 12},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.2,
+					"y": 0.1,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"text": "Thanks for playing!",
+			"font": {"fontFamily": "chunk", "fontSize": "160px", "fill": "#F18A8A", "stroke": "#F9E113", "strokeThickness": 12},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.25	,
+					"y": 0.3,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"text": "https://sta.sh/2tmt454o4ig",
+			"font": {"fontFamily": "chunk", "fontSize": "160px", "fill": "#000000", "stroke": "#F9E113", "strokeThickness": 12},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.23,
+					"y": 0.5,
+					"alpha": 0
+					
+				},
+				"animations":
+				[
+
+					{
+						
+						"key": "alpha",
+						"start": 0,
+						"target": 1,
+						"time": 500
+						
+					}
+					
+				]
+				
+			}
+			
+		},
+		{
+			
+			"text": "Link copied to clipboard",
+			"font": {"fontFamily": "chunk", "fontSize": "125px", "fill": "#888888", "stroke": "#000000", "strokeThickness": 6},
+			"display":
+			{
+				
+				"start":
+				{
+					
+					"x": 0.3,
+					"y": 0.825,
+					"alpha": 0
+					
+				},
+				"animations":
+				[	
+				]
+				
+			}
+			
+		}
+		
+	],
+	"items": 
 	[
 		
 		{
@@ -77,7 +199,7 @@
 				"start":
 				{
 					
-					"x": 0.4,
+					"x": 0.35,
 					"y": -0.1,
 					"alpha": 0
 					
