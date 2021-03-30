@@ -55,12 +55,12 @@
         
         "key": "F-SMagician",
         "name": "Silver Magician",
-        "description": "Complete \"<t-AzureLevel1>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel1>\" with a score of at least 24000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel1", "score": 35000}
+            {"level": "AzureLevel1", "score": 24000}
             
         ]
         
@@ -92,12 +92,12 @@
         
         "key": "F-SMasochist",
         "name": "Silver Masochist",
-        "description": "Complete \"<t-AzureLevel2>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel2>\" with a score of at least 30000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel2", "score": 35000}
+            {"level": "AzureLevel2", "score": 30000}
             
         ]
         
@@ -129,12 +129,12 @@
         
         "key": "F-SHeroine",
         "name": "Silver Heroine",
-        "description": "Complete \"<t-AzureLevel3>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel3>\" with a score of at least 20000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel3", "score": 35000}
+            {"level": "AzureLevel3", "score": 20000}
             
         ]
         
@@ -166,12 +166,12 @@
         
         "key": "F-SVillain",
         "name": "Silver Villain",
-        "description": "Complete \"<t-AzureLevel4>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel4>\" with a score of at least 22000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel4", "score": 35000}
+            {"level": "AzureLevel4", "score": 22000}
             
         ]
         
@@ -203,12 +203,12 @@
         
         "key": "F-SInvader",
         "name": "Silver Invader",
-        "description": "Complete \"<t-AzureLevel5>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel5>\" with a score of at least 30000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel5", "score": 35000}
+            {"level": "AzureLevel5", "score": 30000}
             
         ]
         
@@ -240,12 +240,12 @@
         
         "key": "F-SCore",
         "name": "Silver Core",
-        "description": "Complete \"<t-AzureLevel6>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel6>\" with a score of at least 75000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel6", "score": 35000}
+            {"level": "AzureLevel6", "score": 75000}
             
         ]
         
@@ -277,12 +277,12 @@
         
         "key": "F-SGeneral",
         "name": "Silver General",
-        "description": "Complete \"<t-AzureLevel7>\" with a score of at least 35000 points.",
+        "description": "Complete \"<t-AzureLevel7>\" with a score of at least 55000 points.",
         "type": "score",
         "scores":
         [
             
-            {"level": "AzureLevel7", "score": 35000}
+            {"level": "AzureLevel7", "score": 55000}
             
         ]
         

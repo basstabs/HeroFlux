@@ -8,7 +8,7 @@ import SoundBoard from "../Tools/SoundBoard.js";
 export const CONST_POOLSPRITE_MESSAGE_CODE = "PoolSprite";
 export const CONST_SPAWN_MESSAGE_CODE = "spawn";
 
-const CONST_TINT_HURT_COLOR = 0x880000;
+const CONST_TINT_HURT_COLOR = 0xFF8888;
 const CONST_TINT_INVULN_COLOR = 0x8888ff;
 const CONST_TINT_BASE_COLOR = 0xffffff;
 

@@ -1671,7 +1671,7 @@
 			},
 			{
 				
-				"background_param": "0",
+				"background_param": "1",
 				"type": "wave",
 				"music": "Level2Music",
 				"data":
@@ -1687,7 +1687,7 @@
 			},
 			{
 				
-				"background_param": "p-0.25*t=4=0",
+				"background_param": "p1+(-0.25*t)=4=0",
 				"type": "scripted",
 				"duration": 4,
 				"player":

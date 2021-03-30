@@ -237,8 +237,7 @@ export default class SaveData
 	Score(level)
 	{
 		
-		return 1;
-		//return (this.scores[level] ? this.scores[level] : 0);
+		return (this.scores[level] ? this.scores[level] : 0);
 		
 	}
 	
