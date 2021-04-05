@@ -8,6 +8,7 @@ import Shmup from "../Scenes/Shmup.js";
 
 import Input from "../Game/Input.js";
 import Score from "../Game/Score.js";
+import SaveData from "../Game/SaveData.js";
 
 import SoundBoard from "../Tools/SoundBoard.js";
 
@@ -66,6 +67,8 @@ export default class GameOver extends MenuScene
 		this.remove = data.remove;
 		
 		Score.WipeScore();
+		
+		SaveData.SavePlayerData();
 		
 	}
 

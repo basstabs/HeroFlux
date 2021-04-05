@@ -340,7 +340,8 @@
 			{"effect": "Snuggler-Death", "poolSize": 3},
 			{"effect": "MiniGreenFireball-Death", "poolSize": 6},
 			{"effect": "BigBolt-Death", "poolSize": 3},
-			{"effect": "Force-Death", "poolSize": 3}
+			{"effect": "Force-Death", "poolSize": 3},
+			{"effect": "GreenFireball-Death", "poolSize": 3}
 			
 		],
 		"level": "AzureLevel7",
