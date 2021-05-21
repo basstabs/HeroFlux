@@ -1,3 +1,6 @@
+Changes from 1.0.2 to 1.0.1
+-Fixed controller bug whereby game would freeze after hitting continue
+
 Changes from 1.0 to 1.0.1
 -Fixed bug where progress and currency wasn't saved after a game over
 -Fixed bug where destroying a green fireball against the final boss froze the game

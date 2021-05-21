@@ -317,9 +317,16 @@ class PadInput extends Control
 	
 	Movement()
 	{
-		
+
 		var velocity = super.Movement();
-		
+	
+		if(!this.pad)
+		{
+
+			return velocity;
+
+		}
+
 		if(this.Left())
 		{
 
